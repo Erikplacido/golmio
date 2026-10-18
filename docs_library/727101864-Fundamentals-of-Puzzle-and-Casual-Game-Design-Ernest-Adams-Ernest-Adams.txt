@@ -1,0 +1,962 @@
+ Fundamentals of Puzzle
+and Casual Game Design
+
+
+
+        Ernest Adams
+Table of Contents
+ About the Author
+
+ What Are Puzzle and Casual Games?
+
+ Puzzle Games
+     Classes of Puzzle Games
+     Scott Kim’s Eight Steps
+     What Computers Bring to Puzzles
+     Checking the Victory Condition
+
+ Casual Games
+     Qualities of Casual Games
+     Mid-Core Games
+
+ Summary
+     Design Practice Case Study
+     About the Fundamentals of Game Design E-books
+About the Author
+Ernest Adams is a game design consultant and part-time
+professor at the University of Uppsala Campus Gotland in
+Sweden. He lives in England and holds a Ph.D. in computer
+science from Teesside University for his contributions to the
+field of interactive storytelling. Dr. Adams has worked in the
+interactive entertainment industry since 1989, and he founded
+the International Game Developers’ Association in 1994. He
+was most recently employed as a lead designer at Bullfrog
+Productions, and for several years before that he was the
+audio/video producer on the Madden NFL line of football
+games at Electronic Arts. His professional website is at
+www.designersnotebook.com.
+
+
+
+
+Ernest Adams
+What Are Puzzle and Casual Games?
+Puzzle games have been around for a long time, but they
+really came into their own with the advent of mobile game
+platforms and inexpensive, downloadable games. They’re
+generally single-player omnipresent games that challenge
+the mind rather than the reflexes.
+
+Casual games are a market rather than a genre, games that
+are easy for inexperienced players to pick up and play.
+Casual games don’t require the player to devote too much
+time to learning how to play, and are designed to work
+with very short play sessions. They’re included in this e-
+book because many puzzle games are also casual games.
+Puzzle Games
+Puzzles appear in games in several genres. Many single-
+player computer games contain puzzles. In action games,
+the player often has to figure out the boss opponent’s
+weakness; adventure games are full of puzzles, frequently
+about obtaining inaccessible objects or getting information
+from other people; and even first-person shooters offer the
+occasional puzzle, figuring out how to get past locked
+doors and other obstacles. Puzzle design is an essential
+element of game design, and it’s harder than you might
+think.
+
+In puzzle games, puzzle solving is the primary activity, though
+puzzles may occur within a storyline or lead up to some larger
+goal. That doesn’t mean that you can offer a random collection
+of puzzles and call it a game; puzzle games usually provide
+related challenges, variations on a theme, or a narrative. The
+types of puzzles offered include recognizing patterns, making
+logical deductions, or understanding a process. In all cases, the
+puzzles give the player clues that have to be somehow
+unraveled or solved to meet the victory condition.
+To be a commercial success, a puzzle game needs to be
+challenging (but not too difficult), visually attractive, and,
+above all, enjoyable. It also needs to be fresh and to offer
+enough gameplay to justify the purchase price. Although
+solitaire card games such as FreeCell belong in the class of
+puzzle games, unless you sell a lot of them together as a
+collection, people are unlikely to want to pay for them.
+Puzzle games require the player to change the game world
+from an initial state to a solution state, usually by planning
+ahead and manipulating objects in some way. Usually the
+player can take as much time as she wants and can undo and
+redo her moves, a quality that sets puzzle games apart from
+action games, for example. A few puzzle games, such as
+Bejeweled Blitz, have timers, but they don’t require the sort of
+careful thought that a game like Sudoku does. If you include a
+timer on a mobile device, you have to account for the
+interruptions that occur, such as incoming phone calls, and
+make the game easy to replay.
+Because most puzzle games are abstract, the game world does
+not simulate a real place, and usually the player does not enact
+a role within the world. There are exceptions; in Sokoban, the
+player takes the role of a warehouse custodian and has an
+avatar, but her duties are limited to pushing crates around.
+Unlike designing most other games, the process of designing a
+puzzle game does not involve enabling some kind of fantasy
+such as being an explorer or a race car driver. Many puzzle
+games take place in 2D worlds with simple top-down views.
+
+CLASSES OF PUZZLE GAMES
+There are many kinds of puzzles in video games, and they
+don’t all appeal to all kinds of players. If you want to design a
+puzzle game, you’ll need to think about which of the various
+types of puzzles you’d like to offer, and in particular the sort
+of audience that you want to reach. Some options to consider:
+  • Real-time or turn-based? Almost all noncomputerized
+    puzzles, especially single-player ones, are turn-based and
+    the player can think about them as long as she wants.
+    Marble Drop is a single-player Maxis game about
+    dropping marbles into a complex mechanism in such a
+    way that they come out again in a certain order. Most of
+    the puzzles are turn-based, but sometimes the mechanism
+    has moving parts and the player must drop the marbles at
+    the right time to produce the right result. Real-time games
+    also tend to be time-limited (although Marble Drop’s real-
+    time levels were not), placing the player under pressure.
+    Time constraints allow you to control the difficulty level
+    by play-testing the game to see how long it takes players
+    to solve a puzzle and choosing an appropriate time limit.
+    Puzzle-solving under severe time constraints—as in Tetris
+    —belongs more to the action than to the puzzle game
+    genre. Tetris and the many games similar to it depend
+    more on physical coordination challenges than they do on
+    logic problems.
+  • Multiplayer or single-player? We tend to think of puzzle
+    games as single-player, but they don’t have to be. Boggle
+    is a real-time multiplayer game in which players have to
+    find as many words as they can in a random grid of letters.
+    Players earn points for finding words that no other player
+    noticed.
+• Randomized or premade? Puzzle games such as
+ Minesweeper or Battleship use a simple mechanic and
+ starting conditions that can be randomized every time the
+ player plays. These games have minimal level design. To
+ adjust the difficulty, you give the player more things to
+ work on and perhaps fewer resources to work with,
+ depending on what kind of a puzzle it is. However, you
+ have to be careful that your algorithm for generating the
+ initial state of the game world doesn’t produce an
+ unwinnable situation—ideally the software should be able
+ to detect these and reject them so that the player never
+ sees one. (If the player does work herself into an
+ unwinnable situation, she should be able to start over.)
+ Alternatively, you can build a game with premade levels.
+ This is much more work, but it enables you to introduce
+ variety, and difficulty, into the gameplay in a well-
+ organized progression.
+• Combination locks. Many game puzzles are effectively
+ combination locks. The player must manipulate one or
+ more objects to achieve a final, unlocked state. The
+ objects to be manipulated often have a hidden relationship
+ to one another that the player must discover and take into
+ account when manipulating them, just as the tumblers in a
+ combination lock do. Rubik’s Cube is a classic
+ combination lock puzzle; changing one thing changes a lot
+ of other things as well. Most video game puzzles are not
+ that complicated, however.
+• Tile-matching puzzles. The player must make tiles match
+ on a board in order to remove them. Bejeweled and the
+ many, many other match-three games use this mechanism;
+ so do Columns and Tetris, in different forms.
+• Construction. Construction puzzles require building
+ something in such a way that it is complete or operational.
+ Usually the object can be built in a variety of ways, but
+ most of them don’t work. Sometimes there is exactly one
+ correct solution, but you can also create games that
+ include a physics-based challenge, so any construction
+ that meets the requirements is successful. World of Goo is
+ an excellent construction puzzle game. The player has to
+ build objects out of goo balls that meet certain
+ requirements, but she may build them any way she likes as
+ long as the object doesn’t fall apart. For further discussion
+ of construction puzzles, see the sidebar “Case Study:
+ Pettson’s Inventions,” later in this e-book.
+• Navigation. These puzzles involve moving one or more
+ characters through a space, overcoming obstacles along
+ the way. The Portal games are a classic single-player
+ example, set in a 3D environment; the Lemmings games
+ require the player to manage a large number of semi-
+ autonomous creatures and make sure that enough of them
+ make it alive to the level exit to meet the victory
+ condition. The Lost Vikings also required navigating
+ characters through a 2D environment by controlling them
+ one at a time.
+• Hidden object/hidden word. Hidden object and hidden
+ word puzzles show the player an environment—
+ sometimes just a grid of letters—and ask her to find
+ objects or words hidden in the environment. This isn’t a
+ puzzle in the usual sense of being a brain-teaser, or
+ requiring the player to plan a series of moves correctly, but
+ people think of them as puzzles all the same.
+• Brain training. These games usually include a variety of
+ puzzles based on pattern recognition, manipulating letters
+ and words, and doing arithmetic quickly. They are
+ generally designed to exercise the player’s verbal and
+ mathematical abilities, often with a time limit. Some also
+ test the player’s physical skills.
+• Lateral thinking and conceptual reasoning. These kinds
+ of puzzles are normally found in adventure games. Each
+ puzzle is unique because once the player has found the
+ solution to a given challenge (such as using a vacuum
+ cleaner to obtain something that is out of reach, for
+ example), then she knows it and the challenge is no longer
+ puzzling. Rather than using variations on a single
+ mechanic, lateral thinking and conceptual reasoning
+ puzzles require a different mechanic for each one.
+ Adventure games are normally considered a different
+ genre, because they involve so much storytelling,
+ character development, and dialogue.
+• Codes and ciphers. A fair number of adventure games
+ include codes or ciphers, a class of puzzle in which the
+ player must deduce the meaning of a message by finding
+    clues elsewhere in the game, or working from internal
+    evidence, such as knowing that the only one-letter words
+    in English are a and I. These are fun for players to solve
+    and require very little programming to implement. You
+    can make the decoded message a clue in another puzzle,
+    too.
+  • Trivia. Trivia games aren’t puzzles in the traditional sense
+    of find something or manipulate something into a desired
+    end state, but they do test the player’s knowledge and so
+    qualify as puzzle games.
+These aren’t the only kinds, of course. Every now and then
+someone creates a puzzle game that is completely unlike any
+other, such as Katamari Damacy. Use your imagination! In the
+next section we’ll look at how to design puzzles.
+
+SCOTT KIM’S EIGHT STEPS
+Scott Kim is a designer who creates puzzles for print media,
+websites, and computer games. At the 1999 Game Developers’
+Conference he gave a lecture entitled “The Art of Puzzle
+Game Design,” in which he identified eight steps in puzzle
+game design. The first four steps comprise the process of
+specifying the rules, while the last four comprise the process
+of building the puzzles and the game itself:
+  1. Find inspiration. This can come from a variety of
+    sources, including other games. Tetris, for example, was
+    inspired by a noncomputer game called Pentominoes. You
+    can be inspired by a piece of art (the drawings of M.C.
+    Escher have a very puzzle-like feel), a story, or some
+ particular subject matter. Another source of inspiration is a
+ play dynamic of some kind: flipping switches, turning
+ knobs, sliding objects around, or picking them up and
+ putting them down. Or there are more complex dynamics
+ among objects: balance, reflection, connection, and
+ transmission.
+2. Simplify. Suppose you have an idea for a puzzle:
+ efficiently parking vehicles of different sizes in a crowded
+ parking lot so that when someone asks you to retrieve his
+ car, you have to move as few other cars as possible. Part
+ of making this task fun is simplifying it to its essentials.
+ First, identify the essential tricky core skill (in this case,
+ space planning on the fly) and concentrate on that.
+ Second, eliminate any irrelevant details. Don’t make your
+ player worry about crashing the cars, for example. Third,
+ make the pieces uniform. Instead of having cars with
+ infinitely variable shapes and sizes, it’s better to have
+ several standard types that conform to a square grid.
+ Finally, simplify the controls. Figure out what the essential
+ moves are and devise controls that implement them with a
+ minimum of fiddling.
+3. Create a construction set. The only way to be sure that a
+ puzzle concept works is to play it, but obviously you don’t
+ want to code up the whole game before you know whether
+ it’s fun. You can build a paper prototype or a simple
+ version in something like Macromedia Flash to see if it
+ works. The rule designer can play with the prototype to
+ tweak the rules, and later the level designer can use it to
+  build levels. You can also code a construction set into the
+  final game so that players can build puzzles for each other.
+4. Define the rules. This is the key part of puzzle design.
+  Most puzzles are characterized in terms of four things: the
+  board (Is it a grid? A network? Is it irregular? Or is there
+  no board at all?), the pieces (How are they shaped? What
+  pictures are on them? What other attributes do they have?
+  Where do they come from?), the moves (What is allowed
+  and what is not? Are they sequential or simultaneous?
+  What side effects do they have?), and the goal or victory
+  condition (Does it have to be an exact match, or will a
+  partial one do?).
+5. Construct the puzzles. A puzzle challenges the player to
+  get from a problem to a solution, but of course, the path
+  isn’t simple. Every puzzle requires that the player make
+  choices, some of which lead to dead ends. In an adventure
+  game, each puzzle appears in a larger context (the story)
+  that gives it meaning, and solving it advances the plot
+  somehow. Some puzzle games also offer an overall plot of
+  sorts or won’t let you try the next puzzle until you’ve
+  completed the current one. Good puzzles require insight
+  from the player, the “Aha!” moment that occurs when the
+  player realizes how the puzzle works and how to solve it.
+  But you mustn’t require an insight that’s too obscure, or it
+  will feel unfair. If you tell the player that she’s in a maze,
+  it’s unfair for the only solution to be to knock down the
+  walls unless you indicate somehow that this is possible.
+6. Test. Testing tells you several things. It tells you whether
+  the puzzle is too easy or too hard (this can be difficult to
+  predict in advance), and it also tells you whether it’s fun in
+  the first place. It’s imperative that your puzzle be solvable,
+  and if you haven’t already proven that it is during the
+  construction phase, you definitely need to find that out in
+  testing. Testing also helps you find out if there are
+  alternative solutions that you didn’t think of, and it helps
+  you discover errors in the rules. And, of course, it lets
+  people try out the user interface. Because puzzle actions
+  tend to be repetitive, it’s important that the interface be
+  smooth and not frustrating.
+7. Devise a sequence. Now it’s time to order all your
+  puzzles into a sequence. The most obvious arrangement is
+  a linear or accelerating sequence going from easy to
+  difficult, but in practice, that becomes tiring and
+  discouraging. A better arrangement is a sawtooth shape,
+  which gets difficult for a while, then goes back to an easy
+  puzzle, and so on, over and over. This creates an
+  appropriate sense of pacing and lets the player have a rest
+  before the puzzles become difficult again. And, of course,
+  you can give the player the freedom to play the puzzles
+  out of order or let her earn that right. You also need to
+  think about transitions between puzzles, something that
+  will keep her moving on to the next one. War games and
+  role-playing games often do this with a storyline, but it
+  doesn’t need to be that much work. Candy Crush Saga
+  simply shows the player a path between levels. Or, the
+  player can be working on a metapuzzle (a single large
+  puzzle, parts of which the player solves in between the
+  regular puzzles), which motivates her to complete the
+  whole game.
+8. Pay attention to presentation. Finally, of course, there
+  are all the other details of game design: sound, graphical
+  style, animation, user interface elements, storyline (if any),
+  and so on. If you’re used to designing other kinds of
+  games, it might be tempting to move this to an earlier
+  point in the process, but with puzzle games, the puzzles
+  are 90 percent of the battle. Get them right first, and the
+  rest won’t be nearly as hard.
+Case Study: Sokoban
+    Sokoban is a classic, simple puzzle game devised back in 1981 by Hiroyuki
+    Imabayashi. It still remains popular today and has been ported to many
+    different machines. It’s particularly well-suited to touch screens.
+
+    The Japanese term sōkoban means “warehouse keeper,” and that is the
+    player’s role—pushing crates around in a warehouse to get them into their
+    desired positions. It’s a 2D game based on a grid with an overhead view. The
+    warehouse is a walled region, often with interior walls as well, and the walls
+    are impassable. Each crate takes up one grid space and the avatar takes up a
+    space. The object is to push crates into marked spaces—sometimes specific
+    crates, sometimes any crate. Because the warehouse is crowded, the player
+    usually has to move other crates out of the way in order to accomplish this.
+
+    Looking at Scott Kim’s eight steps, you can clearly see how Sokoban, or any
+    similar puzzle game, can be created.
+
+    1. Find inspiration. Sokoban was obviously inspired by the challenges of shuffling
+        goods around in a crowded warehouse, or perhaps the classic sliding-tile
+       puzzle.
+    2. Simplify. The challenge is simplified by using a rectangular grid and making all
+        the crates the same size. The avatar occupies the same space as one crate
+       and can move in only four directions. The weight of the crates is not a factor.
+    3. Create a construction set. Any level of the game can be constructed out of four
+        things: the walls, the avatar, the crates, and their target positions. Nothing else
+       is required.
+    4. Define the rules. The rules of Sokoban are particularly simple. The player can
+       move one step in any of the four directions in each turn. In each move she can
+       push exactly one crate in the direction that she is going. She cannot push more
+       than one crate at a time. She cannot ever pull a crate, only push—to make it
+       move in the opposite direction, she must go around and push from the opposite
+       side. As a result, if a crate is in a corner it can never be moved again.
+    5. Construct the puzzles. It is easy to lay out a Sokoban level, but harder to prove
+        that it is solvable. The game is computationally complex. It may be necessary
+       to establish the ending (victory) state and work your way backward to a starting
+       position—bearing in mind that “backward” means pulling, not pushing, the
+       crates back to their starting positions.
+    6. Test. You should test your Sokoban levels both on yourself and on other people.
+        If few people are able to solve your level, it’s too hard—and you should test on
+       the general public, not just other game developers. Most Sokoban
+       implementations keep a counter of the moves made, so if you have the game
+       save this data you can see how long it took a player to solve a level.
+    7. Devise a sequence. Sokoban levels are not related to each other, but obviously
+       some are more difficult to solve than others. Good implementations order the
+       sequence of puzzles according to the sawtooth difficulty curve recommended
+       by Scott Kim, so that after a particularly difficult puzzle the next one is easier
+       for a while.
+8. Pay attention to presentation. Because Sokoban is so simple, it requires very
+   few graphical elements. These should be attractive and clear, as in any other
+   game. Many Sokoban implementations can be reskinned with a variety of
+   graphics to suit the player’s own tastes, from photorealistic pictures of wooden
+   crates and a man as the avatar, to purely abstract shapes.
+Figure 1 shows an open-source implementation of the game named Sokoban
+YASC (for Yet Another Sokoban Clone) created by Brian Damgaard. The
+avatar is a yellow bulldozer, and the crates must be pushed into the spots
+marked with an X. This version includes a level editor, a level solver, and
+many other features, and may be downloaded for free at Sourceforge.net.
+
+
+
+
+      Figure 1 Sokoban YASC
+WHAT COMPUTERS BRING TO
+PUZZLES
+Computers enable us to make a lot of puzzles that would be
+impossible or expensive to create in the real world—consider
+the logistics of supplying all the parts in Pettson’s Inventions
+in physical form, including the cats and squirrels that appear in
+the game. Even if a puzzle is physically possible, the computer
+can add a number of useful features to make the gameplay
+easier and more enjoyable.
+  • Enable nonphysical or inconvenient moves. The
+    computer can let players do things that don’t correspond to
+    physical actions in the real world—for example, changing
+    the color of something. You can also let the player control
+    several things at once with just one key, something that
+    would be inconvenient to do in a physical implementation.
+  • Include computation features. You can use the
+    computing power available to generate new puzzles
+    automatically, find solutions to the current puzzle, or
+    generate hints about what the player should do next.
+  • Enforce the rules. In a lot of physical puzzles, it’s up to
+    the player to enforce the rules. Sometimes players make
+    mistakes and break the rules accidentally. A computer
+    game can make sure that never happens.
+  • Record player moves and allow the player to undo
+    them. This very useful feature for games involves moving
+    objects around in a sequence. The solitaire game FreeCell
+ allows the player to undo one move, but it would be better
+ if she could undo as many as she wanted, back to the
+ beginning of the game. This rule is so important that I
+ consider it imperative for long turn-based puzzles.
+• Make it rewarding! It’s not unusual for puzzle games to
+ have a funny or dramatic visual payoff when the puzzle is
+ successfully completed.
+
+
+Design Rule: Allow Players to Undo and Redo Long Turn-Based Puzzles
+    Puzzles that require a great deal of backtracking and retrying can become
+    tedious if the only way to backtrack is to start all over from the beginning. If
+    the puzzle is complicated, the player usually cannot remember all the steps
+    she had to take, and this creates unnecessary frustration. If this is the case,
+    consider keeping track of the player’s moves, and allow her to undo and redo
+    them as much as she wants.
+
+
+
+
+• Structure the experience. The computer allows you to
+ present the experience in a particular order, if necessary,
+ passing automatically from one phase to another. In the
+ real world, the player would be looking at the instructions
+ and saying, “Let’s see, what am I supposed to do next?”
+• Teach. You can include tutorial modes and step-by-step
+ instructions to help your player get into the game. In
+ puzzle games, these are seldom explicitly called tutorials,
+ however; they are just the early levels of the game.
+• Use bells and whistles. Obviously, with sound and
+ animation, you can make a puzzle much more
+ aesthetically interesting on the computer than it would be
+ as a physical object.
+• Enable online play. The computer lets players compete
+ against one another, compare solutions, and be part of a
+ puzzle-solving community. FoldIt (available at
+ http://fold.it/portal) is a system that challenges players to
+ solve real problems associated with how protein molecules
+ are structured. They seem like ordinary puzzles, and the
+ game gives points for solutions and provides a
+ leaderboard, but the results have real scientific benefit as
+ well. Eyewire is another such game with real-world
+ applications. It’s available at https://eyewire.org/signup.
+Case Study: Pettson’s Inventions
+    Pettson’s Inventions is an imaginative and clever puzzle game for mobile
+    devices that continues an idea begun many years ago in a similar game, The
+    Incredible Machine. The game consists of a series of puzzles, each of which
+    involves building a crazy machine to accomplish a certain task. The player
+    constructs each machine in a two-dimensional space upon which a variety of
+    mechanical devices can be placed. (Some of these devices are actually
+    animals, which can be frightened by noises or lured by food.) Each puzzle
+    starts with a few objects in given positions, and the victory condition states
+    what the player must accomplish (for example, pop the balloon) using a
+    limited number of additional devices. The player must place these devices in
+    the play area and hook them together in such a way that the resulting
+    machine, when set in motion, achieves the goal. Playing the game consists of
+    adding elements to the machine, trying them out, adjusting them, trying them
+    again, and so on. Figure 2 shows one of the completed scenarios in Pettson’s
+    Inventions. Available parts are in the area at the left; this example shows a
+    few leftover parts that are not needed.
+
+    Scott Kim identifies three key design decisions that he feels made The
+    Incredible Machine the prototypical construction puzzle game. These also
+    apply to Pettson’s Inventions.
+
+      • Allow the player to build things. This makes The Incredible Machine a
+        construction game and differentiates it from, say, Tetris (an action puzzle game)
+        or Marble Drop (a logic game in which the player decides where and when to
+        drop marbles into a mechanism). The player is exercising his creativity.
+        (Although Minecraft offers construction, it is a sandbox game, not a puzzle
+        game, because it has no victory condition.)
+      • Include no real-time decision-making. Constructing the machine and running it
+         take place in separate modes. The player can take as long as she wants to
+        think about what she’s doing. This is in contrast with Lemmings, an excellent
+        game but one that requires the player to solve its puzzles on the fly. Often if the
+        player doesn’t solve the puzzle in time, she has to start over.
+      • Allow players to design their own puzzles. Little Big Planet is another great
+        example of this. Any time players can build their own elements, it adds value to
+        the game and helps create a community of devoted fans. Players can
+        exchange their puzzles by e-mail, post them on websites, run tournaments, and
+        enjoy all kinds of other activities, all of which constitute free publicity for the
+        game.
+          Figure 2 Pettson’s Inventions
+
+
+
+
+CHECKING THE VICTORY
+CONDITION
+Bear in mind that players don’t always find the solution to a
+puzzle the way that you envisioned when you invented it.
+There might be more than one path to the goal. When your
+game checks to see whether the player solved the puzzle, you
+should test only to see whether the player met the victory
+condition you gave her, not that she has done it in the way you
+expected. Otherwise you’ve cheated her, and she’ll be
+justifiably frustrated. She’s managed to get to the correct
+solution state, but your game refuses to recognize it.
+This problem appears in the game Interstate ’76, in which
+players found an innovative solution to a problem, but the
+game did not give them credit for it because it wasn’t the
+“right” solution—even though the outcome was the same.
+When the software checks the victory condition in your game,
+be sure it checks the solution state that you told the player to
+achieve, not the way in which she achieved it. Many games
+also provide multiple levels of scores for different solutions,
+which rewards players for partial success and encourages them
+to keep trying for the best solution. It also makes the game
+available to a wider audience because even players who can’t
+find the ideal solution can still advance in the game. In Angry
+Birds you must destroy all the pigs on each level, but you get
+more points for doing it efficiently, and it rewards you with
+one, two, or three stars depending on your score.
+Casual Games
+Gaming used to be an expensive and time-consuming
+hobby, and it still can be, but it no longer has to be. Casual
+games allow people who have little discretionary time (or
+money) to still enjoy playing games during short breaks.
+Casual games are not a single genre, because they can offer
+many different kinds of gameplay. Rather, they have a
+number of features in common that make them easy to
+pick up and play. In this section, we’ll look at what makes
+a game casual, and what features you should include (and
+leave out) to make your game appealing to the casual
+player.
+
+QUALITIES OF CASUAL GAMES
+Because casual games can belong to any genre, it’s not
+possible to generalize about their usual camera or interaction
+models, their progression mechanics, and so on. Rather, casual
+games are defined by a set of characteristics that make them
+appealing to a broad range of players, regardless of what the
+genre is.
+Casual players play when they have the opportunity, often in
+breaks in their schedule or to pass time while waiting for
+something else. Some play at a regular time of day to relax,
+often after an eight- to twelve-hour workday. They may not
+think of themselves as gamers at all and don’t consider gaming
+a hobby or something they work at. It’s just a pastime.
+Nevertheless, they may spend significant amounts of money
+on it. Games aimed at this market earn hundreds of millions of
+dollars every year; they’re an important part of the business.
+Although casual gamers only fit gaming around the rest of
+their lives, it doesn’t necessarily mean that they don’t play
+much. Some casual gamers play for many hours a week.
+If you want to make a casual game, you need to include these
+qualities:
+  • Easy and intuitive controls. The controls of the game
+    should be self-explanatory or require only a minimal
+    tutorial to learn. A designer cannot assume the player has
+    a particular gaming background or muscle memory to
+    drive this intuition. This is one of the reasons that so many
+    casual games are found on tablets and mobile devices:
+    touching and dragging are simple operations, and a touch
+    screen offers the ability for WYSIWYG controls.
+  • Short play sessions. After easy and obvious controls, this
+    is the second-most important feature of casual games. The
+    player must be able to get into the game quickly, feel as if
+    he has accomplished something in a short amount of time,
+    and get out again if he needs to. The loading and set-up
+    times should be as brief as possible. Casual players often
+    play a round or two of a game like Solitaire or Bejeweled
+    while waiting for a bus. The play sessions don’t always
+    have to be as short as three minutes, but if a player is
+    required to play continuously for 15 minutes or more,
+    that’s too long. A mobile game needs to account for the
+    possibility that the player may be interrupted by a phone
+    call at any instant. Bear in mind that offering short play
+ sessions does not necessarily mean offering a short game.
+ You can tell a long story over the course of many short
+ sessions.
+• A shallow difficulty curve and low frustration levels.
+ Casual games should be very easy to start and should stay
+ fairly easy throughout. If the player has a hard time
+ completing a level, he will probably abandon the game.
+ This doesn’t mean that casual games must always be
+ trivial, but they shouldn’t be overly frustrating.
+ Remember, the player is probably playing to relax, so the
+ focus should be on success rather than failure. Cooking
+ Mama moved the player ahead even if he failed at a
+ challenge. See the next item.
+• Hints and tips. Don’t let the player get completely stuck;
+ provide hints and tips to help him move forward. It’s OK
+ to reward the player for not using them—hidden object
+ games often do this—but by offering them, you prevent
+ frustration and make the game accessible to more people.
+ Many casual games offer hints, powerups, or extra time if
+ the player seems to be stuck.
+• Auto-save or save anywhere. If your game is long but
+ can be played in short sessions, the player will need to
+ save it frequently. You can either save the game
+ automatically at frequent intervals or allow the player to
+ save the game at any point, so he can stop and do
+ something else. Auto-save keeps the game simple and
+ means the player doesn’t have to think about it. However,
+ if you’re going to use auto-save, you must avoid saving at
+    times when the player might prefer to go back and reload
+    an earlier save. Most casual games don’t have branching
+    storylines or offer players complex situations in which
+    they might want to keep more than one save around.
+  • Uncomplicated mechanics. Another aspect of keeping
+    casual games accessible and easy to learn is fairly simple
+    and obvious mechanics. Casual games seldom have
+    complex internal economies that they intend for the player
+    to tune carefully to get right. They often simply give the
+    player resources at intervals and let him buy things with
+    them, which eventually earns more resources in a slow
+    positive feedback loop. Casual free-to-play games
+    generally have a bottleneck in this system somewhere that
+    prevents the player from advancing quickly, but which he
+    can pay real money or trade social connections to
+    overcome.
+In addition to the qualities described, many casual games
+include some additional features that you may wish to
+consider:
+  • Randomized levels for unlimited play. Games like
+    Candy Crush Saga have a sequence of standard level
+    layouts (although the arrival of new candy is randomized)
+    that the player must play through in sequence, and often
+    must pay to gain access to. However, you can give the
+    player great value by offering levels with completely
+    randomized content. Creating randomized levels is tricky,
+    however; you have to be sure the level-generation
+    algorithm doesn’t create a trivial or an unwinnable level.
+• Easy social play. If you’re going to offer multiplayer
+ gameplay, as with everything else about casual gaming, it
+ must be easy to get into and out of, and not require the
+ player to plan ahead unless he wants to.
+• A light tone. Most casual games use bright colors and
+ their violence, if there is any, is cartoonish. They also use
+ comedy to keep the tone light, with silly-looking
+ characters and amusing animations (see Song of Swords in
+ Figure 3). Few casual games try to create a dark, moody
+ environment. It takes a while for a player to become
+ immersed in an environment like that, so it’s not suitable
+ for the kind of gameplay that they can dip into for a few
+ minutes at a time. Grim environments don’t work as well
+ on the small screen either, because the contrast between
+ the game world and the player’s real surroundings is too
+ great.
+• Inexpensive. Casual games are almost always inexpensive
+ or free to purchase, at least initially, due to the competition
+ in that space. To reach the casual player, you need to keep
+ the barrier to entry low. Many casual games are monetized
+ through in-app purchases, ads, “full” versions, and other
+ schemes. There isn’t room to discuss all the various ways
+ to do this, but Fundamentals of Game Design, Third
+ Edition discusses it in Chapter 6, “Making Money from
+ Your Game.”
+Figure 3 Song of Swords
+
+MID-CORE GAMES
+In the last couple of years a new category of game has
+emerged, responding to a need for a new kind of gamer, mid-
+core. Like most such terms, the definition is fluid. In this
+section, we’ll consider what mid-core generally seems to
+mean.
+Hardcore gaming is, for the most part, a young person’s hobby.
+(Naturally, there are exceptions.) It requires large blocks of
+leisure time to learn how to play the games and to play them to
+completion. As hardcore gamers get older, have families, and
+take on more responsibilities, they may make a transition to
+mid-core gaming. They are still capable of understanding
+complex games, but they can’t spend several hours at a time
+on a game. They also can’t afford to devote a lot of time to
+learning the intricacies of a new game.
+At the opposite end of the scale, the skilled casual player may
+find that he is ready for a bigger challenge, a game that
+requires more attention than most casual games do. He still
+likes to play in short sessions, but is no longer content with
+very simple games like Bejeweled. He also may be willing to
+spend more money on a given game if it offers the sort of
+sophisticated experience that he’s looking for.
+The mid-core game, then, is one that is easier to pick up and
+play than a hardcore game. Its controls should still be intuitive,
+but you can expect the player to be willing to learn more about
+them. At the same time, however, it has hidden depths that
+most casual games don’t offer. Although the game is easy to
+start playing, it takes longer to master. It requires more
+attention, more brainpower generally, and includes more
+complex mechanics. It is a richer experience than a casual
+game, but it is not as challenging to get into as a hardcore
+game.
+Like casual games, mid-core games must not waste the
+player’s time. Short play sessions require frequent
+checkpoints, auto-saving, or allowing the player to save the
+game anywhere.
+Apart from the growing player base itself, mobile platforms
+with touch screens are another reason that mid-core games
+have come into existence. These devices don’t have the CPU
+power nor the storage space required for a high-end hardcore
+game, but they have enough to deliver an intermediate level
+experience. The touch screen makes the user interface easy to
+learn, but it does not support complex external controllers with
+their many buttons and joysticks.
+Competition Modes
+Like casual games, many mid-core games are single-player
+games, but they can also be multiplayer cooperative or
+competitive. If you want to implement these modes, however,
+the player must be able to enter them quickly and easily. Mid-
+core gamers don’t have the time to gather a diverse group of
+players for a raid as in MMORPGs. Allow your players to join
+a group instantly and anonymously, play for a little while, and
+then drop out with no harm done to the experience of the other
+players. (For this reason, team play is problematic.) Don’t
+require voice chat, either; these kinds of games are often
+played in public where people won’t want to be seen shouting
+at their tablet.
+Pricing Models
+The mid-core gamer is generally more willing to spend money
+than the purely casual gamer, but not a lot more, and not on an
+ongoing basis. You can sell a mid-core game for more than a
+casual game costs in an app store (say, $4.99 instead of $0.99),
+but obviously not as much as a conventional retail game costs.
+Freemium models and in-app purchases are OK, but
+subscription-based models are not; the player will probably
+feel that he is not going to devote enough time to any given
+mid-core game to justify the expense of an ongoing
+subscription.
+Case Study: The Puzzle Quest Series
+    Puzzle Quest and its successors, Puzzle Quest 2 and Marvel Puzzle Quest:
+    Dark Reign, are excellent examples of mid-core games. They aren’t pure
+    puzzle games, because they aren’t about achieving a solution state through
+    planning, and chance plays a large role in them. The developer chose the
+    name simply because the game uses a match-three mechanic that looks
+    rather puzzle-like.
+
+    Puzzle Quest and Puzzle Quest 2 (Figure 4) are both single-player role-
+    playing games (RPGs) with a story and a series of quests in conventional
+    role-playing game style. The game awards experience points for completing
+    quests and winning battles. The player’s avatar earns gold and power as he
+    levels up, and can buy weapons, armor, and magic items. The game has two
+    main gameplay modes: exploration and combat. But it also includes a number
+    of features that make it more accessible than traditional computer role-playing
+    games (CRPGs). Most noticeably, combat is simulated as a turn-based
+    match-three game played against a single opponent. Matching gems on the
+    board does damage to the opponent, or harvests mana or action points that
+    may be expended by wielding weapons or casting spells. There are five types
+    of mana, designated by color, and different amounts are required to cast
+    different spells. The mechanics are moderately complex, but the player can
+    choose from at most five spells in any one battle, and may wield only one or
+    two weapons at a time.
+      Figure 4 Puzzle Quest 2’s combat mode. The avatar’s status
+      is on the left and her opponent’s status is on the right.
+
+
+Because it is turn-based, the player does not experience much pressure
+between combat sessions, a quality that makes it suitable for the mid-core
+player. More importantly, the avatar cannot die and lose progression. If the
+player loses a battle, he simply retreats and can try again. Being defeated
+does not incur any penalty at all, so although the player has lost time, he does
+not have to spend more time recovering; he can try again immediately if he
+wants to. The game also auto-saves frequently, although not in the middle of
+a battle, so the player does not have to worry about losing anything he has
+gained. It also frequently opens up teleporters that enable the avatar to move
+to any other teleporter, including one in the town where the player can buy
+weapons and armor, thus keeping the amount of backtracking to a minimum.
+Summary
+Puzzle games provide the player with moments or hours of
+strategy and problem solving. You’ll need to provide a
+game that combines high-quality presentation with well-
+thought-out game mechanics and interaction. Players can
+be very opinionated about puzzle games, but the
+individuals who enjoy puzzle games are often also very
+loyal.
+
+Casual games are not a genre but a kind of game that is
+designed to appeal to a particular market: the casual
+player. These players want an experience they can get into
+and out of quickly, that is easy to learn and easy to control,
+and that doesn’t require a large commitment of either time
+or money. These games are usually found on mobile
+devices and don’t have to cost a lot to develop.
+
+DESIGN PRACTICE CASE STUDY
+Choose a puzzle game that you believe, from your own
+experience of playing it, is an excellent example of the genre
+(or use one your instructor assigns). It should be a solitaire
+(single-player) game where puzzle solving is the primary
+activity. Write a report documenting this simulation. Be sure to
+cover at least the following areas:
+  • Describe the gameplay and game mechanics. Describe the
+    presentation of the game and interaction of the player.
+    How long is a gameplay session?
+  • Which of the kinds of puzzle games described in this e-
+    book is it (such as tile matching or navigation), or does it
+    belong to another category entirely? Is it real-time or turn-
+    based, with randomized or premade levels?
+  • If the game has a physical representation in the real world
+    (solitaire card games, for example), what does the
+    computer bring to the video game version? What rules or
+    designs were changed for the new medium?
+  • Does the game have levels or increased difficulty? Is it
+    clear to the player how the game progression works? In
+    your opinion, does the game ramp up too quickly or not
+    quickly enough? How does the game adapt to the player’s
+    ability?
+  • Address the combination of puzzles: Is there more than
+    one type of puzzle in the game? Is the mechanism that is
+    used to combine the puzzles into a single game clear to the
+    player and does it make sense?
+  • Discuss whether the victory condition for any level or the
+    overall game is clear to the player. How is progression
+    indicated?
+In your report, use screen shots to illustrate your points. End
+the case study with suggestions for improvement or, if you feel
+the game cannot be improved, suggestions for additional
+features that might be fun to have in the game.
+Alternatively, choose a puzzle game that you believe is
+particularly bad. Do the same case study, explaining what is
+wrong and how it could be improved.
+A case study is neither a review nor a design document; it is an
+analysis. You are not attempting to reverse-engineer the entire
+game but simply to explain how it works in a general way.
+Your instructor will tell you the desired scope of the
+assignment; I recommend from five to twenty pages.
+
+ABOUT THE FUNDAMENTALS OF
+GAME DESIGN E-BOOKS
+You understand the basic concepts of game design: gameplay,
+user interfaces, core mechanics, character design, and
+storytelling. Now you want to know how to apply them to
+individual game genres. These focused guides give you
+exactly what you need. They walk you through the process of
+designing for game genres and show you how to use the right
+techniques to create fun and challenging experiences for your
+players.
+All of these e-books are available from the Peachpit website at
+www.peachpit.com/ernestadams.
+Fundamentals of Shooter Game Design discusses designing
+for this huge and specialized market. It examines both the
+frenetic deathmatch style of play and the stealthier, more
+tactical approach.
+Fundamentals of Action and Arcade Game Design is about the
+earliest, and still most popular, genre of interactive
+entertainment: action games. This genre may be divided into
+numerous subgenres such as fighting games, platformers, and
+others, which the chapter addresses in as much detail as there
+is room for. It also looks at the most popular hybrid genre, the
+action-adventure.
+Fundamentals of Strategy Game Design discusses another
+genre that has been part of gaming since the beginning:
+strategy games, both real-time and turn-based.
+Fundamentals of Role-Playing Game Design is about role-
+playing games, a natural outgrowth of pencil and paper games
+such as Dungeons & Dragons.
+Fundamentals of Sports Game Design looks at sports games,
+which have a number of peculiar design challenges. The actual
+contest itself is designed by others; the trick is to map human
+athletic activities onto a screen and control devices.
+Fundamentals of Vehicle Simulation Design addresses vehicle
+simulations: cars, planes, boats, and other, more exotic modes
+of transportation such as tanks.
+Fundamentals of Construction and Simulation Game Design is
+about construction and management simulations in which the
+player tries to build and maintain something—a city, a theme
+park, a planet—within the limitations of an economic system.
+Fundamentals of Adventure Game Design explores adventure
+games, an old and unique genre of gaming that continues to
+earn a great deal of critical attention by its strong storytelling
+and its visual aesthetics.
+Fundamentals of Puzzle and Casual Game Design examines
+puzzle games and casual games in general.
+Fundamentals of Puzzle and Casual Game Design
+Ernest Adams
+
+New Riders
+www.newriders.com
+To report errors, please send a note to errata@peachpit.com
+New Riders is an imprint of Peachpit, a division of Pearson
+Education
+Copyright © 2015 by Pearson Education, Inc.
+
+Senior Editor: Karyn Johnson
+Developmental Editor: Robyn G. Thomas
+Production Editor: Tracey Croom
+Technical Editor: Tobi Saulnier
+Proofreader: Emily K. Wolman
+Cover Design: Aren Straiger
+Interior Design: Charlene Charles-Will
+Composition: codeMantra, LLC
+
+Notice of Rights
+
+All rights reserved. No part of this book may be reproduced or
+transmitted in any form by any means, electronic, mechanical,
+photocopying, recording, or otherwise, without the prior
+written permission of the publisher. For information on getting
+permission for reprints and excerpts, contact
+permissions@peachpit.com.
+
+Notice of Liability
+The information in this book is distributed on an “As Is” basis
+without warranty. While every precaution has been taken in
+the preparation of the book, neither the author nor Peachpit
+shall have any liability to any person or entity with respect to
+any loss or damage caused or alleged to be caused directly or
+indirectly by the instructions contained in this book or by the
+computer software and hardware products described in it.
+
+Trademarks
+
+Many of the designations used by manufacturers and sellers to
+distinguish their products are claimed as trademarks. Where
+those designations appear in this book, and Peachpit was
+aware of a trademark claim, the designations appear as
+requested by the owner of the trademark. All other product
+names and services identified throughout this book are used in
+editorial fashion only and for the benefit of such companies
+with no intention of infringement of the trademark. No such
+use, or the use of any trade name, is intended to convey
+endorsement or other affiliation with this book.
+ISBN-13: 978-0-133-81194-0
+ISBN-10: 0-133-81194-8
+
+987654321
+Printed and bound in the United States of America
+Fundamentals of Game Design
+You understand the basic concepts of game design: gameplay,
+user interfaces, core mechanics, character design, and
+storytelling. Now you want to know how to apply them to
+individual game genres. These focused guides give you
+exactly what you need. They walk you through the process of
+designing for game genres and show you how to use the right
+techniques to create fun and challenging experiences for your
+players.
+  Fundamentals of Music, Dance, and Exercise Game
+    Design
+  Fundamentals of Role-Playing Game Design
+  Fundamentals of Vehicle Simulation Design
+  Fundamentals of Adventure Game Design
+  Fundamentals of Action and Arcade Game Design
+For a complete listing visit peachpit.com/ernestadams
+

@@ -1,0 +1,66 @@
+{
+  "BR": {
+    "first": ["Lucas", "Gabriel", "Matheus", "Rafael", "Pedro", "Gustavo", "Felipe", "Thiago", "Bruno", "Diego", "Caio", "Vinícius", "Leonardo", "Rodrigo", "Henrique", "João", "Marcos", "André", "Eduardo", "Igor", "Renan", "Luan", "Wesley", "Everton", "Danilo"],
+    "last": ["Silva", "Santos", "Oliveira", "Souza", "Pereira", "Costa", "Rodrigues", "Almeida", "Nascimento", "Lima", "Araújo", "Fernandes", "Carvalho", "Gomes", "Martins", "Rocha", "Ribeiro", "Barbosa", "Cardoso", "Teixeira", "Moreira", "Correia", "Mendes", "Freitas", "Batista"]
+  },
+  "AR": {
+    "first": ["Matías", "Santiago", "Nicolás", "Facundo", "Joaquín", "Tomás", "Agustín", "Franco", "Gonzalo", "Ezequiel", "Federico", "Ignacio", "Julián", "Maximiliano", "Emiliano", "Leandro", "Ramiro", "Sebastián", "Hernán", "Marcelo", "Bautista", "Valentín", "Lucio", "Mariano", "Germán"],
+    "last": ["González", "Rodríguez", "Gómez", "Fernández", "López", "Díaz", "Martínez", "Pérez", "García", "Sánchez", "Romero", "Sosa", "Álvarez", "Torres", "Ruiz", "Ramírez", "Flores", "Acosta", "Benítez", "Medina", "Herrera", "Aguirre", "Molina", "Castro", "Ortiz"]
+  },
+  "PT": {
+    "first": ["João", "Tiago", "Diogo", "Rui", "Bruno", "Nuno", "Ricardo", "Miguel", "Pedro", "André", "Gonçalo", "Rodrigo", "Francisco", "Duarte", "Hugo", "Vasco", "Luís", "Filipe", "Sérgio", "Paulo", "Tomás", "Rafael", "Martim", "Afonso", "Simão"],
+    "last": ["Silva", "Santos", "Ferreira", "Pereira", "Oliveira", "Costa", "Rodrigues", "Martins", "Jesus", "Sousa", "Fernandes", "Gonçalves", "Gomes", "Lopes", "Marques", "Alves", "Almeida", "Ribeiro", "Pinto", "Carvalho", "Teixeira", "Moreira", "Correia", "Mendes", "Nunes"]
+  },
+  "UY": {
+    "first": ["Diego", "Martín", "Rodrigo", "Federico", "Gastón", "Nicolás", "Maximiliano", "Santiago", "Agustín", "Bruno", "Facundo", "Mathías", "Joaquín", "Emiliano", "Gonzalo", "Sebastián", "Ignacio", "Álvaro", "Pablo", "Juan", "Marcelo", "Fabián", "Andrés", "Leandro", "Rafael"],
+    "last": ["Rodríguez", "González", "Fernández", "Pereira", "Silva", "Martínez", "Sosa", "García", "López", "Méndez", "Olivera", "Núñez", "Techera", "Cabrera", "Castro", "Ramos", "Acosta", "Álvarez", "Píriz", "Correa", "Viera", "Rocha", "Benítez", "Machado", "Larrosa"]
+  },
+  "CO": {
+    "first": ["Juan", "Andrés", "Carlos", "Jhon", "Sebastián", "Camilo", "Daniel", "Santiago", "Felipe", "Kevin", "Brayan", "Jorge", "Luis", "Esteban", "Mateo", "Cristian", "Duván", "Yerson", "Wilmar", "Harold", "Óscar", "Jefferson", "Alejandro", "Julián", "Miguel"],
+    "last": ["Rodríguez", "Gómez", "González", "Martínez", "García", "López", "Hernández", "Sánchez", "Ramírez", "Pérez", "Díaz", "Muñoz", "Rojas", "Moreno", "Jiménez", "Vargas", "Castro", "Ortiz", "Mosquera", "Valencia", "Cuesta", "Palacios", "Restrepo", "Zapata", "Ospina"]
+  },
+  "ES": {
+    "first": ["Alejandro", "Pablo", "Daniel", "Javier", "Sergio", "Adrián", "Álvaro", "David", "Diego", "Mario", "Iván", "Rubén", "Jorge", "Hugo", "Marcos", "Raúl", "Víctor", "Alberto", "Íker", "Unai", "Aitor", "Borja", "Óscar", "Carlos", "Manuel"],
+    "last": ["García", "Fernández", "González", "Rodríguez", "López", "Martínez", "Sánchez", "Pérez", "Gómez", "Martín", "Jiménez", "Ruiz", "Hernández", "Díaz", "Moreno", "Muñoz", "Álvarez", "Romero", "Alonso", "Gutiérrez", "Navarro", "Torres", "Domínguez", "Vázquez", "Gil"]
+  },
+  "IT": {
+    "first": ["Francesco", "Alessandro", "Lorenzo", "Matteo", "Andrea", "Gabriele", "Riccardo", "Tommaso", "Davide", "Federico", "Luca", "Marco", "Simone", "Stefano", "Giuseppe", "Antonio", "Giovanni", "Nicola", "Paolo", "Daniele", "Emanuele", "Filippo", "Michele", "Samuele", "Pietro"],
+    "last": ["Rossi", "Russo", "Ferrari", "Esposito", "Bianchi", "Romano", "Colombo", "Ricci", "Marino", "Greco", "Bruno", "Gallo", "Conti", "De Luca", "Mancini", "Costa", "Giordano", "Rizzo", "Lombardi", "Moretti", "Barbieri", "Fontana", "Santoro", "Mariani", "Rinaldi"]
+  },
+  "FR": {
+    "first": ["Lucas", "Hugo", "Théo", "Nathan", "Louis", "Enzo", "Mathis", "Tom", "Clément", "Maxime", "Antoine", "Julien", "Nicolas", "Alexandre", "Quentin", "Romain", "Thomas", "Baptiste", "Adrien", "Florian", "Kévin", "Yanis", "Rayan", "Mehdi", "Samuel"],
+    "last": ["Martin", "Bernard", "Dubois", "Thomas", "Robert", "Richard", "Petit", "Durand", "Leroy", "Moreau", "Simon", "Laurent", "Lefebvre", "Michel", "Garcia", "David", "Bertrand", "Roux", "Vincent", "Fournier", "Morel", "Girard", "André", "Mercier", "Blanc"]
+  },
+  "DE": {
+    "first": ["Lukas", "Leon", "Finn", "Jonas", "Paul", "Felix", "Maximilian", "Elias", "Noah", "Luis", "Tim", "Jan", "Niklas", "Moritz", "Tobias", "Florian", "Sebastian", "Julian", "Dominik", "Kevin", "Marcel", "Dennis", "Philipp", "Simon", "Fabian"],
+    "last": ["Müller", "Schmidt", "Schneider", "Fischer", "Weber", "Meyer", "Wagner", "Becker", "Schulz", "Hoffmann", "Schäfer", "Koch", "Bauer", "Richter", "Klein", "Wolf", "Schröder", "Neumann", "Schwarz", "Zimmermann", "Braun", "Krüger", "Hofmann", "Hartmann", "Lange"]
+  },
+  "CL": {
+    "first": ["Benjamín", "Vicente", "Matías", "Martín", "Agustín", "Joaquín", "Cristóbal", "Maximiliano", "Tomás", "Diego", "Felipe", "Ignacio", "Nicolás", "Sebastián", "Francisco", "Bastián", "Javier", "Rodrigo", "Gonzalo", "Claudio", "Pablo", "Esteban", "Fabián", "Álvaro", "Mauricio"],
+    "last": ["González", "Muñoz", "Rojas", "Díaz", "Pérez", "Soto", "Contreras", "Silva", "Martínez", "Sepúlveda", "Morales", "Rodríguez", "López", "Fuentes", "Hernández", "Torres", "Araya", "Flores", "Espinoza", "Valenzuela", "Castillo", "Tapia", "Reyes", "Gutiérrez", "Castro"]
+  },
+  "PY": {
+    "first": ["Juan", "José", "Carlos", "Luis", "Miguel", "Óscar", "Derlis", "Richard", "Blas", "Hugo", "Rodrigo", "Ramón", "Celso", "Néstor", "Aldo", "Víctor", "Marcelo", "Fabián", "Gustavo", "Diego", "Antonio", "Arnaldo", "Édgar", "Alcides", "Sergio"],
+    "last": ["González", "Benítez", "Martínez", "López", "Giménez", "Vera", "Duarte", "Ramírez", "Villalba", "Ayala", "Cáceres", "Acosta", "Ortiz", "Rojas", "Báez", "Franco", "Aquino", "Ríos", "Núñez", "Cabrera", "Sanabria", "Riveros", "Ledesma", "Galeano", "Espínola"]
+  },
+  "MX": {
+    "first": ["José", "Luis", "Juan", "Carlos", "Jesús", "Miguel", "Alejandro", "Diego", "Jorge", "Fernando", "Ricardo", "Eduardo", "Daniel", "Raúl", "Héctor", "Iván", "Uriel", "Rodrigo", "Óscar", "Emilio", "Sergio", "Arturo", "Mario", "Andrés", "Érick"],
+    "last": ["Hernández", "García", "Martínez", "López", "González", "Pérez", "Rodríguez", "Sánchez", "Ramírez", "Cruz", "Flores", "Gómez", "Morales", "Vázquez", "Reyes", "Jiménez", "Torres", "Díaz", "Gutiérrez", "Ruiz", "Mendoza", "Aguilar", "Ortiz", "Moreno", "Castillo"]
+  },
+  "NG": {
+    "first": ["Chinedu", "Emeka", "Oluwaseun", "Tunde", "Ifeanyi", "Chukwuma", "Obinna", "Uche", "Segun", "Kelechi", "Babatunde", "Ademola", "Nnamdi", "Ikechukwu", "Chidi", "Femi", "Kunle", "Ebuka", "Sani", "Musa", "Ibrahim", "Abdullahi", "Yusuf", "Tobi", "Dayo"],
+    "last": ["Okafor", "Adeyemi", "Okonkwo", "Eze", "Nwosu", "Ogunleye", "Balogun", "Adebayo", "Okeke", "Obi", "Nwankwo", "Chukwu", "Olawale", "Afolabi", "Onyekachi", "Uzor", "Bello", "Abubakar", "Ibekwe", "Nwachukwu", "Adewale", "Oyelaran", "Oladipo", "Ezeh", "Umeh"]
+  },
+  "NL": {
+    "first": ["Daan", "Sem", "Lucas", "Milan", "Levi", "Luuk", "Thijs", "Jesse", "Bram", "Stijn", "Ruben", "Tim", "Niels", "Jasper", "Sven", "Kevin", "Joris", "Wouter", "Bas", "Rick", "Joost", "Koen", "Mees", "Teun", "Guus"],
+    "last": ["Jansen", "de Vries", "van den Berg", "Bakker", "Janssen", "Visser", "Smit", "Meijer", "de Boer", "Mulder", "de Groot", "Bos", "Vos", "Peters", "Hendriks", "van Leeuwen", "Dekker", "Brouwer", "de Wit", "Dijkstra", "Smits", "de Graaf", "van der Meer", "Kok", "Jacobs"]
+  },
+  "JP": {
+    "first": ["Haruto", "Sota", "Yuto", "Riku", "Kaito", "Ren", "Takumi", "Daiki", "Kenta", "Shota", "Yuki", "Ryota", "Kazuki", "Hiroki", "Takuya", "Naoki", "Yusuke", "Kohei", "Tatsuya", "Shun", "Hayato", "Daichi", "Kenji", "Takeru", "Sho"],
+    "last": ["Sato", "Suzuki", "Takahashi", "Tanaka", "Watanabe", "Ito", "Yamamoto", "Nakamura", "Kobayashi", "Kato", "Yoshida", "Yamada", "Sasaki", "Yamaguchi", "Matsumoto", "Inoue", "Kimura", "Hayashi", "Shimizu", "Yamazaki", "Mori", "Abe", "Ikeda", "Hashimoto", "Ishikawa"]
+  },
+  "EC": {
+    "first": ["Byron", "Carlos", "Luis", "Jhon", "Kevin", "Anderson", "Édison", "Walter", "Segundo", "Christian", "Jordan", "Joao", "Ángel", "Fernando", "Jaime", "Wilson", "Holger", "Darwin", "Freddy", "Marlon", "Geovanny", "Alexander", "Josué", "Javier", "Diego"],
+    "last": ["Valencia", "Quiñónez", "Caicedo", "Mina", "Arroyo", "Cortez", "Estrada", "Castillo", "Plata", "Preciado", "Angulo", "Ayoví", "Hurtado", "Chalá", "Méndez", "Ramírez", "Guerrero", "Bone", "Montaño", "Vera", "Reasco", "Sornoza", "Bolaños", "Torres", "Cevallos"]
+  }
+}

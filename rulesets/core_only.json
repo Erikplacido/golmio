@@ -1,0 +1,7 @@
+{
+  "id": "core_only",
+  "version": "0",
+  "description": "Só o núcleo: toda mecânica fica desligada, inclusive as que forem criadas no futuro.",
+  "unlisted_mechanics": "off",
+  "mechanics": {}
+}

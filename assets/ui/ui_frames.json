@@ -1,0 +1,185 @@
+{
+	"scale": 2,
+	"items": {
+		"ui_botao_normal": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [16, 8, 16, 10]
+		},
+		"ui_botao_pressionado": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [16, 9, 16, 9]
+		},
+		"ui_botao_foco": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": false,
+			"slice": [32, 32, 32, 32],
+			"content": [0, 0, 0, 0]
+		},
+		"ui_painel": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [14, 14, 14, 14]
+		},
+		"ui_painel_titulo": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [12, 6, 12, 8]
+		},
+		"ui_janela": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [20, 18, 20, 18]
+		},
+		"ui_item_lista": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [10, 8, 10, 8]
+		},
+		"ui_campo": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [12, 8, 12, 8]
+		},
+		"ui_campo_foco": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": false,
+			"slice": [32, 32, 32, 32],
+			"content": [0, 0, 0, 0]
+		},
+		"ui_aba": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [12, 6, 12, 8]
+		},
+		"ui_chip": {
+			"kind": "frame",
+			"w": 96,
+			"h": 48,
+			"tint": true,
+			"slice": [24, 0, 24, 0],
+			"content": [12, 4, 12, 4]
+		},
+		"ui_aviso": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": true,
+			"slice": [32, 32, 32, 32],
+			"content": [16, 10, 16, 12]
+		},
+		"ui_dica": {
+			"kind": "frame",
+			"w": 96,
+			"h": 96,
+			"tint": false,
+			"slice": [32, 32, 32, 32],
+			"content": [14, 8, 14, 8]
+		},
+		"ui_dica_seta": {
+			"kind": "piece",
+			"w": 32,
+			"h": 16,
+			"tint": false
+		},
+		"ui_barra_trilho": {
+			"kind": "frame",
+			"w": 96,
+			"h": 32,
+			"tint": false,
+			"slice": [16, 0, 16, 0],
+			"content": [0, 0, 0, 0]
+		},
+		"ui_barra_preenchimento": {
+			"kind": "frame",
+			"w": 96,
+			"h": 32,
+			"tint": true,
+			"slice": [16, 0, 16, 0],
+			"content": [0, 0, 0, 0]
+		},
+		"ui_interruptor_ligado": {
+			"kind": "piece",
+			"w": 104,
+			"h": 56,
+			"tint": false
+		},
+		"ui_interruptor_desligado": {
+			"kind": "piece",
+			"w": 104,
+			"h": 56,
+			"tint": false
+		},
+		"ui_slider_botao": {
+			"kind": "piece",
+			"w": 48,
+			"h": 48,
+			"tint": false
+		},
+		"ui_check_marcado": {
+			"kind": "piece",
+			"w": 48,
+			"h": 48,
+			"tint": false
+		},
+		"ui_check_vazio": {
+			"kind": "piece",
+			"w": 48,
+			"h": 48,
+			"tint": false
+		},
+		"ui_radio_marcado": {
+			"kind": "piece",
+			"w": 48,
+			"h": 48,
+			"tint": false
+		},
+		"ui_radio_vazio": {
+			"kind": "piece",
+			"w": 48,
+			"h": 48,
+			"tint": false
+		},
+		"ui_notificacao": {
+			"kind": "piece",
+			"w": 48,
+			"h": 48,
+			"tint": false
+		},
+		"ui_papel": {
+			"kind": "texture",
+			"w": 1024,
+			"h": 1024,
+			"tint": false
+		}
+	}
+}

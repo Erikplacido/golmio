@@ -1,0 +1,350 @@
+keys,pt_BR
+POS_GK,Goleiro
+POS_GK_CURTA,GOL
+POS_DEF,Defensor
+POS_DEF_CURTA,DEF
+POS_MID,Meio-campista
+POS_MID_CURTA,MEI
+POS_FWD,Atacante
+POS_FWD_CURTA,ATA
+FUNC_GOL,Goleiro
+FUNC_GOL_CURTA,GOL
+FUNC_ZAG,Zagueiro
+FUNC_ZAG_CURTA,ZAG
+FUNC_LE,Lateral-esquerdo
+FUNC_LE_CURTA,LE
+FUNC_LD,Lateral-direito
+FUNC_LD_CURTA,LD
+FUNC_VOL,Volante
+FUNC_VOL_CURTA,VOL
+FUNC_MC,Meio-campista central
+FUNC_MC_CURTA,MC
+FUNC_ME,Meia-esquerda
+FUNC_ME_CURTA,ME
+FUNC_MD,Meia-direita
+FUNC_MD_CURTA,MD
+FUNC_MEI,Meia ofensivo
+FUNC_MEI_CURTA,MEI
+FUNC_PE,Ponta-esquerda
+FUNC_PE_CURTA,PE
+FUNC_PD,Ponta-direita
+FUNC_PD_CURTA,PD
+FUNC_CA,Centroavante
+FUNC_CA_CURTA,CA
+CARTA_NORMAL,Normal
+CARTA_RARO,Raro
+CARTA_LENDARIO,Lendário
+CARTA_MITICO,Mítico
+CARTA_DIVINO,Divino
+PACOTE_BASICO,Básico
+PACOTE_RARO,Raro
+PACOTE_MITICO,Mítico
+MENT_RETRANCA,Retranca
+MENT_RETRANCA_DESC,"Todos atrás da linha da bola, quase sem pressão; só sai no contra-ataque."
+MENT_DEFENSIVO,Defensivo
+MENT_DEFENSIVO_DESC,"Bloco baixo e compacto, passes seguros, poucos chutes de longe."
+MENT_CAUTELOSO,Cauteloso
+MENT_CAUTELOSO_DESC,"Um pouco recuado e paciente com a bola; arrisca pouco."
+MENT_EQUILIBRADO,Equilibrado
+MENT_EQUILIBRADO_DESC,"Sem viés: o comportamento padrão do time."
+MENT_POSITIVO,Positivo
+MENT_POSITIVO_DESC,"Linha um pouco mais alta e passes mais verticais."
+MENT_OFENSIVO,Ofensivo
+MENT_OFENSIVO_DESC,"Sobe o bloco, pressiona mais e finaliza mais."
+MENT_PRESSAO_TOTAL,Pressão Total
+MENT_PRESSAO_TOTAL_DESC,"Marcação alta com dois na bola e ritmo máximo; deixa espaço atrás."
+ABERTURA_JOGAR,JOGAR
+UI_JOGAR,JOGAR
+UI_VOLTAR,Voltar
+UI_VOLTAR_INICIO,Voltar ao Início
+UI_CANCELAR,Cancelar
+UI_CONTINUAR,Continuar
+UI_PULAR,Pular
+UI_PROXIMO,Próximo
+UI_ENTENDI,Entendi
+UI_EM_BREVE,Chega numa próxima atualização.
+UI_TENTAR_NOVAMENTE,Tentar de novo
+ESTADO_ERRO_TITULO,Algo deu errado
+ESTADO_OFFLINE,Sem conexão: mostrando o último dado salvo. Ações que dependem do servidor voltam quando a conexão voltar.
+SAIR_TITULO,Sair do jogo?
+SAIR_TEXTO,Seu clube fica salvo. Você continua de onde parou na próxima vez.
+SAIR_CONFIRMAR,Sair
+ERRO_SEM_CLUBE,Crie seu clube antes de jogar.
+ERRO_SEM_ADVERSARIO,Não encontramos um adversário agora. Tente de novo.
+ERRO_OFICIAL_DESLIGADO,O campeonato oficial não está disponível.
+ERRO_OFICIAL_JOGADO,Você já jogou o oficial de hoje. Amanhã tem outro.
+NAV_INICIO,Início
+NAV_ELENCO,Elenco
+NAV_COLECAO,Coleção
+NAV_CLUBE,Clube
+NAV_LOJA,Loja
+CLUBE_SEM_NOME,Seu clube
+TIPO_OFFICIAL,Oficial
+TIPO_FRIENDLY,Amistoso
+TIPO_CUP,Copa
+TIPO_VARZEA,Várzea
+TIPO_NATIONAL,Seleção
+INICIO_SEM_CLUBE_TITULO,Você ainda não tem clube
+INICIO_SEM_CLUBE_TEXTO,"Crie seu clube: nome, sigla e uniforme. Leva menos de um minuto."
+INICIO_CRIAR_CLUBE,Criar clube
+INICIO_OFICIAL_TITULO,Jogo oficial de hoje
+INICIO_OFICIAL_REGRA,Um por dia. Vale para a tabela e conta 1 dia de carreira para quem entrar em campo.
+INICIO_JA_JOGADO,Já jogado: %d × %d contra %s
+INICIO_PROXIMO_OFICIAL,Próximo oficial em %s
+INICIO_JOGAR_AMISTOSO,Jogar amistoso
+INICIO_AMISTOSO_TITULO,Partida amistosa
+INICIO_AMISTOSO_TEXTO,Teste sua tática contra outro clube. Jogue quantas vezes quiser: amistoso não envelhece atletas nem conta na tabela.
+INICIO_FORCA,OVR %d   DEF %d   MEI %d   ATA %d
+INICIO_PENDENCIAS,Pendências
+INICIO_PEND_ESCALACAO,Escalação incompleta
+INICIO_PEND_AJUSTAR,Ajustar
+INICIO_PEND_PACOTES,Pacotes para abrir: %d
+INICIO_PEND_PACOTES_TEXTO,Veja o que chegou e escale os novos atletas.
+INICIO_PEND_ABRIR,Ver
+INICIO_MODOS,Modos de jogo
+INICIO_MODOS_REGRA,"Amistosos, copas e várzea não envelhecem atletas. Só o oficial conta dias de carreira."
+INICIO_ULTIMOS,Últimos resultados
+INICIO_SEM_PARTIDAS,Nenhuma partida ainda. Seu primeiro resultado aparece aqui.
+MODO_AMISTOSO,Amistoso
+MODO_AMISTOSO_DICA,Jogo livre: não envelhece atletas nem conta na tabela.
+MODO_COPA,Copa
+MODO_VARZEA,Várzea
+MODO_CODIGO,Código
+TOUR_1_TITULO,Um jogo oficial por dia
+TOUR_1_TEXTO,O oficial vale para a tabela e conta 1 dia de carreira para cada atleta que entrar em campo. Amistosos são livres.
+TOUR_2_TITULO,Monte seu time
+TOUR_2_TEXTO,"No Elenco você vê cada atleta, escala os 11 titulares e escolhe a tática."
+TOUR_3_TITULO,Sua coleção
+TOUR_3_TEXTO,"Pacotes, álbum de figurinhas e itens do clube ficam na Coleção."
+MODOS_TITULO,Modos e adversário
+MODOS_REGRA_TITULO,Regra de ouro
+MODOS_REGRA_TEXTO,Amistoso não envelhece atletas nem conta na tabela.
+MODOS_TODOS,Todos
+MODOS_MAIS_FRACO,Mais fraco
+MODOS_PARELHO,Parelho
+MODOS_MAIS_FORTE,Mais forte
+MODOS_MAIS_FRACO_N,Mais fraco (-%d)
+MODOS_MAIS_FORTE_N,Mais forte (+%d)
+MODOS_ESCOLHER,Escolher
+MODOS_FILTRO_VAZIO,Nenhum adversário nessa faixa de força. Tente outro filtro.
+MODOS_SEM_ADVERSARIOS,Nenhum adversário disponível
+MODOS_SEM_ADVERSARIOS_TEXTO,Volte daqui a pouco: os adversários vêm do servidor.
+PREJOGO_TITULO,Pré-jogo
+PREJOGO_TITULO_OFICIAL,Pré-jogo: oficial
+PREJOGO_FORCA,Força comparada
+PREJOGO_OVR,Geral (OVR)
+PREJOGO_MENTALIDADE,Mentalidade
+PREJOGO_MAIS_DEFENSIVO,Mais defensivo
+PREJOGO_MAIS_OFENSIVO,Mais ofensivo
+PREJOGO_ALERTAS,Alertas
+PREJOGO_ALERTA_SEM_BANCO,Sem reservas relacionados: ninguém entra se alguém cansar.
+PREJOGO_TUDO_CERTO,Escalação pronta para jogar.
+PREJOGO_NESTE_JOGO,Neste jogo
+PREJOGO_OFICIAL_TABELA,Oficial: o resultado vale para a tabela e não dá para jogar de novo hoje.
+PREJOGO_DIAS,"%d titulares ganham 1 dia de carreira (reservas também, se entrarem)."
+PREJOGO_ANIVERSARIO,%s completa %d anos neste jogo.
+PREJOGO_RESERVAS_NAO_ENVELHECEM,Reserva que não entra em campo não ganha dia.
+PREJOGO_ESCALACAO,Escalação
+PREJOGO_ESCALACAO_RESUMO,%s: %d titulares e %d reservas
+PREJOGO_AJUSTAR,Ajustar escalação
+PREJOGO_DETALHES,Detalhes do jogo
+PREJOGO_CONFIRMAR_TITULO,Jogar o oficial de hoje?
+PREJOGO_CONFIRMAR_TEXTO,O resultado vale para a tabela e conta dias de carreira. Só dá para jogar um oficial por dia.
+PREJOGO_OFICIAL_JOGADO,Oficial de hoje já jogado
+PREJOGO_OFICIAL_JOGADO_TEXTO,"Amanhã tem outro. Enquanto isso, teste a tática num amistoso."
+PARTIDA_DICAS_CARREIRA,[Espaço] pausa   [9/0/1-5] velocidade   [C] próximo lance   [P] replay   [V] vinhetas   [F] ver resultado   [Esc] sair
+PARTIDA_INTERVALO,Intervalo
+PARTIDA_FIM,Fim de jogo
+PARTIDA_CONTINUAR,Começar o 2º tempo
+PARTIDA_VER_RESULTADO,Ver resultado
+PARTIDA_CALCULANDO,Calculando o resultado... %d%%
+PARTIDA_SAIR_TITULO,Sair da partida?
+PARTIDA_SAIR_OFICIAL,"O oficial vale de qualquer jeito: dá para ver o resultado agora, sem assistir ao resto."
+PARTIDA_SAIR_AMISTOSO,Veja o resultado agora ou abandone o amistoso (nada é registrado).
+PARTIDA_CONTINUAR_ASSISTINDO,Continuar assistindo
+PARTIDA_ABANDONAR,Abandonar
+PARTIDA_VELOCIDADE,Velocidade
+PARTIDA_VELOCIDADE_DICA,Partida em velocidade %s
+PARTIDA_ENCERRAR_AGORA,Finalizar agora
+PARTIDA_ENCERRAR_DICA,"Desenvolvimento: encerra a partida já, com o placar atual."
+PARTIDA_ENCERRADA,Partida encerrada no placar atual.
+PARTIDA_DICA_ENCERRAR,[E] finalizar agora
+ESTREIA_DICA_VEL_TITULO,Acelere quando quiser
+ESTREIA_DICA_VEL_TEXTO,A partida vai de 1× a 5×. Assistir não muda o resultado.
+ESTREIA_DICA_LANCE_TITULO,Próximo lance
+ESTREIA_DICA_LANCE_TEXTO,"Pula direto para o próximo gol, defesa ou falta, com replay."
+STAT_POSSE,Posse de bola
+STAT_CHUTES,Finalizações
+STAT_NO_ALVO,No alvo
+STAT_XG,Gols esperados (xG)
+STAT_PASSES,Acerto de passe
+STAT_DESARMES,Desarmes
+STAT_DEFESAS,Defesas
+STAT_ESCANTEIOS,Escanteios
+LANCE_GOL,Gol de %s
+LANCE_GOL_CONTRA,Gol contra de %s
+LANCE_AMARELO,Cartão amarelo para %s
+LANCE_VERMELHO,Cartão vermelho para %s
+LANCE_SUBSTITUICAO,"Entra %s, sai %s"
+RESULTADO_TITULO,Resultado
+RESULTADO_LETRA_V,V
+RESULTADO_LETRA_E,E
+RESULTADO_LETRA_D,D
+RESULTADO_VITORIA,Vitória!
+RESULTADO_VITORIA_TEXTO,Belo jogo. A torcida sai feliz do estádio.
+RESULTADO_EMPATE,Empate
+RESULTADO_EMPATE_TEXTO,Jogo duro. Um ajuste na tática pode virar o próximo.
+RESULTADO_DERROTA,Derrota
+RESULTADO_DERROTA_TEXTO,Faz parte. Revise a escalação e teste num amistoso.
+RESULTADO_PENALTIS,Pênaltis: %d × %d
+RESULTADO_NUMEROS,Números
+RESULTADO_LANCES,Lances
+RESULTADO_SEM_LANCES,Sem gols nem cartões.
+RESULTADO_CARREIRA,No clube
+RESULTADO_DIAS,%d atletas ganharam 1 dia de carreira.
+RESULTADO_SEM_DIAS,Ninguém ganhou dia de carreira neste jogo.
+RESULTADO_ANIVERSARIO,%s completou %d anos.
+RESULTADO_APOSENTOU,%s se aposentou. A figurinha vai para o álbum.
+RESULTADO_HISTORICO,Partida do histórico: as mudanças no clube ficaram registradas no dia.
+RESULTADO_JOGAR_DE_NOVO,Jogar de novo
+RESULTADO_CONCLUIR,Concluir
+RESULTADO_VAZIO_TITULO,Nenhum resultado para mostrar
+RESULTADO_VAZIO_TEXTO,Jogue uma partida e o resultado aparece aqui.
+ESCALACAO_TITULO,Escalação
+ELENCO_ATLETAS,Atletas
+ELENCO_MERCADO,Mercado
+ELENCO_MERCADO_EM_BREVE,O mercado de transferências chega numa próxima atualização.
+ELENCO_CONTADOR,%d/%d atletas (%d vagas)
+ELENCO_BUSCAR,Buscar atleta
+ELENCO_TODOS,Todos
+ELENCO_ORDEM_OVR,Maior OVR
+ELENCO_ORDEM_IDADE,Mais novos
+ELENCO_ORDEM_NOME,Nome
+ELENCO_ORDEM_SETOR,Setor
+ELENCO_IDADE,%d anos
+ELENCO_TITULAR,Titular
+ELENCO_RESERVA,Reserva
+ELENCO_ABRIR_FICHA,Abrir a ficha do atleta
+ELENCO_TITULARES,Titulares
+ELENCO_RESERVAS,Reservas
+ELENCO_SEM_RESERVAS,Sem reservas. Atletas novos chegam pelos pacotes.
+ELENCO_FILTROS,Filtrar e ordenar
+ELENCO_LIMPAR,Limpar
+ELENCO_FILTRO_VAZIO,Nenhum atleta
+ELENCO_FILTRO_VAZIO_TEXTO,Nenhum atleta com esse filtro. Limpe a busca ou escolha outro setor.
+ATLETA_TITULO,Ficha do atleta
+ATLETA_ANTERIOR,Anterior
+ATLETA_PROXIMO,Próximo
+ATLETA_APOSENTADO,Aposentado
+ATLETA_ATRIBUTOS,Atributos
+ATLETA_ATRIBUTO_GOLEIRO,Atributo de goleiro: pouco efeito num atleta de linha.
+ATLETA_ATRIBUTO_LINHA,Atributo de linha: pouco efeito no goleiro.
+ATLETA_LEGENDA_GOLEIRO,Reflexo e elasticidade são de goleiro e aparecem esmaecidos.
+ATLETA_LEGENDA_LINHA,Atributos de linha aparecem esmaecidos no goleiro.
+ATLETA_CARREIRA,Fase da carreira
+ATLETA_IDADE_DIAS,%d anos: dia %d de %d do ano de carreira
+ATLETA_CARREIRA_REGRA,Cada jogo oficial em campo conta 1 dia. Amistosos não envelhecem.
+ATLETA_CARREIRA_PARADA,O envelhecimento está desligado nestas regras.
+ATLETA_PROCEDENCIA,Procedência
+ATLETA_ORIGEM,Origem: %s
+ATLETA_ORIGEM_PACOTE,pacote
+ATLETA_ORIGEM_ESTREIA,elenco inicial
+ATLETA_ORIGEM_DEMO,demonstração
+ATLETA_ORIGEM_FUNDACAO,fundação do clube
+ATLETA_DNA,DNA %s
+ATLETA_ACOES,Ações
+ATLETA_VENDER,Vender
+ATLETA_ANUNCIAR,Anunciar
+ATLETA_LIBERAR,Liberar
+ATLETA_MERCADO_EM_BREVE,"Vender, anunciar e liberar chegam com o mercado, numa próxima atualização."
+ATLETA_NAO_ENCONTRADO,Atleta não encontrado
+ATLETA_NAO_ENCONTRADO_TEXTO,Ele pode ter saído do clube. Volte ao elenco.
+FASE_PROMESSA,Promessa
+FASE_AUGE,Auge
+FASE_VETERANO,Veterano
+FASE_DECLINIO,Declínio
+COLECAO_PACOTES,Pacotes
+COLECAO_ALBUM,Álbum
+COLECAO_ITENS,Itens
+COLECAO_VAGAS,%d vagas livres no elenco (%d/%d)
+COLECAO_SEM_PACOTES,Nenhum pacote fechado
+COLECAO_SEM_PACOTES_TEXTO,"Pacotes chegam como prêmio das competições. Enquanto isso, veja como é a abertura."
+COLECAO_VER_DEMO,Ver a abertura (demonstração)
+COLECAO_PACOTE,Pacote %s
+COLECAO_PACOTE_QTD,Fechados: %d
+COLECAO_ABRIR,Abrir
+COLECAO_ABRIR_EM_BREVE,A abertura no clube chega numa próxima atualização.
+COLECAO_ATIVOS,No elenco
+COLECAO_APOSENTADOS,Aposentados
+COLECAO_ALBUM_TOTAL,%d figurinhas
+COLECAO_ALBUM_VAZIO,Álbum vazio
+COLECAO_ALBUM_VAZIO_TEXTO,"Atletas aposentados ficam guardados aqui, com a história preservada."
+COLECAO_ITENS_VAZIO,Nenhum item ainda
+COLECAO_ITENS_VAZIO_TEXTO,"Botões, campos, uniformes e molduras do clube aparecem aqui."
+CLUBE_PAINEL,Painel
+CLUBE_LIGA,Liga
+CLUBE_TORCIDA,Torcida
+CLUBE_FINANCAS,Finanças
+CLUBE_SELECAO,Seleção
+CLUBE_MANCHETES,Manchetes
+CLUBE_COMISSAO,Comissão
+CLUBE_TROFEUS,Troféus
+CLUBE_SIGLA,Sigla %s
+CLUBE_CAMPANHA,Campanha
+CLUBE_PARTIDAS,Partidas
+CLUBE_OFICIAIS,Oficiais
+CLUBE_GOLS,Gols pró e contra
+CLUBE_SALDO,Saldo de gols
+CLUBE_UNIFORME,Uniforme
+CLUBE_EDITAR_IDENTIDADE,Editar identidade
+CLUBE_EM_BREVE,Em breve no clube
+CLUBE_EM_BREVE_TEXTO,"Liga, torcida, finanças, manchetes, comissão técnica e troféus chegam nas próximas fases."
+LOJA_SEM_BONUS,"Aparência sem bônus de desempenho: a loja nunca vende atletas, pacotes nem moedas."
+LOJA_BOTOES,Botões
+LOJA_UNIFORMES,Uniformes
+LOJA_CAMPOS,Campos
+LOJA_REDES,Redes
+LOJA_MOLDURAS,Molduras
+LOJA_EM_BREVE,A loja abre em breve
+LOJA_EM_BREVE_TEXTO,"Itens de aparência para o clube, pagos com créditos. Sem contagem regressiva e sem pressa."
+ESTREIA_PACOTE_TITULO,Seu elenco chegou!
+ESTREIA_PACOTE_TEXTO,%d atletas para começar. Toque nas cartas para revelar os destaques.
+ESTREIA_ELENCO_TEXTO,%d atletas no elenco (até %d). Cada figurinha é um atleta único.
+ESTREIA_VER_ELENCO,Ver o elenco
+ESTREIA_PACOTE_VAZIO,Elenco a caminho
+ESTREIA_PACOTE_VAZIO_TEXTO,Os atletas do seu clube ainda não chegaram. Continue e confira no Elenco.
+ESTREIA_ESCALACAO_TITULO,Seu time está pronto
+ESTREIA_ESCALACAO_TEXTO,Já escalamos o time. Quer trocar? Toque em um atleta e depois em outro.
+ESTREIA_DICA_TROCA_TITULO,Troque dois atletas
+ESTREIA_DICA_TROCA_TEXTO,Toque em um atleta no campo e depois em outro: eles trocam de posição.
+ESTREIA_JOGAR,Jogar a estreia
+SORTEIO_APRESENTACAO,Hoje em campo
+SORTEIO_VS,×
+SORTEIO_ESCOLHA,Cara ou coroa?
+SORTEIO_CARA,Cara
+SORTEIO_COROA,Coroa
+SORTEIO_GANHOU,Você ganhou o sorteio!
+SORTEIO_PERDEU,%s ganhou o sorteio
+SORTEIO_BOLA,Bola
+SORTEIO_CAMPO,Campo
+SORTEIO_BOLA_DICA,Seu time dá a saída.
+SORTEIO_CAMPO_DICA,Você escolhe o lado; o adversário dá a saída.
+SORTEIO_LADO,Para que lado seu time ataca?
+SORTEIO_ESQUERDA,Esquerda
+SORTEIO_DIREITA,Direita
+SORTEIO_ADV_BOLA,%s fica com a bola.
+SORTEIO_ADV_CAMPO,%s escolhe o campo: seu time dá a saída.
+SORTEIO_TOQUE,Toque para continuar
+PADRAO_LISA,Lisa
+PADRAO_LISTRAS_VERTICAIS,Listras verticais
+PADRAO_LISTRAS_HORIZONTAIS,Listras horizontais
+PADRAO_FAIXA_HORIZONTAL,Faixa no peito
+PADRAO_FAIXA_VERTICAL,Faixa central
+PADRAO_FAIXA_DIAGONAL,Faixa diagonal
+PADRAO_METADES,Metades
+PADRAO_XADREZ,Xadrez
+PADRAO_LISTRAS_DIAGONAIS,Listras diagonais
+PADRAO_CHEVRON,Chevron
+PADRAO_DUAS_FAIXAS,Duas faixas
+PADRAO_LOSANGOS,Losangos
+COSMETICO_BLOQUEADO,Ganhe em recompensas ou na loja

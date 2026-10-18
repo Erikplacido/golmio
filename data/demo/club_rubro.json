@@ -1,0 +1,408 @@
+{
+  "club": {
+    "id": "demo_rubro",
+    "name": "Rubro FC",
+    "short_name": "RUB",
+    "colors": {
+      "primary": "#dc2626",
+      "secondary": "#ffffff"
+    }
+  },
+  "formation": "4-3-3",
+  "tactics": {
+    "mentality": "equilibrado",
+    "penalty_order": [
+      "rub_09",
+      "rub_08",
+      "rub_11",
+      "rub_10",
+      "rub_07"
+    ],
+    "auto_subs": [
+      {
+        "when": "condition_below",
+        "value": 0.35
+      },
+      {
+        "when": "losing_at",
+        "minute": 60,
+        "out": "rub_05",
+        "in": "rub_16"
+      }
+    ]
+  },
+  "athletes": [
+    {
+      "id": "rub_01",
+      "name": "Tobias Lemos",
+      "nationality": "BR",
+      "position": "GK",
+      "shirt": 1,
+      "attributes": {
+        "pace": 66,
+        "physical": 70,
+        "passing": 70,
+        "finishing": 30,
+        "tackling": 60,
+        "positioning": 88,
+        "reflexes": 89,
+        "elasticity": 87,
+        "stamina": 70
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_02",
+      "name": "Caio Braga",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 2,
+      "attributes": {
+        "pace": 86,
+        "physical": 74,
+        "passing": 76,
+        "finishing": 58,
+        "tackling": 83,
+        "positioning": 82,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 82
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_03",
+      "name": "Renan Tavares",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 3,
+      "attributes": {
+        "pace": 76,
+        "physical": 88,
+        "passing": 80,
+        "finishing": 55,
+        "tackling": 91,
+        "positioning": 90,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 76
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_04",
+      "name": "Igor Pacheco",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 4,
+      "attributes": {
+        "pace": 74,
+        "physical": 85,
+        "passing": 76,
+        "finishing": 48,
+        "tackling": 89,
+        "positioning": 88,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 74
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_06",
+      "name": "Davi Moura",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 6,
+      "attributes": {
+        "pace": 84,
+        "physical": 72,
+        "passing": 81,
+        "finishing": 60,
+        "tackling": 82,
+        "positioning": 83,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 84
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_05",
+      "name": "Otávio Reis",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 5,
+      "attributes": {
+        "pace": 72,
+        "physical": 80,
+        "passing": 91,
+        "finishing": 76,
+        "tackling": 87,
+        "positioning": 91,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 85
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_08",
+      "name": "Lucas Venâncio",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 8,
+      "attributes": {
+        "pace": 77,
+        "physical": 70,
+        "passing": 95,
+        "finishing": 86,
+        "tackling": 68,
+        "positioning": 87,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 80
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_10",
+      "name": "Mateus Arruda",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 10,
+      "attributes": {
+        "pace": 74,
+        "physical": 66,
+        "passing": 93,
+        "finishing": 80,
+        "tackling": 74,
+        "positioning": 88,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 78
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_11",
+      "name": "Enzo Farias",
+      "nationality": "BR",
+      "position": "FWD",
+      "shirt": 11,
+      "attributes": {
+        "pace": 91,
+        "physical": 68,
+        "passing": 82,
+        "finishing": 88,
+        "tackling": 48,
+        "positioning": 86,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 82
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_09",
+      "name": "Bruno Galvão",
+      "nationality": "BR",
+      "position": "FWD",
+      "shirt": 9,
+      "attributes": {
+        "pace": 88,
+        "physical": 90,
+        "passing": 72,
+        "finishing": 93,
+        "tackling": 45,
+        "positioning": 89,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 79
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_07",
+      "name": "Kauã Siqueira",
+      "nationality": "BR",
+      "position": "FWD",
+      "shirt": 7,
+      "attributes": {
+        "pace": 95,
+        "physical": 62,
+        "passing": 81,
+        "finishing": 85,
+        "tackling": 42,
+        "positioning": 87,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 83
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_12",
+      "name": "Pedro Anjos",
+      "nationality": "BR",
+      "position": "GK",
+      "shirt": 12,
+      "attributes": {
+        "pace": 60,
+        "physical": 66,
+        "passing": 62,
+        "finishing": 28,
+        "tackling": 55,
+        "positioning": 80,
+        "reflexes": 82,
+        "elasticity": 80,
+        "stamina": 68
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_13",
+      "name": "Ícaro Mendes",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 13,
+      "attributes": {
+        "pace": 72,
+        "physical": 80,
+        "passing": 70,
+        "finishing": 45,
+        "tackling": 84,
+        "positioning": 80,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 75
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_14",
+      "name": "Rafael Lins",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 14,
+      "attributes": {
+        "pace": 75,
+        "physical": 72,
+        "passing": 84,
+        "finishing": 74,
+        "tackling": 72,
+        "positioning": 80,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 80
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_15",
+      "name": "Gael Rocha",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 15,
+      "attributes": {
+        "pace": 80,
+        "physical": 70,
+        "passing": 80,
+        "finishing": 78,
+        "tackling": 64,
+        "positioning": 78,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 82
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "rub_16",
+      "name": "Nando Queiroz",
+      "nationality": "BR",
+      "position": "FWD",
+      "shirt": 16,
+      "attributes": {
+        "pace": 86,
+        "physical": 74,
+        "passing": 70,
+        "finishing": 84,
+        "tackling": 40,
+        "positioning": 80,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 78
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    }
+  ],
+  "lineup": [
+    "rub_01",
+    "rub_02",
+    "rub_03",
+    "rub_04",
+    "rub_06",
+    "rub_05",
+    "rub_08",
+    "rub_10",
+    "rub_11",
+    "rub_09",
+    "rub_07"
+  ],
+  "bench": [
+    "rub_12",
+    "rub_13",
+    "rub_14",
+    "rub_15",
+    "rub_16"
+  ]
+}

@@ -1,0 +1,1955 @@
+{
+  "format": 1,
+  "source": "visuais/montagem.js",
+  "catalog_version": "retratos-2026.09",
+  "catalog_hash": "2925f49c54780592d36c0eaa0a4242a271a40888734de2c2701d1979b2b431ea",
+  "cases": [
+	{
+	  "name": "head_011/base",
+	  "face": {"head":"head_011","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_015","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":452,"y":433,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":434,"y":643,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 542,
+		  "y": 306,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.9},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [11,-2],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [20,5],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-3,10],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-7,28],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [52,-8],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [24,-28],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [32,0],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [53,89],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [48,0],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-4,66],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-10,24],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [1,60]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_011","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-6.509200000000021,4.97120000000001],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,15.455600000000004,-4.545600000000036],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-2.5215999999999212,1.0511999999999944],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_011/body_front",
+	  "face": {"head":"head_011","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_015","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":452,"y":433,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":434,"y":643,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 542,
+		  "y": 306,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.9},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [11,-2],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [20,5],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-3,10],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-7,28],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [52,-8],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [24,-28],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [32,0],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [53,89],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [48,0],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-4,66],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-10,24],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [1,60]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":false}
+	  },
+	  "draws": [
+		{"slot":"head","id":"head_011","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-6.509200000000021,4.97120000000001],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,15.455600000000004,-4.545600000000036],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-2.5215999999999212,1.0511999999999944],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_011/hair_behind",
+	  "face": {"head":"head_011","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_015","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":452,"y":433,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":434,"y":643,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 542,
+		  "y": 306,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": true,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.9},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [11,-2],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [20,5],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-3,10],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-7,28],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [52,-8],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [24,-28],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [32,0],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [53,89],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [48,0],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-4,66],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-10,24],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [1,60]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-2.5215999999999212,1.0511999999999944],"w":1086,"h":1448},
+		{"slot":"head","id":"head_011","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-6.509200000000021,4.97120000000001],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,15.455600000000004,-4.545600000000036],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_011/ears_front",
+	  "face": {"head":"head_011","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_015","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":452,"y":433,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":434,"y":643,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 542,
+		  "y": 306,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.9},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [11,-2],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [20,5],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-3,10],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-7,28],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [52,-8],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [24,-28],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [32,0],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [53,89],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [48,0],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-4,66],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-10,24],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [1,60]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_011","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-6.509200000000021,4.97120000000001],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,15.455600000000004,-4.545600000000036],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-2.5215999999999212,1.0511999999999944],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_011/no_hair",
+	  "face": {"head":"head_011","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":452,"y":433,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":434,"y":643,"scale":1,"rotation":0},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_011","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-6.509200000000021,4.97120000000001],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,15.455600000000004,-4.545600000000036],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_011/hair_scale_override",
+	  "face": {"head":"head_011","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_015","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":452,"y":433,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":434,"y":643,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 542,
+		  "y": 306,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9,
+			"image-gen-8(20260930-235555)_0001_cabelo.png": 1.37
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [11,-2],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [20,5],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-3,10],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-7,28],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [52,-8],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [24,-28],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [32,0],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [53,89],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [48,0],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-4,66],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-10,24],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [1,60]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_011","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-6.509200000000021,4.97120000000001],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,15.455600000000004,-4.545600000000036],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_015","side":"","m":[1.37,0,0,1.37,-221.754592,-111.77985600000005],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_012/base",
+	  "face": {"head":"head_012","ear":"","eye":"eye_014","eyebrow":"eyebrow_005","nose":"nose_011","mouth":"mouth_011","hair":"hair_016","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":473,"y":449,"scale":1,"rotation":0},
+		"eyebrow": {"x":492,"y":398,"scale":1,"rotation":0},
+		"nose": {"x":428,"y":506,"scale":1,"rotation":0},
+		"mouth": {"x":441,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 543,
+		  "y": 340,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.9,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [18,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [4,6],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [57,-21],
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [4,-3],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [46,-55],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [40,-27],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [54,71],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [62,-19],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [6,56],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [0,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_012","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,16.98860000000002,12.427999999999997],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,12.531000000000006,13.555999999999983],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,6.523399999999981,7.4535999999999945],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,4.970999999999947,29.517600000000016],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_016","side":"","m":[0.9990000000000001,0,0,0.9990000000000001,4.636955999999941,3.361646399999927],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_012/body_front",
+	  "face": {"head":"head_012","ear":"","eye":"eye_014","eyebrow":"eyebrow_005","nose":"nose_011","mouth":"mouth_011","hair":"hair_016","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":473,"y":449,"scale":1,"rotation":0},
+		"eyebrow": {"x":492,"y":398,"scale":1,"rotation":0},
+		"nose": {"x":428,"y":506,"scale":1,"rotation":0},
+		"mouth": {"x":441,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 543,
+		  "y": 340,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.9,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [18,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [4,6],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [57,-21],
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [4,-3],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [46,-55],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [40,-27],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [54,71],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [62,-19],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [6,56],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [0,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":false}
+	  },
+	  "draws": [
+		{"slot":"head","id":"head_012","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,16.98860000000002,12.427999999999997],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,12.531000000000006,13.555999999999983],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,6.523399999999981,7.4535999999999945],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,4.970999999999947,29.517600000000016],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_016","side":"","m":[0.9990000000000001,0,0,0.9990000000000001,4.636955999999941,3.361646399999927],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_012/hair_behind",
+	  "face": {"head":"head_012","ear":"","eye":"eye_014","eyebrow":"eyebrow_005","nose":"nose_011","mouth":"mouth_011","hair":"hair_016","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":473,"y":449,"scale":1,"rotation":0},
+		"eyebrow": {"x":492,"y":398,"scale":1,"rotation":0},
+		"nose": {"x":428,"y":506,"scale":1,"rotation":0},
+		"mouth": {"x":441,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 543,
+		  "y": 340,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": true,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.9,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [18,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [4,6],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [57,-21],
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [4,-3],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [46,-55],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [40,-27],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [54,71],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [62,-19],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [6,56],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [0,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_016","side":"","m":[0.9990000000000001,0,0,0.9990000000000001,4.636955999999941,3.361646399999927],"w":1086,"h":1448},
+		{"slot":"head","id":"head_012","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,16.98860000000002,12.427999999999997],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,12.531000000000006,13.555999999999983],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,6.523399999999981,7.4535999999999945],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,4.970999999999947,29.517600000000016],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_012/ears_front",
+	  "face": {"head":"head_012","ear":"","eye":"eye_014","eyebrow":"eyebrow_005","nose":"nose_011","mouth":"mouth_011","hair":"hair_016","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":473,"y":449,"scale":1,"rotation":0},
+		"eyebrow": {"x":492,"y":398,"scale":1,"rotation":0},
+		"nose": {"x":428,"y":506,"scale":1,"rotation":0},
+		"mouth": {"x":441,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 543,
+		  "y": 340,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.9,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [18,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [4,6],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [57,-21],
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [4,-3],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [46,-55],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [40,-27],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [54,71],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [62,-19],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [6,56],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [0,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_012","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,16.98860000000002,12.427999999999997],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,12.531000000000006,13.555999999999983],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,6.523399999999981,7.4535999999999945],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,4.970999999999947,29.517600000000016],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_016","side":"","m":[0.9990000000000001,0,0,0.9990000000000001,4.636955999999941,3.361646399999927],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_012/no_hair",
+	  "face": {"head":"head_012","ear":"","eye":"eye_014","eyebrow":"eyebrow_005","nose":"nose_011","mouth":"mouth_011","hair":"","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":473,"y":449,"scale":1,"rotation":0},
+		"eyebrow": {"x":492,"y":398,"scale":1,"rotation":0},
+		"nose": {"x":428,"y":506,"scale":1,"rotation":0},
+		"mouth": {"x":441,"y":683,"scale":1,"rotation":0},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_012","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,16.98860000000002,12.427999999999997],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,12.531000000000006,13.555999999999983],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,6.523399999999981,7.4535999999999945],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,4.970999999999947,29.517600000000016],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_012/hair_scale_override",
+	  "face": {"head":"head_012","ear":"","eye":"eye_014","eyebrow":"eyebrow_005","nose":"nose_011","mouth":"mouth_011","hair":"hair_016","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":473,"y":449,"scale":1,"rotation":0},
+		"eyebrow": {"x":492,"y":398,"scale":1,"rotation":0},
+		"nose": {"x":428,"y":506,"scale":1,"rotation":0},
+		"mouth": {"x":441,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 543,
+		  "y": 340,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 1.37,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [18,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [4,6],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [57,-21],
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [4,-3],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [46,-55],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [40,-27],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [54,71],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [62,-19],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [6,56],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [0,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_012","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,16.98860000000002,12.427999999999997],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,12.531000000000006,13.555999999999983],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,6.523399999999981,7.4535999999999945],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,4.970999999999947,29.517600000000016],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_016","side":"","m":[1.5207000000000002,0,0,1.5207000000000002,-304.7081892000001,-209.51616048000005],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_013/base",
+	  "face": {"head":"head_013","ear":"","eye":"eye_015","eyebrow":"eyebrow_006","nose":"nose_012","mouth":"mouth_012","hair":"hair_017","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":443,"y":448,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":432,"y":675,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 545,
+		  "y": 347,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0005_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.94},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,-4],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-10,-4],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-14,-8],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [51,-56],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [22,-64],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [33,-50],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [32,59],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [41,-34],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-14,29],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-13,19],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,20]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_013","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-33.97119999999995,13.455200000000048],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,15.383250000000032,83.55571199999997],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,2.963000000000079,-19.53280000000001],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_013/body_front",
+	  "face": {"head":"head_013","ear":"","eye":"eye_015","eyebrow":"eyebrow_006","nose":"nose_012","mouth":"mouth_012","hair":"hair_017","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":443,"y":448,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":432,"y":675,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 545,
+		  "y": 347,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0005_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.94},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,-4],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-10,-4],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-14,-8],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [51,-56],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [22,-64],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [33,-50],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [32,59],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [41,-34],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-14,29],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-13,19],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,20]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":false}
+	  },
+	  "draws": [
+		{"slot":"head","id":"head_013","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-33.97119999999995,13.455200000000048],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,15.383250000000032,83.55571199999997],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,2.963000000000079,-19.53280000000001],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_013/hair_behind",
+	  "face": {"head":"head_013","ear":"","eye":"eye_015","eyebrow":"eyebrow_006","nose":"nose_012","mouth":"mouth_012","hair":"hair_017","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":443,"y":448,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":432,"y":675,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 545,
+		  "y": 347,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": true,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0005_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.94},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,-4],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-10,-4],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-14,-8],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [51,-56],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [22,-64],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [33,-50],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [32,59],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [41,-34],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-14,29],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-13,19],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,20]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,2.963000000000079,-19.53280000000001],"w":1086,"h":1448},
+		{"slot":"head","id":"head_013","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-33.97119999999995,13.455200000000048],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,15.383250000000032,83.55571199999997],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_013/ears_front",
+	  "face": {"head":"head_013","ear":"","eye":"eye_015","eyebrow":"eyebrow_006","nose":"nose_012","mouth":"mouth_012","hair":"hair_017","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":443,"y":448,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":432,"y":675,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 545,
+		  "y": 347,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0005_cabelo.png":0.95,"image-gen-8(20260930-235555)_0002_cabelo.png":0.94},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,-4],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-10,-4],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-14,-8],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [51,-56],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [22,-64],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [33,-50],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [32,59],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [41,-34],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-14,29],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-13,19],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,20]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_013","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-33.97119999999995,13.455200000000048],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,15.383250000000032,83.55571199999997],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,2.963000000000079,-19.53280000000001],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_013/no_hair",
+	  "face": {"head":"head_013","ear":"","eye":"eye_015","eyebrow":"eyebrow_006","nose":"nose_012","mouth":"mouth_012","hair":"","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":443,"y":448,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":432,"y":675,"scale":1,"rotation":0},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_013","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-33.97119999999995,13.455200000000048],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,15.383250000000032,83.55571199999997],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_013/hair_scale_override",
+	  "face": {"head":"head_013","ear":"","eye":"eye_015","eyebrow":"eyebrow_006","nose":"nose_012","mouth":"mouth_012","hair":"hair_017","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":443,"y":448,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":432,"y":675,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 545,
+		  "y": 347,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.94,
+			"image-gen-8(20260930-235555)_0003_cabelo.png": 1.37
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,-4],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-10,-4],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-14,-8],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [51,-56],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [22,-64],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [33,-50],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [32,59],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [41,-34],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-14,29],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-13,19],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,20]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_013","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-33.97119999999995,13.455200000000048],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,15.383250000000032,83.55571199999997],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_017","side":"","m":[1.37,0,0,1.37,-209.80068999999992,-136.64993600000003],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_014/base",
+	  "face": {"head":"head_014","ear":"","eye":"eye_016","eyebrow":"eyebrow_007","nose":"nose_013","mouth":"mouth_013","hair":"hair_018","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":448,"y":441,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":436,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 547,
+		  "y": 329,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-16,-11],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-14,1],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-17,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [45,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [18,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [29,-41],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [41,68],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [45,-25],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,36],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [4,42],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_014","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-10.509200000000021,11.523200000000031],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-1.5493999999999915,59.44560000000001],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-7.539200000000051,-8.532000000000039],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_014/body_front",
+	  "face": {"head":"head_014","ear":"","eye":"eye_016","eyebrow":"eyebrow_007","nose":"nose_013","mouth":"mouth_013","hair":"hair_018","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":448,"y":441,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":436,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 547,
+		  "y": 329,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-16,-11],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-14,1],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-17,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [45,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [18,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [29,-41],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [41,68],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [45,-25],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,36],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [4,42],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":false}
+	  },
+	  "draws": [
+		{"slot":"head","id":"head_014","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-10.509200000000021,11.523200000000031],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-1.5493999999999915,59.44560000000001],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-7.539200000000051,-8.532000000000039],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_014/hair_behind",
+	  "face": {"head":"head_014","ear":"","eye":"eye_016","eyebrow":"eyebrow_007","nose":"nose_013","mouth":"mouth_013","hair":"hair_018","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":448,"y":441,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":436,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 547,
+		  "y": 329,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": true,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-16,-11],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-14,1],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-17,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [45,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [18,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [29,-41],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [41,68],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [45,-25],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,36],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [4,42],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-7.539200000000051,-8.532000000000039],"w":1086,"h":1448},
+		{"slot":"head","id":"head_014","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-10.509200000000021,11.523200000000031],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-1.5493999999999915,59.44560000000001],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_014/ears_front",
+	  "face": {"head":"head_014","ear":"","eye":"eye_016","eyebrow":"eyebrow_007","nose":"nose_013","mouth":"mouth_013","hair":"hair_018","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":448,"y":441,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":436,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 547,
+		  "y": 329,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-16,-11],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-14,1],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-17,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [45,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [18,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [29,-41],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [41,68],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [45,-25],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,36],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [4,42],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_014","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-10.509200000000021,11.523200000000031],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-1.5493999999999915,59.44560000000001],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-7.539200000000051,-8.532000000000039],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_014/no_hair",
+	  "face": {"head":"head_014","ear":"","eye":"eye_016","eyebrow":"eyebrow_007","nose":"nose_013","mouth":"mouth_013","hair":"","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":448,"y":441,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":436,"y":697,"scale":1,"rotation":0},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_014","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-10.509200000000021,11.523200000000031],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-1.5493999999999915,59.44560000000001],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_014/hair_scale_override",
+	  "face": {"head":"head_014","ear":"","eye":"eye_016","eyebrow":"eyebrow_007","nose":"nose_013","mouth":"mouth_013","hair":"hair_018","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":448,"y":441,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":436,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 547,
+		  "y": 329,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {"image-gen-8(20260930-235555)_0000s_0001_cabelo.png":0.97,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0004_cabelo.png":1.37},
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-16,-11],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-14,1],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-17,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [45,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [18,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [29,-41],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [41,68],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [45,-25],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,36],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [4,42],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-6,36]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_014","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-10.509200000000021,11.523200000000031],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-1.5493999999999915,59.44560000000001],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_018","side":"","m":[1.37,0,0,1.37,-219.37870400000008,-113.80884000000009],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_015/base",
+	  "face": {"head":"head_015","ear":"","eye":"eye_017","eyebrow":"eyebrow_008","nose":"nose_014","mouth":"mouth_014","hair":"hair_019","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":463,"y":432,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":690,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 563,
+		  "y": 318,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-28,21],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-17,-16],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-18,5],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-18,14],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [32,-5],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [16,-37],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-39],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [35,85],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [35,-4],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,62],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-25,4],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-14,49]
+		  },
+		  "scales": {"image-gen-8(20260930-235555)_0004_cabelo.png":1.05,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.95}
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_015","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-0.5047999999999888,9.473599999999976],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,50.99759999999992],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-24.524990000000116,-4.155439999999999],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_015/body_front",
+	  "face": {"head":"head_015","ear":"","eye":"eye_017","eyebrow":"eyebrow_008","nose":"nose_014","mouth":"mouth_014","hair":"hair_019","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":463,"y":432,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":690,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 563,
+		  "y": 318,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-28,21],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-17,-16],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-18,5],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-18,14],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [32,-5],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [16,-37],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-39],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [35,85],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [35,-4],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,62],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-25,4],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-14,49]
+		  },
+		  "scales": {"image-gen-8(20260930-235555)_0004_cabelo.png":1.05,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.95}
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":false}
+	  },
+	  "draws": [
+		{"slot":"head","id":"head_015","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-0.5047999999999888,9.473599999999976],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,50.99759999999992],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-24.524990000000116,-4.155439999999999],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_015/hair_behind",
+	  "face": {"head":"head_015","ear":"","eye":"eye_017","eyebrow":"eyebrow_008","nose":"nose_014","mouth":"mouth_014","hair":"hair_019","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":463,"y":432,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":690,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 563,
+		  "y": 318,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": true,
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-28,21],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-17,-16],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-18,5],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-18,14],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [32,-5],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [16,-37],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-39],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [35,85],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [35,-4],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,62],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-25,4],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-14,49]
+		  },
+		  "scales": {"image-gen-8(20260930-235555)_0004_cabelo.png":1.05,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.95}
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-24.524990000000116,-4.155439999999999],"w":1086,"h":1448},
+		{"slot":"head","id":"head_015","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-0.5047999999999888,9.473599999999976],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,50.99759999999992],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_015/ears_front",
+	  "face": {"head":"head_015","ear":"","eye":"eye_017","eyebrow":"eyebrow_008","nose":"nose_014","mouth":"mouth_014","hair":"hair_019","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":463,"y":432,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":690,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 563,
+		  "y": 318,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-28,21],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-17,-16],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-18,5],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-18,14],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [32,-5],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [16,-37],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-39],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [35,85],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [35,-4],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,62],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-25,4],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-14,49]
+		  },
+		  "scales": {"image-gen-8(20260930-235555)_0004_cabelo.png":1.05,"image-gen-8(20260930-235555)_0002_cabelo.png":0.95,"image-gen-8(20260930-235555)_0000s_0007_cabelo.png":0.95}
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_015","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-0.5047999999999888,9.473599999999976],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,50.99759999999992],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-24.524990000000116,-4.155439999999999],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_015/no_hair",
+	  "face": {"head":"head_015","ear":"","eye":"eye_017","eyebrow":"eyebrow_008","nose":"nose_014","mouth":"mouth_014","hair":"","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":463,"y":432,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":690,"scale":1,"rotation":0},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_015","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-0.5047999999999888,9.473599999999976],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,50.99759999999992],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_015/hair_scale_override",
+	  "face": {"head":"head_015","ear":"","eye":"eye_017","eyebrow":"eyebrow_008","nose":"nose_014","mouth":"mouth_014","hair":"hair_019","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":463,"y":432,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":690,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 563,
+		  "y": 318,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-28,21],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-17,-16],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-18,5],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-18,14],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [32,-5],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [16,-37],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-39],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [35,85],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [35,-4],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-11,62],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-25,4],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-14,49]
+		  },
+		  "scales": {
+			"image-gen-8(20260930-235555)_0004_cabelo.png": 1.05,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 1.37
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_015","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-0.5047999999999888,9.473599999999976],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,50.99759999999992],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_019","side":"","m":[1.4385000000000001,0,0,1.4385000000000001,-253.74923630000012,-121.5029528],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_016/base",
+	  "face": {"head":"head_016","ear":"","eye":"eye_018","eyebrow":"eyebrow_009","nose":"nose_015","mouth":"mouth_015","hair":"hair_020","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":451,"y":435,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":428,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 556,
+		  "y": 328,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-20,16],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-17,7],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [42,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [19,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-31],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [37,70],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [38,-15],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-9,38],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-18,-2],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-10,43]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_016","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-11.5274,-4.033600000000035],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,1.9621999999999957,52.92960000000005],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_020","side":"","m":[1,0,0,1,-4.393599999999992,-2.651200000000017],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_016/body_front",
+	  "face": {"head":"head_016","ear":"","eye":"eye_018","eyebrow":"eyebrow_009","nose":"nose_015","mouth":"mouth_015","hair":"hair_020","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":451,"y":435,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":428,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 556,
+		  "y": 328,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-20,16],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-17,7],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [42,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [19,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-31],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [37,70],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [38,-15],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-9,38],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-18,-2],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-10,43]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":false}
+	  },
+	  "draws": [
+		{"slot":"head","id":"head_016","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-11.5274,-4.033600000000035],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,1.9621999999999957,52.92960000000005],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_020","side":"","m":[1,0,0,1,-4.393599999999992,-2.651200000000017],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_016/hair_behind",
+	  "face": {"head":"head_016","ear":"","eye":"eye_018","eyebrow":"eyebrow_009","nose":"nose_015","mouth":"mouth_015","hair":"hair_020","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":451,"y":435,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":428,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 556,
+		  "y": 328,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": true,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-20,16],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-17,7],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [42,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [19,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-31],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [37,70],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [38,-15],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-9,38],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-18,-2],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-10,43]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_020","side":"","m":[1,0,0,1,-4.393599999999992,-2.651200000000017],"w":1086,"h":1448},
+		{"slot":"head","id":"head_016","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-11.5274,-4.033600000000035],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,1.9621999999999957,52.92960000000005],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_016/ears_front",
+	  "face": {"head":"head_016","ear":"","eye":"eye_018","eyebrow":"eyebrow_009","nose":"nose_015","mouth":"mouth_015","hair":"hair_020","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":451,"y":435,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":428,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 556,
+		  "y": 328,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-20,16],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-17,7],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [42,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [19,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-31],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [37,70],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [38,-15],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-9,38],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-18,-2],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-10,43]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_016","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-11.5274,-4.033600000000035],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,1.9621999999999957,52.92960000000005],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_020","side":"","m":[1,0,0,1,-4.393599999999992,-2.651200000000017],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_016/no_hair",
+	  "face": {"head":"head_016","ear":"","eye":"eye_018","eyebrow":"eyebrow_009","nose":"nose_015","mouth":"mouth_015","hair":"","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":451,"y":435,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":428,"y":697,"scale":1,"rotation":0},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_016","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-11.5274,-4.033600000000035],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,1.9621999999999957,52.92960000000005],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_016/hair_scale_override",
+	  "face": {"head":"head_016","ear":"","eye":"eye_018","eyebrow":"eyebrow_009","nose":"nose_015","mouth":"mouth_015","hair":"hair_020","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":451,"y":435,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":428,"y":697,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 556,
+		  "y": 328,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 1.37,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 1,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [-20,16],
+			"image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [-19,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [-17,7],
+			"image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [-15,0],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [42,-29],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [19,-53],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [21,-31],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [37,70],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [38,-15],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [-9,38],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [-18,-2],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [-10,43]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_016","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-11.5274,-4.033600000000035],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,1.9621999999999957,52.92960000000005],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_020","side":"","m":[1.37,0,0,1.37,-204.33923200000004,-130.91214400000007],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_017/base",
+	  "face": {"head":"head_017","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_021","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":465,"y":424,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 525,
+		  "y": 339,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.98,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [6,8],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [21,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [10,1],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [20,27],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [65,-34],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [42,-61],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [53,-35],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [68,53],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [65,-18],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [17,31],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [18,29]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_017","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,6.490799999999979,-4.02879999999999],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,35.454399999999964],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,24.720000000000027,-8.519999999999982],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_017/body_front",
+	  "face": {"head":"head_017","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_021","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":465,"y":424,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 525,
+		  "y": 339,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.98,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [6,8],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [21,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [10,1],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [20,27],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [65,-34],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [42,-61],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [53,-35],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [68,53],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [65,-18],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [17,31],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [18,29]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":false}
+	  },
+	  "draws": [
+		{"slot":"head","id":"head_017","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,6.490799999999979,-4.02879999999999],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,35.454399999999964],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,24.720000000000027,-8.519999999999982],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_017/hair_behind",
+	  "face": {"head":"head_017","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_021","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":465,"y":424,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 525,
+		  "y": 339,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": true,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.98,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [6,8],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [21,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [10,1],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [20,27],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [65,-34],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [42,-61],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [53,-35],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [68,53],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [65,-18],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [17,31],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [18,29]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,24.720000000000027,-8.519999999999982],"w":1086,"h":1448},
+		{"slot":"head","id":"head_017","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,6.490799999999979,-4.02879999999999],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,35.454399999999964],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_017/ears_front",
+	  "face": {"head":"head_017","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_021","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":465,"y":424,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 525,
+		  "y": 339,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.98,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [6,8],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [21,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [10,1],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [20,27],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [65,-34],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [42,-61],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [53,-35],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [68,53],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [65,-18],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [17,31],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [18,29]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_017","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,6.490799999999979,-4.02879999999999],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,35.454399999999964],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,24.720000000000027,-8.519999999999982],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_017/no_hair",
+	  "face": {"head":"head_017","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":465,"y":424,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":683,"scale":1,"rotation":0},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_017","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,6.490799999999979,-4.02879999999999],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,35.454399999999964],"w":1086,"h":1448}
+	  ]
+	},
+	{
+	  "name": "head_017/hair_scale_override",
+	  "face": {"head":"head_017","ear":"","eye":"eye_013","eyebrow":"eyebrow_004","nose":"nose_010","mouth":"mouth_010","hair":"hair_021","chin":"","skin_mark":"skin_mark_001","body":"body_005"},
+	  "head_anchor": {
+		"eye": {"x":465,"y":424,"scale":1,"rotation":0},
+		"eyebrow": {"x":477,"y":388,"scale":1,"rotation":0},
+		"nose": {"x":418,"y":486,"scale":1,"rotation":0},
+		"mouth": {"x":426,"y":683,"scale":1,"rotation":0},
+		"hair": {
+		  "x": 525,
+		  "y": 339,
+		  "scale": 1,
+		  "rotation": 0,
+		  "behind": false,
+		  "scales": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.98,
+			"image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": 1.37
+		  },
+		  "offsets": {
+			"image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [6,8],
+			"image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [21,0],
+			"image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [10,1],
+			"image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [20,27],
+			"image-gen-8(20260930-235555)_0005_cabelo.png": [65,-34],
+			"image-gen-8(20260930-235555)_0004_cabelo.png": [42,-61],
+			"image-gen-8(20260930-235555)_0003_cabelo.png": [53,-35],
+			"image-gen-8(20260930-235555)_0002_cabelo.png": [68,53],
+			"image-gen-8(20260930-235555)_0001_cabelo.png": [65,-18],
+			"image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [17,31],
+			"image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [18,29]
+		  }
+		},
+		"body": {"x":543,"y":966,"scale":1,"rotation":0,"behind":true}
+	  },
+	  "draws": [
+		{"slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331],"w":1086,"h":1448},
+		{"slot":"head","id":"head_017","side":"","m":[1,0,0,1,0,0],"w":1086,"h":1448},
+		{"slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,6.490799999999979,-4.02879999999999],"w":1086,"h":1448},
+		{"slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052],"w":1086,"h":1448},
+		{"slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002],"w":1086,"h":1448},
+		{"slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,35.454399999999964],"w":1086,"h":1448},
+		{"slot":"hair","id":"hair_021","side":"","m":[1.3152000000000001,0,0,1.3152000000000001,-168.1536000000001,-137.10240000000005],"w":1086,"h":1448}
+	  ]
+	}
+  ],
+  "sweep": [
+	{"head":"head_011","slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-6.509200000000021,4.97120000000001]},
+	{"head":"head_011","slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,-4.0113999999999805,-3.5720000000000027]},
+	{"head":"head_011","slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-24.971199999999953,-1.5447999999999524]},
+	{"head":"head_011","slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-6.509200000000021,3.523200000000031]},
+	{"head":"head_011","slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-11.504799999999989,10.473599999999976]},
+	{"head":"head_011","slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-10.5274,-6.033600000000035]},
+	{"head":"head_011","slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052]},
+	{"head":"head_011","slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,-2.468999999999994,3.555999999999983]},
+	{"head":"head_011","slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006]},
+	{"head":"head_011","slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828]},
+	{"head":"head_011","slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021]},
+	{"head":"head_011","slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996]},
+	{"head":"head_011","slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002]},
+	{"head":"head_011","slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,-3.476600000000019,-12.546400000000006]},
+	{"head":"head_011","slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436]},
+	{"head":"head_011","slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027]},
+	{"head":"head_011","slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952]},
+	{"head":"head_011","slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975]},
+	{"head":"head_011","slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,15.455600000000004,-4.545600000000036]},
+	{"head":"head_011","slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,-2.029000000000053,-10.482399999999984]},
+	{"head":"head_011","slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,17.383250000000032,51.55571199999997]},
+	{"head":"head_011","slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-3.5493999999999915,5.445600000000013]},
+	{"head":"head_011","slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-1.0516000000000076,3.9975999999999203]},
+	{"head":"head_011","slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,7.962199999999996,-1.0703999999999496]},
+	{"head":"head_011","slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-2.5215999999999212,1.0511999999999944]},
+	{"head":"head_011","slot":"hair","id":"hair_016","side":"","m":[1.0545,0,0,1.0545,-30.272102000000018,-35.28492879999999]},
+	{"head":"head_011","slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,-1.0369999999999209,-10.532800000000009]},
+	{"head":"head_011","slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-6.539200000000051,-6.532000000000039]},
+	{"head":"head_011","slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-25.524990000000116,-19.15544]},
+	{"head":"head_011","slot":"hair","id":"hair_020","side":"","m":[0.95,0,0,0.95,39.62608,-25.318640000000016]},
+	{"head":"head_011","slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,40.72000000000003,-36.51999999999998]},
+	{"head":"head_011","slot":"hair","id":"hair_022","side":"","m":[0.92,0,0,0.92,42.44,-27.04000000000002]},
+	{"head":"head_011","slot":"hair","id":"hair_023","side":"","m":[0.95,0,0,0.95,23.149999999999977,-27.899999999999977]},
+	{"head":"head_011","slot":"hair","id":"hair_024","side":"","m":[1,0,0,1,0,4]},
+	{"head":"head_011","slot":"hair","id":"hair_025","side":"","m":[0.91,0,0,0.91,40.870000000000005,4.579999999999984]},
+	{"head":"head_011","slot":"hair","id":"hair_026","side":"","m":[0.9,0,0,0.9,43.30000000000001,4.199999999999989]},
+	{"head":"head_011","slot":"hair","id":"hair_027","side":"","m":[1,0,0,1,-5,10]},
+	{"head":"head_011","slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331]},
+	{"head":"head_012","slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,14.490799999999979,20.97120000000001]},
+	{"head":"head_012","slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,16.98860000000002,12.427999999999997]},
+	{"head":"head_012","slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-3.9711999999999534,14.455200000000048]},
+	{"head":"head_012","slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,14.490799999999979,19.52320000000003]},
+	{"head":"head_012","slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,9.495200000000011,26.473599999999976]},
+	{"head":"head_012","slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,10.4726,9.966399999999965]},
+	{"head":"head_012","slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,21.54480000000001,17.46560000000005]},
+	{"head":"head_012","slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,12.531000000000006,13.555999999999983]},
+	{"head":"head_012","slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,1.453800000000001,2.5511999999999944]},
+	{"head":"head_012","slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,21.001800000000003,8.053600000000017]},
+	{"head":"head_012","slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,11.01060000000001,21.95440000000002]},
+	{"head":"head_012","slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,21.97919999999999,-0.4895999999999958]},
+	{"head":"head_012","slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,27.04880000000003,19.47199999999998]},
+	{"head":"head_012","slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,6.523399999999981,7.4535999999999945]},
+	{"head":"head_012","slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-3.033399999999972,20.051199999999994]},
+	{"head":"head_012","slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,19.446799999999996,22.512800000000027]},
+	{"head":"head_012","slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-4.988200000000006,35.54479999999995]},
+	{"head":"head_012","slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,15.971599999999967,15.562400000000025]},
+	{"head":"head_012","slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,22.455600000000004,35.454399999999964]},
+	{"head":"head_012","slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,4.970999999999947,29.517600000000016]},
+	{"head":"head_012","slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,24.383250000000032,91.55571199999997]},
+	{"head":"head_012","slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,3.4506000000000085,45.44560000000001]},
+	{"head":"head_012","slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,5.948399999999992,43.99759999999992]},
+	{"head":"head_012","slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,14.962199999999996,38.92960000000005]},
+	{"head":"head_012","slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,12.478400000000079,16.051199999999994]},
+	{"head":"head_012","slot":"hair","id":"hair_016","side":"","m":[0.9990000000000001,0,0,0.9990000000000001,4.636955999999941,3.361646399999927]},
+	{"head":"head_012","slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,7.963000000000079,-3.532800000000009]},
+	{"head":"head_012","slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,16.46079999999995,0.4679999999999609]},
+	{"head":"head_012","slot":"hair","id":"hair_019","side":"","m":[0.9974999999999999,0,0,0.9974999999999999,11.451259499999992,17.702332000000013]},
+	{"head":"head_012","slot":"hair","id":"hair_020","side":"","m":[0.95,0,0,0.95,33.62608,7.681359999999984]},
+	{"head":"head_012","slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,39.72000000000003,-7.519999999999982]},
+	{"head":"head_012","slot":"hair","id":"hair_022","side":"","m":[0.92,0,0,0.92,43.44,6.9599999999999795]},
+	{"head":"head_012","slot":"hair","id":"hair_023","side":"","m":[0.95,0,0,0.95,31.149999999999977,2.1000000000000227]},
+	{"head":"head_012","slot":"hair","id":"hair_024","side":"","m":[1,0,0,1,0,14]},
+	{"head":"head_012","slot":"hair","id":"hair_025","side":"","m":[0.91,0,0,0.91,48.870000000000005,10.579999999999984]},
+	{"head":"head_012","slot":"hair","id":"hair_026","side":"","m":[0.9,0,0,0.9,54.30000000000001,14.199999999999989]},
+	{"head":"head_012","slot":"hair","id":"hair_027","side":"","m":[1,0,0,1,6,34]},
+	{"head":"head_012","slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331]},
+	{"head":"head_013","slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-15.509200000000021,19.97120000000001]},
+	{"head":"head_013","slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,-13.01139999999998,11.427999999999997]},
+	{"head":"head_013","slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-33.97119999999995,13.455200000000048]},
+	{"head":"head_013","slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-15.509200000000021,18.52320000000003]},
+	{"head":"head_013","slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-20.50479999999999,25.473599999999976]},
+	{"head":"head_013","slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-19.5274,8.966399999999965]},
+	{"head":"head_013","slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052]},
+	{"head":"head_013","slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,-2.468999999999994,3.555999999999983]},
+	{"head":"head_013","slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006]},
+	{"head":"head_013","slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828]},
+	{"head":"head_013","slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021]},
+	{"head":"head_013","slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996]},
+	{"head":"head_013","slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002]},
+	{"head":"head_013","slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,-3.476600000000019,-12.546400000000006]},
+	{"head":"head_013","slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436]},
+	{"head":"head_013","slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027]},
+	{"head":"head_013","slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952]},
+	{"head":"head_013","slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975]},
+	{"head":"head_013","slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,13.455600000000004,27.454399999999964]},
+	{"head":"head_013","slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,-4.029000000000053,21.517600000000016]},
+	{"head":"head_013","slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,15.383250000000032,83.55571199999997]},
+	{"head":"head_013","slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-5.5493999999999915,37.44560000000001]},
+	{"head":"head_013","slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-3.0516000000000076,35.99759999999992]},
+	{"head":"head_013","slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,5.962199999999996,30.92960000000005]},
+	{"head":"head_013","slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-6.521599999999921,8.051199999999994]},
+	{"head":"head_013","slot":"hair","id":"hair_016","side":"","m":[1.0434,0,0,1.0434,-41.690290400000094,-19.755613760000074]},
+	{"head":"head_013","slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,2.963000000000079,-19.53280000000001]},
+	{"head":"head_013","slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-5.539200000000051,-1.532000000000039]},
+	{"head":"head_013","slot":"hair","id":"hair_019","side":"","m":[0.9974999999999999,0,0,0.9974999999999999,7.451259499999992,-10.297667999999987]},
+	{"head":"head_013","slot":"hair","id":"hair_020","side":"","m":[0.97,0,0,0.97,5.818208000000027,10.748335999999995]},
+	{"head":"head_013","slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,23.720000000000027,-0.5199999999999818]},
+	{"head":"head_013","slot":"hair","id":"hair_022","side":"","m":[0.92,0,0,0.92,26.439999999999998,9.95999999999998]},
+	{"head":"head_013","slot":"hair","id":"hair_023","side":"","m":[0.95,0,0,0.95,19.149999999999977,-0.8999999999999773]},
+	{"head":"head_013","slot":"hair","id":"hair_024","side":"","m":[1,0,0,1,-4,5]},
+	{"head":"head_013","slot":"hair","id":"hair_025","side":"","m":[0.91,0,0,0.91,36.870000000000005,9.579999999999984]},
+	{"head":"head_013","slot":"hair","id":"hair_026","side":"","m":[1,0,0,1,-11,4]},
+	{"head":"head_013","slot":"hair","id":"hair_027","side":"","m":[1,0,0,1,-12,14]},
+	{"head":"head_013","slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331]},
+	{"head":"head_014","slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-10.509200000000021,12.97120000000001]},
+	{"head":"head_014","slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,-8.01139999999998,4.427999999999997]},
+	{"head":"head_014","slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-28.971199999999953,6.455200000000048]},
+	{"head":"head_014","slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-10.509200000000021,11.523200000000031]},
+	{"head":"head_014","slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-15.504799999999989,18.473599999999976]},
+	{"head":"head_014","slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-14.5274,1.9663999999999646]},
+	{"head":"head_014","slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052]},
+	{"head":"head_014","slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,-2.468999999999994,3.555999999999983]},
+	{"head":"head_014","slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006]},
+	{"head":"head_014","slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828]},
+	{"head":"head_014","slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021]},
+	{"head":"head_014","slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996]},
+	{"head":"head_014","slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002]},
+	{"head":"head_014","slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,-3.476600000000019,-12.546400000000006]},
+	{"head":"head_014","slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436]},
+	{"head":"head_014","slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027]},
+	{"head":"head_014","slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952]},
+	{"head":"head_014","slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975]},
+	{"head":"head_014","slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,17.455600000000004,49.454399999999964]},
+	{"head":"head_014","slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,-0.029000000000053205,43.517600000000016]},
+	{"head":"head_014","slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,19.383250000000032,105.55571199999997]},
+	{"head":"head_014","slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-1.5493999999999915,59.44560000000001]},
+	{"head":"head_014","slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,0.9483999999999924,57.99759999999992]},
+	{"head":"head_014","slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,9.962199999999996,52.92960000000005]},
+	{"head":"head_014","slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-0.5215999999999212,-0.9488000000000056]},
+	{"head":"head_014","slot":"hair","id":"hair_016","side":"","m":[1.0545,0,0,1.0545,-37.27210200000002,-33.28492879999999]},
+	{"head":"head_014","slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,0.9630000000000791,-28.53280000000001]},
+	{"head":"head_014","slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-7.539200000000051,-8.532000000000039]},
+	{"head":"head_014","slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-27.524990000000116,-17.15544]},
+	{"head":"head_014","slot":"hair","id":"hair_020","side":"","m":[0.97,0,0,0.97,7.818208000000027,-7.251664000000005]},
+	{"head":"head_014","slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,25.720000000000027,-18.519999999999982]},
+	{"head":"head_014","slot":"hair","id":"hair_022","side":"","m":[0.92,0,0,0.92,31.439999999999998,-15.04000000000002]},
+	{"head":"head_014","slot":"hair","id":"hair_023","side":"","m":[0.95,0,0,0.95,17.149999999999977,-13.899999999999977]},
+	{"head":"head_014","slot":"hair","id":"hair_024","side":"","m":[1,0,0,1,-2,3]},
+	{"head":"head_014","slot":"hair","id":"hair_025","side":"","m":[0.91,0,0,0.91,35.870000000000005,-0.4200000000000159]},
+	{"head":"head_014","slot":"hair","id":"hair_026","side":"","m":[1,0,0,1,8,9]},
+	{"head":"head_014","slot":"hair","id":"hair_027","side":"","m":[1,0,0,1,-7,3]},
+	{"head":"head_014","slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331]},
+	{"head":"head_015","slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,4.490799999999979,3.9712000000000103]},
+	{"head":"head_015","slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,6.9886000000000195,-4.572000000000003]},
+	{"head":"head_015","slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-13.971199999999953,-2.5447999999999524]},
+	{"head":"head_015","slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,4.490799999999979,2.523200000000031]},
+	{"head":"head_015","slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-0.5047999999999888,9.473599999999976]},
+	{"head":"head_015","slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,0.4725999999999999,-7.033600000000035]},
+	{"head":"head_015","slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052]},
+	{"head":"head_015","slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,-2.468999999999994,3.555999999999983]},
+	{"head":"head_015","slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006]},
+	{"head":"head_015","slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828]},
+	{"head":"head_015","slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021]},
+	{"head":"head_015","slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996]},
+	{"head":"head_015","slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002]},
+	{"head":"head_015","slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,-3.476600000000019,-12.546400000000006]},
+	{"head":"head_015","slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436]},
+	{"head":"head_015","slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027]},
+	{"head":"head_015","slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952]},
+	{"head":"head_015","slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975]},
+	{"head":"head_015","slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,42.454399999999964]},
+	{"head":"head_015","slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,-10.029000000000053,36.517600000000016]},
+	{"head":"head_015","slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,9.383250000000032,98.55571199999997]},
+	{"head":"head_015","slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-11.549399999999991,52.44560000000001]},
+	{"head":"head_015","slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,50.99759999999992]},
+	{"head":"head_015","slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,-0.037800000000004275,45.92960000000005]},
+	{"head":"head_015","slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,5.478400000000079,9.051199999999994]},
+	{"head":"head_015","slot":"hair","id":"hair_016","side":"","m":[1.0545,0,0,1.0545,-27.272102000000018,-27.28492879999999]},
+	{"head":"head_015","slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,8.96300000000008,-37.53280000000001]},
+	{"head":"head_015","slot":"hair","id":"hair_018","side":"","m":[1.05,0,0,1.05,-22.166160000000104,-17.758600000000058]},
+	{"head":"head_015","slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-24.524990000000116,-4.155439999999999]},
+	{"head":"head_015","slot":"hair","id":"hair_020","side":"","m":[1,0,0,1,-5.393599999999992,-7.651200000000017]},
+	{"head":"head_015","slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,41.72000000000003,-29.519999999999982]},
+	{"head":"head_015","slot":"hair","id":"hair_022","side":"","m":[0.92,0,0,0.92,46.44,-31.04000000000002]},
+	{"head":"head_015","slot":"hair","id":"hair_023","side":"","m":[0.95,0,0,0.95,29.149999999999977,-20.899999999999977]},
+	{"head":"head_015","slot":"hair","id":"hair_024","side":"","m":[1,0,0,1,6,5]},
+	{"head":"head_015","slot":"hair","id":"hair_025","side":"","m":[0.91,0,0,0.91,50.870000000000005,2.579999999999984]},
+	{"head":"head_015","slot":"hair","id":"hair_026","side":"","m":[0.95,0,0,0.95,22.149999999999977,-21.899999999999977]},
+	{"head":"head_015","slot":"hair","id":"hair_027","side":"","m":[1,0,0,1,9,18]},
+	{"head":"head_015","slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331]},
+	{"head":"head_016","slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,-7.509200000000021,6.97120000000001]},
+	{"head":"head_016","slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,-5.0113999999999805,-1.5720000000000027]},
+	{"head":"head_016","slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-25.971199999999953,0.45520000000004757]},
+	{"head":"head_016","slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,-7.509200000000021,5.523200000000031]},
+	{"head":"head_016","slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,-12.504799999999989,12.473599999999976]},
+	{"head":"head_016","slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,-11.5274,-4.033600000000035]},
+	{"head":"head_016","slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052]},
+	{"head":"head_016","slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,-2.468999999999994,3.555999999999983]},
+	{"head":"head_016","slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006]},
+	{"head":"head_016","slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828]},
+	{"head":"head_016","slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021]},
+	{"head":"head_016","slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996]},
+	{"head":"head_016","slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002]},
+	{"head":"head_016","slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,-3.476600000000019,-12.546400000000006]},
+	{"head":"head_016","slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436]},
+	{"head":"head_016","slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027]},
+	{"head":"head_016","slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952]},
+	{"head":"head_016","slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975]},
+	{"head":"head_016","slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,9.455600000000004,49.454399999999964]},
+	{"head":"head_016","slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,-8.029000000000053,43.517600000000016]},
+	{"head":"head_016","slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,11.383250000000032,105.55571199999997]},
+	{"head":"head_016","slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-9.549399999999991,59.44560000000001]},
+	{"head":"head_016","slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-7.051600000000008,57.99759999999992]},
+	{"head":"head_016","slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,1.9621999999999957,52.92960000000005]},
+	{"head":"head_016","slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,1.4784000000000788,8.051199999999994]},
+	{"head":"head_016","slot":"hair","id":"hair_016","side":"","m":[1.0545,0,0,1.0545,-32.27210200000002,-32.28492879999999]},
+	{"head":"head_016","slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,1.9630000000000791,-19.53280000000001]},
+	{"head":"head_016","slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,2.4607999999999493,-9.532000000000039]},
+	{"head":"head_016","slot":"hair","id":"hair_019","side":"","m":[1.05,0,0,1.05,-21.524990000000116,-18.15544]},
+	{"head":"head_016","slot":"hair","id":"hair_020","side":"","m":[1,0,0,1,-4.393599999999992,-2.651200000000017]},
+	{"head":"head_016","slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,34.72000000000003,-19.519999999999982]},
+	{"head":"head_016","slot":"hair","id":"hair_022","side":"","m":[0.92,0,0,0.92,37.44,-5.0400000000000205]},
+	{"head":"head_016","slot":"hair","id":"hair_023","side":"","m":[0.95,0,0,0.95,23.149999999999977,-8.899999999999977]},
+	{"head":"head_016","slot":"hair","id":"hair_024","side":"","m":[1,0,0,1,3,9]},
+	{"head":"head_016","slot":"hair","id":"hair_025","side":"","m":[0.91,0,0,0.91,46.870000000000005,-1.420000000000016]},
+	{"head":"head_016","slot":"hair","id":"hair_026","side":"","m":[0.9,0,0,0.9,49.30000000000001,0.19999999999998863]},
+	{"head":"head_016","slot":"hair","id":"hair_027","side":"","m":[1,0,0,1,4,4]},
+	{"head":"head_016","slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331]},
+	{"head":"head_017","slot":"eye","id":"eye_013","side":"","m":[1,0,0,1,6.490799999999979,-4.02879999999999]},
+	{"head":"head_017","slot":"eye","id":"eye_014","side":"","m":[1,0,0,1,8.98860000000002,-12.572000000000003]},
+	{"head":"head_017","slot":"eye","id":"eye_015","side":"","m":[1,0,0,1,-11.971199999999953,-10.544799999999952]},
+	{"head":"head_017","slot":"eye","id":"eye_016","side":"","m":[1,0,0,1,6.490799999999979,-5.476799999999969]},
+	{"head":"head_017","slot":"eye","id":"eye_017","side":"","m":[1,0,0,1,1.4952000000000112,1.4735999999999763]},
+	{"head":"head_017","slot":"eye","id":"eye_018","side":"","m":[1,0,0,1,2.4726,-15.033600000000035]},
+	{"head":"head_017","slot":"eyebrow","id":"eyebrow_004","side":"","m":[1,0,0,1,6.544800000000009,7.465600000000052]},
+	{"head":"head_017","slot":"eyebrow","id":"eyebrow_005","side":"","m":[1,0,0,1,-2.468999999999994,3.555999999999983]},
+	{"head":"head_017","slot":"eyebrow","id":"eyebrow_006","side":"","m":[1,0,0,1,-13.546199999999999,-7.448800000000006]},
+	{"head":"head_017","slot":"eyebrow","id":"eyebrow_007","side":"","m":[1,0,0,1,6.001800000000003,-1.9463999999999828]},
+	{"head":"head_017","slot":"eyebrow","id":"eyebrow_008","side":"","m":[1,0,0,1,-3.989399999999989,11.954400000000021]},
+	{"head":"head_017","slot":"eyebrow","id":"eyebrow_009","side":"","m":[1,0,0,1,6.979199999999992,-10.489599999999996]},
+	{"head":"head_017","slot":"nose","id":"nose_010","side":"","m":[1,0,0,1,17.04880000000003,-0.52800000000002]},
+	{"head":"head_017","slot":"nose","id":"nose_011","side":"","m":[1,0,0,1,-3.476600000000019,-12.546400000000006]},
+	{"head":"head_017","slot":"nose","id":"nose_012","side":"","m":[1,0,0,1,-13.033399999999972,0.05119999999999436]},
+	{"head":"head_017","slot":"nose","id":"nose_013","side":"","m":[1,0,0,1,9.446799999999996,2.512800000000027]},
+	{"head":"head_017","slot":"nose","id":"nose_014","side":"","m":[1,0,0,1,-14.988200000000006,15.544799999999952]},
+	{"head":"head_017","slot":"nose","id":"nose_015","side":"","m":[1,0,0,1,5.971599999999967,-4.437599999999975]},
+	{"head":"head_017","slot":"mouth","id":"mouth_010","side":"","m":[1,0,0,1,7.455600000000004,35.454399999999964]},
+	{"head":"head_017","slot":"mouth","id":"mouth_011","side":"","m":[1,0,0,1,-10.029000000000053,29.517600000000016]},
+	{"head":"head_017","slot":"mouth","id":"mouth_012","side":"","m":[0.93,0,0,0.93,9.383250000000032,91.55571199999997]},
+	{"head":"head_017","slot":"mouth","id":"mouth_013","side":"","m":[1,0,0,1,-11.549399999999991,45.44560000000001]},
+	{"head":"head_017","slot":"mouth","id":"mouth_014","side":"","m":[1,0,0,1,-9.051600000000008,43.99759999999992]},
+	{"head":"head_017","slot":"mouth","id":"mouth_015","side":"","m":[1,0,0,1,-0.037800000000004275,38.92960000000005]},
+	{"head":"head_017","slot":"hair","id":"hair_015","side":"","m":[1,0,0,1,-2.5215999999999212,16.051199999999994]},
+	{"head":"head_017","slot":"hair","id":"hair_016","side":"","m":[1.0545,0,0,1.0545,-32.27210200000002,-38.28492879999999]},
+	{"head":"head_017","slot":"hair","id":"hair_017","side":"","m":[1,0,0,1,2.963000000000079,-12.532800000000009]},
+	{"head":"head_017","slot":"hair","id":"hair_018","side":"","m":[1,0,0,1,-5.539200000000051,-6.532000000000039]},
+	{"head":"head_017","slot":"hair","id":"hair_019","side":"","m":[0.9974999999999999,0,0,0.9974999999999999,1.451259499999992,3.7023320000000126]},
+	{"head":"head_017","slot":"hair","id":"hair_020","side":"","m":[0.97,0,0,0.97,6.818208000000027,10.748335999999995]},
+	{"head":"head_017","slot":"hair","id":"hair_021","side":"","m":[0.96,0,0,0.96,24.720000000000027,-8.519999999999982]},
+	{"head":"head_017","slot":"hair","id":"hair_022","side":"","m":[0.92,0,0,0.92,25.439999999999998,5.9599999999999795]},
+	{"head":"head_017","slot":"hair","id":"hair_023","side":"","m":[0.95,0,0,0.95,19.149999999999977,-3.8999999999999773]},
+	{"head":"head_017","slot":"hair","id":"hair_024","side":"","m":[1,0,0,1,0,6]},
+	{"head":"head_017","slot":"hair","id":"hair_025","side":"","m":[0.91,0,0,0.91,30.870000000000005,9.579999999999984]},
+	{"head":"head_017","slot":"hair","id":"hair_026","side":"","m":[0.98,0,0,0.98,12.860000000000014,11.240000000000009]},
+	{"head":"head_017","slot":"hair","id":"hair_027","side":"","m":[1,0,0,1,-1,8]},
+	{"head":"head_017","slot":"body","id":"body_005","side":"","m":[1,0,0,1,0,0.4736000000000331]}
+  ]
+}

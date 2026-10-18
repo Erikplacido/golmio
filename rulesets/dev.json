@@ -1,0 +1,15 @@
+{
+  "extends": "default.json",
+  "id": "dev",
+  "version": "dev",
+  "description": "Ruleset de desenvolvimento: igual à produção + mecânicas experimentais ligadas para teste.",
+  "mechanics": {
+    "athlete_generator": { "enabled": true },
+    "packs":             { "enabled": true },
+    "xg_model":          { "enabled": true },
+    "fouls_cards":       { "enabled": true },
+    "offside":           { "enabled": true },
+    "replays":           { "enabled": true },
+    "daily_official":    { "enabled": true }
+  }
+}

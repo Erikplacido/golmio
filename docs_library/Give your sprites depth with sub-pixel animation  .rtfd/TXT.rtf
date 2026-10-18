@@ -1,0 +1,122 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fnil\fcharset0 Verdana;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red154\green154\blue154;
+\red174\green174\blue174;\red26\green26\blue26;\red238\green149\blue8;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;\cssrgb\c66667\c66667\c66667;
+\cssrgb\c73725\c73725\c73725;\cssrgb\c13333\c13333\c13333;\cssrgb\c95294\c64706\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa960\partightenfactor0
+
+\f0\fs48 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Give your sprites depth with sub-pixel animation\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\f1\fs30 \cf4 \cb3 If you\'92ve ever worked with a classic RPG style like Chrono Trigger or other sprites smaller than 100\'d7100, you know how pixels seem to get bigger, less flexible and more uncooperative as the sprite size gets smaller.\cb1 \
+\cb3 Creating a sprite at that size, even though it has fewer pixels, can be surprisingly hard since you have fewer ways to get it looking right. Planning out the face so that the eyes are in a natural position \'97 and then making it so that 1 pixel is a believable size for those eyes \'97 takes extra work. But once you\'92ve finally settled on a good illustration with each pixel exactly where it has to be\'85 it comes time to animate. And suddenly your last batch of problems look like a first grade math quiz.\cb1 \
+\cb3 The issue now isn\'92t just how to move a microscopic character with believably exaggerated animation. It\'92s how to do so within the confining grid of these giant pixels. Anyone who\'92s experimented with animating the NES Megaman knows what I\'92m talking about. The number of natural, \'93correct\'94-looking poses you can put him in is severely limited. And on top of that, moving his arm 1 pixel out in an animation looks like he\'92s jutting the arm forward a significant distance. But you can\'92t move a sprite any less than that huge distance because pixels are either on or off, and its the only means you have to convey movement. Obviously. ..Right?\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs20 \cf5 {{\NeXTGraphic subpixel-gutsman.gif \width1240 \height1280 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf5 \
+\pard\pardeftab720\sa360\qc\partightenfactor0
+\cf4 \cb6 Ahahahaa, this is the most subtle movement I\'92m capable of!\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\fs30 \cf4 \cb3 I mean, if only there were a way to make those small-sized sprites move smoother than a black and white Tamagotchi. Some way to mimic, say, the real life movement you\'92d capture with a video camera. Even those low-resolution cameras can render believable movement. Ah, but wait a minute. What if a video camera were recording some distant person as small as a sprite. Wouldn\'92t it translate the person into pixels and move them believably? And what\'92s the difference between that real life \'93sprite\'94 from the camera and the on-off-ness of the pixels from NES Megaman or Tamagotchi?\cb1 \
+\cb3 The colors. To move a small sprite a small distance, don\'92t move the sprite \'97 move its colors.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb6 {{\NeXTGraphic subpixel3.gif \width4200 \height6000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sa540\partightenfactor0
+\cf4 \cb3 Take a look at that pic. That person is less than 50 pixels tall, but you can clearly interpret that he took a deep breath. How? Look at what\'92s actually changing: 1) a shifting of the light and shadow colors, and 2) how the colors of his edges blend in to the background (obviously he doesn\'92t have outlines drawn around him, but bear with me). \'93Well,\'94 you say, \'93that\'92s nice, but when you have a few hundred colors to spare, I\'92m sure you can add all the subtlety you need for you animations.\'94 Okay then, let\'92s cut this down to 16 colors:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb6 {{\NeXTGraphic subpixel16.gif \width4200 \height6000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sa540\partightenfactor0
+\cf4 \cb3 Getting more cartoony, but the same ideas are having the same effects: the light pixels on his ribs/stomach area shift to dark, and the edges\'92 colors shift into the background\'92s. (Granted, the high framerate is a factor in how nice this is looking, but that\'92s a separate issue for animation style, not for the what I\'92m focusing on in this case.) And now let\'92s see if we can distill this to the barebones basics:\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb6 {{\NeXTGraphic subpixel6.gif \width4200 \height6000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sa540\partightenfactor0
+\cf4 \cb3 Six faded colors, and it\'92s still obvious that this 50 pixel tall character is performing a specific subtle movement, even though the silhouette is barely moving. Okay, there\'92s got to be something to this.\cb1 \
+\cb3 Basically, \'93sub-pixel animation\'94 means animating your anti-aliasing. A valuable technique either for transitioning shades of colors inside a sprite from light to shadow or in slightly moving an outline without moving the silhouette. These digital video animations are what you\'92re trying to imitate, and yes that makes the concept a little mechanical, but the \'91art\'92 comes in deciding how far to take it, and especially with deciding how to incorporate the technique with your limited colors.\cb1 \
+\cb3 That\'92s the idea, and now here\'92s some examples that show you how the pros move small sprites:\cb1 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/slug-harrier.gif"}}{\fldrslt 
+\fs20 \cf7 {{\NeXTGraphic slug-harrier.gif \width8160 \height6240 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+
+\fs20 \cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/erishoot.gif"}}{\fldrslt \cf7 {{\NeXTGraphic erishoot.gif \width4480 \height3040 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/ms5-hybrid.gif"}}{\fldrslt \cf7 {{\NeXTGraphic ms5-hybrid.gif \width5920 \height4960 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/Slug-drill.gif"}}{\fldrslt \cf7 {{\NeXTGraphic Slug-drill.gif \width6560 \height4160 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/slug-eleph-walk.gif"}}{\fldrslt \cf7 {{\NeXTGraphic slug-eleph-walk.gif \width9040 \height7680 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/fio-scuba-yawn.gif"}}{\fldrslt \cf7 {{\NeXTGraphic fio-scuba-yawn.gif \width4960 \height4720 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/eri-fat-duck.gif"}}{\fldrslt \cf7 {{\NeXTGraphic eri-fat-duck.gif \width3680 \height2160 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/ms5-SuperSlug-duck.gif"}}{\fldrslt \cf7 {{\NeXTGraphic ms5-SuperSlug-duck.gif \width6320 \height3760 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/slug-camel.gif"}}{\fldrslt \cf7 {{\NeXTGraphic slug-camel.gif \width5760 \height4320 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\qc\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://2dwillneverdie.com/wp-content/uploads/eri1.gif"}}{\fldrslt \cf7 {{\NeXTGraphic eri1.gif \width3280 \height3680 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}}}\pard\pardeftab720\qc\partightenfactor0
+\cf5 \
+\pard\pardeftab720\partightenfactor0
+\cf5 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\fs30 \cf4 \cb3 Metal Slug conveys movement really well because of two factors: very large color count, which provides a high detail level, and very high framerate, which provides detailed animations.\cb1 \
+\cb3 Look at these sprites and see just how little the actual silhouettes move. Its the colors of the existing pixels that are changing the most. (To be technically accurate, sub-pixel animation is happening on those spots where the outlines get lighter as a body part pushes into them, and darken as body part recedes. So it looks like the sprite is moving in space, but it\'92s really only moving into its own outline.) If you were to reduce any of these to just black and white lineart, the majority of the motion would instantly disappear.\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs20 \cf5 {{\NeXTGraphic subpixel-bosslaugh.gif \width4000 \height3000 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf5 \
+\pard\pardeftab720\sa360\qc\partightenfactor0
+\cf4 \cb6 With a few subpixel animation concepts, you can add some depth to even the most difficult of subjects. I added a dark red to give the original red some antialiasing, and I reduced the animation so that the silhouette barely moves at all. How\'92s *that* for subtle movement, Gutsman?\cb1 \
+\pard\pardeftab720\sa540\partightenfactor0
+
+\fs30 \cf4 \cb3 There is so much detail crammed into these tiny areas that looking at them up-close makes it hard to focus on what\'92s what. That detail comes from the huge number of color shades crammed into the sprite, which in turn gives the most opportunities to move, say, an arm up a small distance from shadow into lighter area into more lighter area into lightest area, without moving the actual position of the arm. And what\'92s more, the small size of the sprite now becomes an advantage because this trick would have less impact with larger sprites.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb6 {{\NeXTGraphic sub-soma.gif \width1440 \height2720 \appleattachmentpadding0 \appleembedtype0 \appleaqc
+}¬}\pard\pardeftab720\partightenfactor0
+\cf4 \
+\pard\pardeftab720\sa540\partightenfactor0
+\cf4 \cb3 Castlevania is another series bursting with examples. Note here how the inside of Soma\'92s cloak has no outline. Instead it uses dark antialiasing to blend more and more into his black shirt and dark pants. In this case, imagine pixel art not as the art itself, but as a filter that\'92s translating the art.\cb1 \
+\cb3 So there\'92s how you do it, but at the same time you see the caveat: more subtle movement requires more color to supply you with enough differently colored pixels to animate with. A higher framerate doesn\'92t hurt either, but it\'92s secondary.\cb1 \
+\cb3 Next time you animators are finding yourself trapped with rough, jerky movement, think about the insides of the outlines. This can work for detailed areas like fingers or faces on fighter sprites or heavy breathing animations for sidescrollers, and so on. It\'92s just another example of how you pixel artists can think outside the block.}

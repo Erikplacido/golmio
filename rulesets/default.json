@@ -1,0 +1,19 @@
+{
+  "id": "default",
+  "version": "2026.09.0",
+  "description": "Regras de produção. Toda mecânica não listada usa seu enabled_by_default e default_params.",
+  "core": {
+	"match_minutes": 90,
+	"squad_limit": 30,
+	"lineup_size": 11,
+	"bench_size": 5
+  },
+  "mechanics": {
+	"stamina":              { "enabled": true },
+	"mentality":            { "enabled": true },
+	"set_pieces":           { "enabled": true },
+	"substitutions":        { "enabled": true, "params": { "max_subs": 5 } },
+	"extra_time_penalties": { "enabled": true },
+	"career_aging":         { "enabled": true }
+  }
+}

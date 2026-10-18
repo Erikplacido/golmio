@@ -1,0 +1,146 @@
+================================================================================
+PUZZLE DEPENDENCY CHARTS
+Como Projetar Quebra-Cabeças e Aventuras Não-Lineares sem Becos sem Saída
+================================================================================
+
+Autor: Ron Gilbert (Grumpy Gamer)
+Data Original de Publicação: 10 de Agosto de 2014
+Fonte Original: https://grumpygamer.com/puzzle_dependency_charts/
+Arquivo Fonte Local: Puzzle Dependency Charts _ Grumpy Gamer.html
+Pasta de Recursos Visuais: Puzzle Dependency Charts _ Grumpy Gamer_files/
+Obras Referenciadas: Maniac Mansion, The Secret of Monkey Island, Monkey Island 2: LeChuck's Revenge, Indiana Jones and the Last Crusade, DeathSpank
+
+--------------------------------------------------------------------------------
+1. INTRODUÇÃO E CONTEXTO HISTÓRICO
+--------------------------------------------------------------------------------
+
+Neste clássico artigo sobre game design, Ron Gilbert — o lendário criador de The Secret of Monkey Island, Maniac Mansion e cocriador do motor SCUMM da Lucasfilm Games / LucasArts — apresenta aquela que considera a ferramenta mais poderosa e indispensável para a criação de jogos de aventura (adventure games) e quebra-cabeças narrativos: o Gráfico de Dependência de Puzzles (Puzzle Dependency Chart ou Puzzle Dependency Graph).
+
+Havia uma disputa histórica interna na Lucasfilm Games sobre se o nome correto era "Chart" (Tabela/Gráfico) ou "Graph" (Grafo Matemático). Ron Gilbert, David Fox e Noah Falstein contribuíram intensamente para a formulação da técnica durante o desenvolvimento de "Indiana Jones and the Last Crusade: The Graphic Adventure" (1989), atingindo sua maturidade plena em "The Secret of Monkey Island" (1990) e "Monkey Island 2: LeChuck's Revenge" (1991).
+
+Em "Maniac Mansion" (1987), Ron Gilbert e Gary Winnick ainda não utilizavam gráficos de dependência formais. Como consequência, o jogo sofria com becos sem saída insolúveis (dead ends), ritmo irregular e estrangulamentos excessivos onde o jogador ficava completamente travado sem opções alternativas. O Puzzle Dependency Chart foi inventado precisamente para eliminar essas falhas.
+
+--------------------------------------------------------------------------------
+2. TRANSCRIÇÃO INTEGRAL DO ARTIGO ORIGINAL (TRADUÇÃO COMENTADA)
+--------------------------------------------------------------------------------
+
+[Texto de Ron Gilbert]:
+
+Na primeira e única parte da minha série de artigos sobre game design, vamos mergulhar em uma das (se não A) ferramentas mais úteis para projetar jogos de aventura: O Gráfico de Dependência de Puzzles (Puzzle Dependency Chart). 
+
+Não confunda isso com um fluxograma (flowchart). NÃO é um fluxograma, e as distinções sutis entre os dois se tornarão claras, pois nelas reside a chave de sua utilidade e de seu puro poder de design pulsante.
+
+Há certa disputa nos círculos da Lucasfilm Games sobre se eram chamados de "Puzzle Dependency Charts" ou "Puzzle Dependency Graphs", e em qualquer dia específico eu juraria com total convicção que era "Chart", e no dia seguinte juraria com a mesma convicção que era "Graph". Para este artigo, vou ficar com "Chart". É domingo.
+
+Gary [Winnick] e eu não tínhamos Gráficos de Dependência de Puzzles para Maniac Mansion, e de muitas maneiras isso fica evidente no jogo final. O jogo está repleto de puzzles que levam a becos sem saída (dead ends) e o fluxo é desigual, ficando afunilado e travado demais.
+
+Os Gráficos de Dependência de Puzzles teriam resolvido a maioria desses problemas. Não lembro exatamente quando concebi o conceito pela primeira vez; foi provavelmente um pouco antes ou durante o desenvolvimento do adventure de "Indiana Jones and the Last Crusade", e tanto David Fox quanto Noah Falstein contribuíram pesadamente para o que eles se tornariam. Eles atingiram seu potencial pleno durante Monkey Island, onde me apoiei neles para cada aspecto do design de enigmas.
+
+Um Gráfico de Dependência de Puzzles é uma lista de todos os puzzles e etapas necessárias para resolver um puzzle em um jogo de aventura. Eles são apresentados na forma de um Grafo (Graph), com cada nó conectando-se ao puzzle ou etapa de puzzle necessária para chegar até ali. Eles geralmente NÃO incluem batidas de história (story beats), a menos que essas batidas sejam críticas para solucionar um puzzle.
+
+Vamos construir um!
+
+---
+PASSO 1: DESIGN REGRESSIVO (BACKWARDS DESIGN)
+[Imagem correspondente: gg_pdc_1.jpg]
+
+Eu sempre trabalho de trás para frente ao projetar um jogo de aventura — não do fim absoluto do jogo, mas a partir do final de cadeias de quebra-cabeças. Eu costumo começar com: "O jogador precisa entrar no porão", e não com: "Onde eu deveria esconder uma chave para entrar em algum lugar que eu ainda nem descobri?".
+
+Também gosto de trabalhar da esquerda para a direita (outras pessoas preferem trabalhar de cima para baixo). Minha justificativa para a esquerda para a direita é que gosto de fixá-los na parede do meu escritório, cobrindo a sala inteira com o design do jogo.
+
+Então... primeiro, precisamos descobrir o que é necessário para entrar no porão...
+
+---
+PASSO 2: A PRIMEIRA DEPENDÊNCIA
+[Imagem correspondente: gg_pdc_2.jpg]
+
+Identificamos a necessidade: "Destrancar a porta" (Unlock Door) depende de "Encontrar a chave" (Find Key).
+E então desenhamos uma linha conectando os dois nós, indicando a dependência. "Destrancar a porta" é DEPENDENTE de "Encontrar a chave". Repito: isso não representa fluxo temporal; representa dependência lógica.
+
+---
+PASSO 3: ADICIONANDO PARALELISMO E NÃO-LINEARIDADE
+[Imagem correspondente: gg_pdc_3.jpg]
+
+Agora vamos adicionar uma nova etapa ao puzzle chamada "Lubrificar Dobradiças" (Oil Hinges) na porta, e isso pode acontecer EM PARALELO ao puzzle de "Encontrar a Chave"...
+
+Adicionamos dois novos nós de puzzle: uma ação "Lubrificar Dobradiças" e sua dependência prévia "Encontrar Lata de Óleo" (Find Oil Can). 
+"Destrancar a porta" NÃO depende de "Lubrificar as dobradiças", portanto não há linha entre eles. Ambos, porém, se conectam no nó final "Abrir a Porta do Porão" (Open Basement Door), já que ambos os passos precisam estar cumpridos para que a porta finalmente abra.
+
+Neste ponto, o gráfico começa a ficar interessante e revela algo fundamental: A NÃO-LINEARIDADE DO DESIGN.
+Existem agora dois quebra-cabeças independentes nos quais o jogador pode estar trabalhando ativamente e em paralelo enquanto tenta abrir a porta do porão.
+
+Não existe nada (NADA!) pior do que jogos de aventura puramente lineares, e esses gráficos fornecem uma maneira visual instantânea de enxergar onde o design está ficando excessivamente linear ou excessivamente descontrolado com escolhas demais (o que também é ruim).
+
+---
+PASSO 4: A ESTRUTURA EM LOSANGO (SUB-DIAMOND EXPANSION & CONTRACTION)
+[Imagens correspondentes: gg_pdc_6.jpg e gg_pdc_7.jpg]
+
+Quando você se afasta e olha para um Gráfico de Dependência de Puzzles completo e finalizado, você deve enxergar esse padrão geral composto por pequenas expansões e contrações em formato de sub-losangos (sub-diamond shapes):
+
+1. Resolver um puzzle deve abrir 2 ou 3 novos puzzles para o jogador explorar;
+2. Esses múltiplos ramos então se colapsam (não necessariamente no mesmo ritmo) em uma solução unificadora;
+3. Essa solução unificadora, por sua vez, abre novos ramos de puzzles não-lineares.
+
+O jogo começa com uma escolha simples; então os puzzles começam a se expandir em leque, oferecendo mais e mais atividades para o jogador realizar em paralelo, e então se afunilam e colapsam novamente.
+
+---
+PASSO 5: ATOS, GARGALOS E PODA DE INVENTÁRIO (INVENTORY CULLING)
+[Imagens correspondentes: gg_pdc_5.jpg e gg_pdc_4.jpg]
+
+Costumo projetar jogos de aventura em "Atos", onde cada ato termina com um gargalo (bottleneck) rigoroso antes de transitar para o próximo ato.
+
+Gosto de fazer isso por três motivos fundamentais:
+1. Proporciona ao jogador uma sensação real de conclusão e conquista periódica;
+2. Permite que o jogador "arquive" mentalmente um bloco inteiro de conhecimento que não será mais necessário;
+3. Se necessário, o inventário pode ser podado e limpo (Inventory Culling), descartando itens usados para que o jogador não carregue dezenas de quinquilharias obsoletas que só servem para gerar confusão em atos posteriores.
+
+Monkey Island tinha uma estrutura muito parecida com isso... [Ver gg_pdc_4.jpg e a folha original do caderno de design de Monkey Island 2 em MI2_puzzle1_small.jpg].
+
+---
+PASSO 6: DEPENDENCY CHARTS VERSUS FLOWCHARTS
+Por que eles são fundamentalmente diferentes?
+
+Eu não possuo mais o gráfico completo de Monkey Island original guardado, ou eu o publicaria. Já vi alguns que as pessoas fizeram online, mas a maioria são "fluxogramas" (flowcharts) e não "gráficos de dependência". 
+
+Tive incontáveis discussões com pessoas ao longo dos anos sobre as diferenças:
+- Fluxogramas (Flowcharts) são excelentes se você estiver tentando RESOLVER um jogo já existente (um passo-a-passo / walkthrough).
+- Gráficos de Dependência (Dependency Charts / DAGs) são a ferramenta perfeita se você estiver tentando PROJETAR um jogo.
+Eles revelam as amarras lógicas, os pré-requisitos e a liberdade de navegação paralela.
+
+---
+PASSO 7: SOFTWARES E FERRAMENTAS RECOMENDADAS
+Como construir esses gráficos?
+
+Você precisa de um software que reorganize automaticamente os gráficos à medida que você adiciona e conecta nós. Se você tentar fazer isso em um programa de desenho manual ou fluxogramas rígidos, passará a vida inteira reposicionando caixinhas para que as linhas não se cruzem. É um processo frustrante, demorado e que destrói a agilidade do design.
+
+Na Lucasfilm Games, usávamos um software antigo de agendamento de projetos (Project Management / CPM / PERT).
+Na era moderna, o melhor aplicativo que encontrei para isso é o OmniGraffle (para macOS). O OmniGraffle é construído sobre a ferramenta Unix clássica chamada Graphviz.
+
+O Graphviz (http://www.graphviz.org/) é espetacular: você alimenta o programa através de um arquivo de texto simples (.dot) contendo os nós e setas de dependência ("Find_Key -> Unlock_Door"), e ele compila e organiza visualmente o grafo de forma totalmente otimizada. É uma ferramenta "nerd nível 8", mas foi exatamente o que usei para projetar DeathSpank.
+
+--------------------------------------------------------------------------------
+3. ANÁLISE SISTÊMICA E REGRAS DE DESIGN EXTRAÍDAS DA METODOLOGIA DE GILBERT
+--------------------------------------------------------------------------------
+
+A partir do ensaio de Ron Gilbert e de sua prática na LucasArts, podemos formalizar princípios universais para qualquer designer de jogos narrativos e quebra-cabeças:
+
+1. O Princípio Anti-Frustração de LucasArts (The LucasArts Design Philosophy):
+   Diferente dos jogos de aventura da Sierra On-Line nos anos 80 (onde o jogador podia morrer sem aviso prévio ou esquecer um item no capítulo 1 e ficar travado no capítulo 4), a metodologia de Gilbert estipula:
+   - O jogador NUNCA deve morrer de surpresa;
+   - O jogador NUNCA deve cair em um estado de "beco sem saída" (dead end / unwinnable state);
+   - Toda derrota ou erro deve permitir recuperação imediata.
+
+2. A Regra do Paralelismo Mínimo (Evitar Travamentos Únicos):
+   Se o jogador encontrar um quebra-cabeça difícil em um jogo estritamente linear, ele para de jogar (abandono / churn). Em um grafo em losango, se o jogador travar na busca pela "chave", ele pode mudar de ambiente e se concentrar em "procurar a lata de óleo". O progresso continua fluindo e o cérebro processa o outro enigma em segundo plano (efeito de incubação psicológica).
+
+3. Estrutura Matemática: DAG (Directed Acyclic Graph):
+   Um gráfico de dependência de puzzles bem projetado é um Grafo Direcionado Acíclico (DAG):
+   - Direcionado: as setas apontam rigorosamente do pré-requisito para o objetivo desbloqueado;
+   - Acíclico: não podem existir loops de dependência circular (ex.: para pegar A você precisa de B, e para pegar B você precisa de A), o que causaria um deadlock de progressão.
+
+4. Poda de Inventário (Inventory Culling):
+   A sobrecarga cognitiva gerada pelo acúmulo excessivo de itens é uma das maiores armadilhas de adventure games. Quando um inventário passa de 15 a 20 objetos, o jogador tende a apelar para força bruta (tentar usar todos os itens em todos os pontos interativos da tela). Os gargalos de final de ato permitem que o designer retire itens que já cumpriram seu papel narrativo e mecânico.
+
+================================================================================
+FIM DO DOCUMENTO
+================================================================================

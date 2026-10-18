@@ -1,0 +1,778 @@
+{
+  "heads": {
+    "image-gen-8(20260930-235555)_0035_cabeça.png": {
+      "width": 1086,
+      "height": 1448,
+      "eye": {
+        "x": 452,
+        "y": 433,
+        "scale": 1,
+        "rotation": 0
+      },
+      "eyebrow": {
+        "x": 477,
+        "y": 388,
+        "scale": 1,
+        "rotation": 0
+      },
+      "nose": {
+        "x": 418,
+        "y": 486,
+        "scale": 1,
+        "rotation": 0
+      },
+      "mouth": {
+        "x": 434,
+        "y": 643,
+        "scale": 1,
+        "rotation": 0
+      },
+      "body": {
+        "x": 543,
+        "y": 966,
+        "scale": 1,
+        "rotation": 0,
+        "behind": true
+      },
+      "ear_left": {
+        "x": 280,
+        "y": 450,
+        "scale": 1,
+        "rotation": -2,
+        "behind": true
+      },
+      "ear_right": {
+        "x": 800,
+        "y": 450,
+        "scale": 1,
+        "rotation": 2,
+        "flipX": true,
+        "behind": true
+      },
+      "hair": {
+        "x": 542,
+        "y": 306,
+        "scale": 1,
+        "rotation": 0,
+        "behind": false,
+        "scales": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+        },
+        "offsets": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [
+            11,
+            -2
+          ],
+          "image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [
+            20,
+            5
+          ],
+          "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [
+            -3,
+            10
+          ],
+          "image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [
+            -7,
+            28
+          ],
+          "image-gen-8(20260930-235555)_0005_cabelo.png": [
+            52,
+            -8
+          ],
+          "image-gen-8(20260930-235555)_0004_cabelo.png": [
+            24,
+            -28
+          ],
+          "image-gen-8(20260930-235555)_0003_cabelo.png": [
+            32,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0002_cabelo.png": [
+            53,
+            89
+          ],
+          "image-gen-8(20260930-235555)_0001_cabelo.png": [
+            48,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [
+            -4,
+            66
+          ],
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [
+            -10,
+            24
+          ],
+          "image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [
+            1,
+            60
+          ]
+        }
+      }
+    },
+    "image-gen-8(20260930-235555)_0036_cabeça.png": {
+      "width": 1086,
+      "height": 1448,
+      "eye": {
+        "x": 473,
+        "y": 449,
+        "scale": 1,
+        "rotation": 0
+      },
+      "eyebrow": {
+        "x": 492,
+        "y": 398,
+        "scale": 1,
+        "rotation": 0
+      },
+      "nose": {
+        "x": 428,
+        "y": 506,
+        "scale": 1,
+        "rotation": 0
+      },
+      "mouth": {
+        "x": 441,
+        "y": 683,
+        "scale": 1,
+        "rotation": 0
+      },
+      "body": {
+        "x": 543,
+        "y": 966,
+        "scale": 1,
+        "rotation": 0,
+        "behind": true
+      },
+      "ear_left": {
+        "x": 280,
+        "y": 450,
+        "scale": 1,
+        "rotation": -2,
+        "behind": true
+      },
+      "ear_right": {
+        "x": 800,
+        "y": 450,
+        "scale": 1,
+        "rotation": 2,
+        "flipX": true,
+        "behind": true
+      },
+      "hair": {
+        "x": 543,
+        "y": 340,
+        "scale": 1,
+        "rotation": 0,
+        "behind": false,
+        "scales": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0002_cabelo.png": 0.9,
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+        },
+        "offsets": {
+          "image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [
+            18,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [
+            4,
+            6
+          ],
+          "image-gen-8(20260930-235555)_0005_cabelo.png": [
+            57,
+            -21
+          ],
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [
+            4,
+            -3
+          ],
+          "image-gen-8(20260930-235555)_0004_cabelo.png": [
+            46,
+            -55
+          ],
+          "image-gen-8(20260930-235555)_0003_cabelo.png": [
+            40,
+            -27
+          ],
+          "image-gen-8(20260930-235555)_0002_cabelo.png": [
+            54,
+            71
+          ],
+          "image-gen-8(20260930-235555)_0001_cabelo.png": [
+            62,
+            -19
+          ],
+          "image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [
+            6,
+            56
+          ],
+          "image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [
+            0,
+            36
+          ]
+        }
+      }
+    },
+    "image-gen-8(20260930-235555)_0037_cabeça.png": {
+      "width": 1086,
+      "height": 1448,
+      "eye": {
+        "x": 443,
+        "y": 448,
+        "scale": 1,
+        "rotation": 0
+      },
+      "eyebrow": {
+        "x": 477,
+        "y": 388,
+        "scale": 1,
+        "rotation": 0
+      },
+      "nose": {
+        "x": 418,
+        "y": 486,
+        "scale": 1,
+        "rotation": 0
+      },
+      "mouth": {
+        "x": 432,
+        "y": 675,
+        "scale": 1,
+        "rotation": 0
+      },
+      "body": {
+        "x": 543,
+        "y": 966,
+        "scale": 1,
+        "rotation": 0,
+        "behind": true
+      },
+      "ear_left": {
+        "x": 280,
+        "y": 450,
+        "scale": 1,
+        "rotation": -2,
+        "behind": true
+      },
+      "ear_right": {
+        "x": 800,
+        "y": 450,
+        "scale": 1,
+        "rotation": 2,
+        "flipX": true,
+        "behind": true
+      },
+      "hair": {
+        "x": 545,
+        "y": 347,
+        "scale": 1,
+        "rotation": 0,
+        "behind": false,
+        "scales": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+          "image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0002_cabelo.png": 0.94
+        },
+        "offsets": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [
+            -15,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [
+            -19,
+            -4
+          ],
+          "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [
+            -10,
+            -4
+          ],
+          "image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [
+            -14,
+            -8
+          ],
+          "image-gen-8(20260930-235555)_0005_cabelo.png": [
+            51,
+            -56
+          ],
+          "image-gen-8(20260930-235555)_0004_cabelo.png": [
+            22,
+            -64
+          ],
+          "image-gen-8(20260930-235555)_0003_cabelo.png": [
+            33,
+            -50
+          ],
+          "image-gen-8(20260930-235555)_0002_cabelo.png": [
+            32,
+            59
+          ],
+          "image-gen-8(20260930-235555)_0001_cabelo.png": [
+            41,
+            -34
+          ],
+          "image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [
+            -14,
+            29
+          ],
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [
+            -13,
+            19
+          ],
+          "image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [
+            -6,
+            20
+          ]
+        }
+      }
+    },
+    "image-gen-8(20260930-235555)_0038_cabeça.png": {
+      "width": 1086,
+      "height": 1448,
+      "eye": {
+        "x": 448,
+        "y": 441,
+        "scale": 1,
+        "rotation": 0
+      },
+      "eyebrow": {
+        "x": 477,
+        "y": 388,
+        "scale": 1,
+        "rotation": 0
+      },
+      "nose": {
+        "x": 418,
+        "y": 486,
+        "scale": 1,
+        "rotation": 0
+      },
+      "mouth": {
+        "x": 436,
+        "y": 697,
+        "scale": 1,
+        "rotation": 0
+      },
+      "body": {
+        "x": 543,
+        "y": 966,
+        "scale": 1,
+        "rotation": 0,
+        "behind": true
+      },
+      "ear_left": {
+        "x": 280,
+        "y": 450,
+        "scale": 1,
+        "rotation": -2,
+        "behind": true
+      },
+      "ear_right": {
+        "x": 800,
+        "y": 450,
+        "scale": 1,
+        "rotation": 2,
+        "flipX": true,
+        "behind": true
+      },
+      "hair": {
+        "x": 547,
+        "y": 329,
+        "scale": 1,
+        "rotation": 0,
+        "behind": false,
+        "scales": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+          "image-gen-8(20260930-235555)_0002_cabelo.png": 0.95
+        },
+        "offsets": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [
+            -15,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [
+            -16,
+            -11
+          ],
+          "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [
+            -14,
+            1
+          ],
+          "image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [
+            -17,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0005_cabelo.png": [
+            45,
+            -29
+          ],
+          "image-gen-8(20260930-235555)_0004_cabelo.png": [
+            18,
+            -53
+          ],
+          "image-gen-8(20260930-235555)_0003_cabelo.png": [
+            29,
+            -41
+          ],
+          "image-gen-8(20260930-235555)_0002_cabelo.png": [
+            41,
+            68
+          ],
+          "image-gen-8(20260930-235555)_0001_cabelo.png": [
+            45,
+            -25
+          ],
+          "image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [
+            -11,
+            36
+          ],
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [
+            4,
+            42
+          ],
+          "image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [
+            -6,
+            36
+          ]
+        }
+      }
+    },
+    "image-gen-8(20260930-235555)_0039_cabeça.png": {
+      "width": 1086,
+      "height": 1448,
+      "eye": {
+        "x": 463,
+        "y": 432,
+        "scale": 1,
+        "rotation": 0
+      },
+      "eyebrow": {
+        "x": 477,
+        "y": 388,
+        "scale": 1,
+        "rotation": 0
+      },
+      "nose": {
+        "x": 418,
+        "y": 486,
+        "scale": 1,
+        "rotation": 0
+      },
+      "mouth": {
+        "x": 426,
+        "y": 690,
+        "scale": 1,
+        "rotation": 0
+      },
+      "body": {
+        "x": 543,
+        "y": 966,
+        "scale": 1,
+        "rotation": 0,
+        "behind": true
+      },
+      "ear_left": {
+        "x": 280,
+        "y": 450,
+        "scale": 1,
+        "rotation": -2,
+        "behind": true
+      },
+      "ear_right": {
+        "x": 800,
+        "y": 450,
+        "scale": 1,
+        "rotation": 2,
+        "flipX": true,
+        "behind": true
+      },
+      "hair": {
+        "x": 563,
+        "y": 318,
+        "scale": 1,
+        "rotation": 0,
+        "behind": false,
+        "offsets": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [
+            -28,
+            21
+          ],
+          "image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [
+            -17,
+            -16
+          ],
+          "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [
+            -18,
+            5
+          ],
+          "image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [
+            -18,
+            14
+          ],
+          "image-gen-8(20260930-235555)_0005_cabelo.png": [
+            32,
+            -5
+          ],
+          "image-gen-8(20260930-235555)_0004_cabelo.png": [
+            16,
+            -37
+          ],
+          "image-gen-8(20260930-235555)_0003_cabelo.png": [
+            21,
+            -39
+          ],
+          "image-gen-8(20260930-235555)_0002_cabelo.png": [
+            35,
+            85
+          ],
+          "image-gen-8(20260930-235555)_0001_cabelo.png": [
+            35,
+            -4
+          ],
+          "image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [
+            -11,
+            62
+          ],
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [
+            -25,
+            4
+          ],
+          "image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [
+            -14,
+            49
+          ]
+        },
+        "scales": {
+          "image-gen-8(20260930-235555)_0004_cabelo.png": 1.05,
+          "image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.95
+        }
+      }
+    },
+    "image-gen-8(20260930-235555)_0040_cabeça.png": {
+      "width": 1086,
+      "height": 1448,
+      "eye": {
+        "x": 451,
+        "y": 435,
+        "scale": 1,
+        "rotation": 0
+      },
+      "eyebrow": {
+        "x": 477,
+        "y": 388,
+        "scale": 1,
+        "rotation": 0
+      },
+      "nose": {
+        "x": 418,
+        "y": 486,
+        "scale": 1,
+        "rotation": 0
+      },
+      "mouth": {
+        "x": 428,
+        "y": 697,
+        "scale": 1,
+        "rotation": 0
+      },
+      "body": {
+        "x": 543,
+        "y": 966,
+        "scale": 1,
+        "rotation": 0,
+        "behind": true
+      },
+      "ear_left": {
+        "x": 280,
+        "y": 450,
+        "scale": 1,
+        "rotation": -2,
+        "behind": true
+      },
+      "ear_right": {
+        "x": 800,
+        "y": 450,
+        "scale": 1,
+        "rotation": 2,
+        "flipX": true,
+        "behind": true
+      },
+      "hair": {
+        "x": 556,
+        "y": 328,
+        "scale": 1,
+        "rotation": 0,
+        "behind": false,
+        "scales": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 1,
+          "image-gen-8(20260930-235555)_0005_cabelo.png": 1,
+          "image-gen-8(20260930-235555)_0002_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.9
+        },
+        "offsets": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [
+            -20,
+            16
+          ],
+          "image-gen-8(20260930-235555)_0000s_0003_cabelo.png": [
+            -19,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [
+            -17,
+            7
+          ],
+          "image-gen-8(20260930-235555)_0000s_0006_cabelo.png": [
+            -15,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0005_cabelo.png": [
+            42,
+            -29
+          ],
+          "image-gen-8(20260930-235555)_0004_cabelo.png": [
+            19,
+            -53
+          ],
+          "image-gen-8(20260930-235555)_0003_cabelo.png": [
+            21,
+            -31
+          ],
+          "image-gen-8(20260930-235555)_0002_cabelo.png": [
+            37,
+            70
+          ],
+          "image-gen-8(20260930-235555)_0001_cabelo.png": [
+            38,
+            -15
+          ],
+          "image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [
+            -9,
+            38
+          ],
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [
+            -18,
+            -2
+          ],
+          "image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [
+            -10,
+            43
+          ]
+        }
+      }
+    },
+    "image-gen-8(20260930-235555)_0041_cabeça.png": {
+      "width": 1086,
+      "height": 1448,
+      "eye": {
+        "x": 465,
+        "y": 424,
+        "scale": 1,
+        "rotation": 0
+      },
+      "eyebrow": {
+        "x": 477,
+        "y": 388,
+        "scale": 1,
+        "rotation": 0
+      },
+      "nose": {
+        "x": 418,
+        "y": 486,
+        "scale": 1,
+        "rotation": 0
+      },
+      "mouth": {
+        "x": 426,
+        "y": 683,
+        "scale": 1,
+        "rotation": 0
+      },
+      "body": {
+        "x": 543,
+        "y": 966,
+        "scale": 1,
+        "rotation": 0,
+        "behind": true
+      },
+      "ear_left": {
+        "x": 280,
+        "y": 450,
+        "scale": 1,
+        "rotation": -2,
+        "behind": true
+      },
+      "ear_right": {
+        "x": 800,
+        "y": 450,
+        "scale": 1,
+        "rotation": 2,
+        "flipX": true,
+        "behind": true
+      },
+      "hair": {
+        "x": 525,
+        "y": 339,
+        "scale": 1,
+        "rotation": 0,
+        "behind": false,
+        "scales": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": 0.97,
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": 0.98,
+          "image-gen-8(20260930-235555)_0005_cabelo.png": 0.95,
+          "image-gen-8(20260930-235555)_0002_cabelo.png": 0.95
+        },
+        "offsets": {
+          "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": [
+            6,
+            8
+          ],
+          "image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": [
+            21,
+            0
+          ],
+          "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": [
+            10,
+            1
+          ],
+          "image-gen-8(20260930-235555)_0000s_0007_cabelo.png": [
+            20,
+            27
+          ],
+          "image-gen-8(20260930-235555)_0005_cabelo.png": [
+            65,
+            -34
+          ],
+          "image-gen-8(20260930-235555)_0004_cabelo.png": [
+            42,
+            -61
+          ],
+          "image-gen-8(20260930-235555)_0003_cabelo.png": [
+            53,
+            -35
+          ],
+          "image-gen-8(20260930-235555)_0002_cabelo.png": [
+            68,
+            53
+          ],
+          "image-gen-8(20260930-235555)_0001_cabelo.png": [
+            65,
+            -18
+          ],
+          "image-gen-8(20260930-235555)_0000s_0008_cabelo.png": [
+            17,
+            31
+          ],
+          "image-gen-8(20260930-235555)_0000s_0005_cabelo.png": [
+            18,
+            29
+          ]
+        }
+      }
+    }
+  }
+}

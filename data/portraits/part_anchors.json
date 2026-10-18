@@ -1,0 +1,311 @@
+{
+  "version": 1,
+  "rules": {
+    "face_margin_px": 12,
+    "neighbor_gap_px": 4,
+    "inner_max_outside": 0.02,
+    "ear_min_visible": 0.15,
+    "ear_max_outside": 0.97,
+    "ear_target_visible": 0.35
+  },
+  "parts": {
+    "ear": {},
+    "eye": {
+      "image-gen-8(20260930-235555)_0009_olho.png": {
+        "pivot": [
+          0.4222,
+          0.2956
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0015_olho.png": {
+        "pivot": [
+          0.4199,
+          0.3015
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0019_olhos.png": {
+        "pivot": [
+          0.4392,
+          0.3001
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0024_olho.png": {
+        "pivot": [
+          0.4222,
+          0.2966
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0029_olho.png": {
+        "pivot": [
+          0.4268,
+          0.2918
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0034_olho.png": {
+        "pivot": [
+          0.4259,
+          0.3032
+        ],
+        "native_scale": 1
+      }
+    },
+    "eyebrow": {
+      "image-gen-8(20260930-235555)_0010_sobrancelha.png": {
+        "pivot": [
+          0.4332,
+          0.2628
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0016_sobrancelha.png": {
+        "pivot": [
+          0.4415,
+          0.2655
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0020_sobancelha.png": {
+        "pivot": [
+          0.4517,
+          0.2731
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0025_sobrancelha.png": {
+        "pivot": [
+          0.4337,
+          0.2693
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0030_sobrancelha.png": {
+        "pivot": [
+          0.4429,
+          0.2597
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0033_sobrancelha.png": {
+        "pivot": [
+          0.4328,
+          0.2752
+        ],
+        "native_scale": 1
+      }
+    },
+    "nose": {
+      "image-gen-8(20260930-235555)_0008_nariz.png": {
+        "pivot": [
+          0.3692,
+          0.336
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0014_nariz.png": {
+        "pivot": [
+          0.3881,
+          0.3443
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0018_nariz.png": {
+        "pivot": [
+          0.3969,
+          0.3356
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0022_nariz.png": {
+        "pivot": [
+          0.3762,
+          0.3339
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0028_nariz.png": {
+        "pivot": [
+          0.3987,
+          0.3249
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0032_Nariz.png": {
+        "pivot": [
+          0.3794,
+          0.3387
+        ],
+        "native_scale": 1
+      }
+    },
+    "mouth": {
+      "image-gen-8(20260930-235555)_0012_boca.png": {
+        "pivot": [
+          0.3854,
+          0.4472
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0013_boca.png": {
+        "pivot": [
+          0.4015,
+          0.4513
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0017_boca.png": {
+        "pivot": [
+          0.4125,
+          0.4392
+        ],
+        "native_scale": 0.93
+      },
+      "image-gen-8(20260930-235555)_0023_boca.png": {
+        "pivot": [
+          0.4029,
+          0.4403
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0026_boca.png": {
+        "pivot": [
+          0.4006,
+          0.4413
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0031_Boca.png": {
+        "pivot": [
+          0.3923,
+          0.4448
+        ],
+        "native_scale": 1
+      }
+    },
+    "chin": {},
+    "skin_mark": {},
+    "hair": {
+      "image-gen-8(20260930-235555)_0001_cabelo.png": {
+        "pivot": [
+          0.5456,
+          0.2106
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0002_cabelo.png": {
+        "pivot": [
+          0.546,
+          0.2818
+        ],
+        "native_scale": 1.11
+      },
+      "image-gen-8(20260930-235555)_0003_cabelo.png": {
+        "pivot": [
+          0.5295,
+          0.2186
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0004_cabelo.png": {
+        "pivot": [
+          0.5272,
+          0.1965
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0005_cabelo.png": {
+        "pivot": [
+          0.5433,
+          0.2086
+        ],
+        "native_scale": 1.05
+      },
+      "image-gen-8(20260930-235555)_0000s_0003_cabelo.png": {
+        "pivot": [
+          0.5,
+          0.25
+        ],
+        "native_scale": 0.92
+      },
+      "image-gen-8(20260930-235555)_0000s_0004_cabelo.png": {
+        "pivot": [
+          0.5,
+          0.25
+        ],
+        "native_scale": 0.95
+      },
+      "image-gen-8(20260930-235555)_0000s_0002_cabelo-.png": {
+        "pivot": [
+          0.5,
+          0.25
+        ],
+        "native_scale": 0.96
+      },
+      "image-gen-8(20260930-235555)_0000s_0001_cabelo.png": {
+        "pivot": [
+          0.4976,
+          0.2394
+        ],
+        "native_scale": 1
+      },
+      "image-gen-8(20260930-235555)_0000s_0006_cabelo.png": {
+        "pivot": [
+          0.5,
+          0.25
+        ],
+        "native_scale": 0.91
+      }
+    },
+    "body": {
+      "image-gen-8(20260930-235555)_0042_corpo.png": {
+        "pivot": [
+          0.5,
+          0.6668
+        ],
+        "native_scale": 1
+      }
+    },
+    "collar": {
+      "Caricatura retrô com gola redonda.png": {
+        "width_factor": 1.25,
+        "top_factor": 0.16,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": 1.0
+      },
+      "Caricatura vintage com gola de futebol.png": {
+        "width_factor": 1.25,
+        "top_factor": 0.16,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": 1.0
+      },
+      "Retrato esportivo com gola polo retrô.png": {
+        "width_factor": 1.25,
+        "top_factor": 0.16,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": 1.0
+      },
+      "Retrato retrô com gola mandarim azul-marinho.png": {
+        "width_factor": 1.25,
+        "top_factor": 0.16,
+        "offset": [
+          0.0,
+          0.0
+        ],
+        "scale": 1.0
+      }
+    }
+  }
+}

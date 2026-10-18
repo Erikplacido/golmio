@@ -1,0 +1,15 @@
+{
+  "min": 1,
+  "max": 99,
+  "attributes": [
+    { "id": "pace",        "label": "Velocidade",     "group": "outfield",   "doc": "Aceleração e velocidade máxima." },
+    { "id": "physical",    "label": "Físico",         "group": "outfield",   "doc": "Proteção de bola, divididas, resistência à carga." },
+    { "id": "passing",     "label": "Passe",          "group": "outfield",   "doc": "Precisão e visão (curtos e em profundidade)." },
+    { "id": "finishing",   "label": "Finalização",    "group": "outfield",   "doc": "Calibre, precisão e conversão." },
+    { "id": "tackling",    "label": "Desarme",        "group": "outfield",   "doc": "Bote limpo e corte de linhas de passe." },
+    { "id": "positioning", "label": "Posicionamento", "group": "all",        "doc": "Ocupação de espaço; no goleiro, fechamento de ângulo." },
+    { "id": "reflexes",    "label": "Reflexo",        "group": "goalkeeper", "doc": "Reação a chutes à queima-roupa." },
+    { "id": "elasticity",  "label": "Elasticidade",   "group": "goalkeeper", "doc": "Alcance em bolas no ângulo." },
+    { "id": "stamina",     "label": "Estamina",       "group": "all",        "doc": "Reserva de energia; rege o decaimento ao longo da partida." }
+  ]
+}

@@ -1,0 +1,1174 @@
+                                              THE ART OF
+                      Puzzle Game Design
+                        Scott Kim & Alexey Pajitnov
+                               March 15, 1999
+                        Game Developers Conference
+These are presentation slides from an all­day tutorial given at the 1999 Game Developers Conference</A> in San Jose. This copy of the 
+slides was taken from www.scottkim.com/articles. All screen shots are copyrighted by the respective game publishers.
+                                                      Puzzles
+       ❥    Part of many games.
+       ❥    Adventure, education, action, web
+       ❥    But how do you create them?
+
+
+
+
+                                                                    
+Whether you are designing levels for an cartridge­based action puzzle game, creating puzzle templates for a CD­ROM puzzle anthology, 
+adding puzzles to an adventure game, or designing an educational game, you need to know how to design good puzzles.
+                         Good News / Bad News
+
+      Mental challenge                                                                    Marketable?
+
+      Nonviolent                                                                           Dramatic?
+
+      Easy to program                                                                     Hard to invent?
+
+      Growing market                                                                      Small market?
+                                                                       
+The good news is that puzzles appeal widely to both males and females of all ages. Although the current market is small, it is rapidly 
+expanding, as computers become a mass market commodity and players demand familiar family games.
+                                                       Outline
+       Types of Puzzle Games
+       Examples: Pipe Dream, Honey Way, Lineman
+       Examples: Fool, Incred Machine, Puzzle Zone
+       Case Study: Jesse’s Strips
+       Case Study: Charlie Blast’s Territory
+       Case Study: Scott Kim’s Puzzle Box
+       Exercises: Idea Invention, Word Sokoban
+                                                                      
+We’ll start by surveying examples of outstanding puzzle games. Then Alexey and I will go into detail about some of our current projects. 
+I’ll describe the eight steps in the puzzle design process. Finally we’ll split into groups of five people each and do projects.
+                Types of Puzzle Games
+
+                                     What every puzzle
+                                    designer should know
+
+
+Here are four basic ways to categorize the types of possible puzzle games.
+                                                                             Scott Kim
+                       Varieties of Play Activity
+
+
+
+
+                                                                       
+There are four types of play. Noninteractive experiences include books and movies. A Toy has no set goal. A Puzzle has a goal: find the 
+solution. The goal of a Game is to beat another player. Each type of play builds on the previous type: a puzzle should first be a good toy.
+                        Genres of Puzzle Games
+
+
+
+
+                                                                     
+Action puzzle games have time pressure and a way to fix mistakes. Story puzzle games have puzzles that advance the plot. Strategy puzzle 
+games are based on multiplayer games. Construction puzzle games let you build something. Pure puzzle games are just puzzles.
+                                     Player Motivation
+
+
+
+
+                                                                       
+Different people play puzzls for different reasons. Some see puzzles as metaphors for spiritual journeys. Puzzle fans like the challenge of 
+finding the answer. Tetris and Solitaire players use puzzles as light distractions. People buy Disney titles for the familiar characters.
+                                                    Modality
+
+
+
+
+                                                                      
+People who play puzzles tend to prefer one of three basic types: Word, Image or Logic puzzles. Each of these types of puzzle uses a 
+different mode of thought. Of course some puzzles combine more than one mode. For instance, Hangman is a logical word game.
+                                                EXAMPLES
+                                       Pipe Dream
+                                             One concept,
+                                             Three designs
+
+
+Here are some of our favorite puzzle games (other than ones we have designed). We 
+                                                                                     Alexey Pajitnov
+chose examples that cover the full range of issues that arise in designing puzzle games.
+                                                Pipe Dream
+       ❥     The simplest
+             construction on the
+             regular grid is the path
+             from one cell to
+             another
+
+
+
+
+                                                                      
+Although Pipe Dream could be classified as an action puzzle game, at its heart it is a construction game. Other examples of constructive 
+puzzles are: Lemmings, The Incredible Machine, Puyo­Puyo.
+                                                Pipe Dream
+       ❥     After obvious
+             straightening of the
+             path we realize that we
+             need a very simple set
+             of pieces:
+
+
+
+
+                                                                      
+To make the concept of constructing a path more suitable for a computer game we restrict lines to a square grid. 
+                                              Pipe Dream
+
+       ❥4 corners
+       ❥2 two lines
+
+       ❥1 cross
+
+
+                                                                   
+Seven pieces is a magic number. Tetris has seven pieces. Psychologists have found the human short term memory can hold about seven 
+things (plus or minus two). That is why 7­digit telephone numbers are so much easier to remember than 10­digit numbers.
+                          Pipe Dream
+       CONCEPT:
+       ❥     Build a path from one cell to another using
+             one-cell elements
+
+
+
+
+                                   
+So this is the concept.
+                                              Pipe Dream
+       DESIGN ELEMENTS:
+       ❥ Playing field   Regular grid 7x10
+       ❥ Objects         4 corners, 2 lines, 1 cross
+       ❥ Rules           Source of pieces: 5-cell stack
+       ❥ User interface  Click to place; replace takes time
+       ❥ Scoring, levels Nothing special
+
+
+
+
+                                                             
+To make a game, we need to specify these design elements.
+                          Pipe Dream (original)
+                  CONCEPT: Build a path from one cell to another
+                           using one-cell elements
+       ❥    Playing field                         Regular grid 7x10
+       ❥    Objects                               4 corners, 2 lines, 1 cross
+       ❥    Rules                                 Source of pieces: 5-cell stack
+       ❥    User interface                        Click to place; replace takes time
+       ❥    Scoring, levels                       Nothing special
+
+
+                                                                    
+For the original Pipe Dream, published by LucasFilm Games, these were the design decisions.
+  Pipe Dream (Microsoft bonus level)
+                CONCEPT: Build a path from one cell to another
+                         using one-cell elements
+    ❥      Playing field                         Regular grid 7x10
+    ❥      Objects                               4 corners, 2 lines, 1 cross
+    ❥      Rules                                 Sliding tiles
+    ❥      User interface                        Click to slide, restriction on drawn path
+    ❥      Scoring, levels                       Nothing special
+
+
+                                                                     
+But other games can be built based on the same concept. The Microsoft Entertainment Pack version of Pipe Dream includes a sliding tile 
+variation as its bonus level. Quite a good game.
+   Pipe Dream (Lucasfilm bonus level)
+                 CONCEPT: Build a path from one cell to another
+                          using one-cell elements
+       ❥     Playing field                           Regular grid 7x10
+       ❥     Objects                                 4 corners, 2 lines, 1 cross
+       ❥     Rules                                   Falling tiles (like Tetris)
+       ❥     User interface                          Control while falling
+       ❥     Scoring, levels                         Nothing special
+
+
+                                                                       
+The original Lucasfilm version includes a Tetris­like variation of Pipe Dream as its bonus level. Very hard game; it is almost impossible to 
+construct paths of more than about five tiles. 
+                                          Honey Way
+                CONCEPT: Build a path from one cell to another
+                         using one-cell elements
+       ❥    Playing field                         Variable hexagonal grid
+       ❥    Objects                               All corners and lines, 3 crosses
+       ❥    Rules                                 Preset sources, crosses and obstacles
+       ❥    User interface                        Drawing the path as freehand
+       ❥    Scoring, levels                       Nothing special
+
+
+                                                                   
+For the Mind Aerobics daily puzzle on the Internet Gaming Zone, Alexey created a simpler game based on the same concept. The grid was 
+changed from square to hexagonal, the player could build paths freely by drawing lines, and sources, crosses and obstacles were given.
+                                            Honey Way
+
+
+
+
+                                                            
+The hexagonal grid suggested the theme: bees and honey. 
+                                                Honey Way
+
+
+
+
+                                                                      
+The player tries to construct a line of honey from one honey blob to another by drawing lines from one cell to another.
+                                                 Honey Way
+
+
+
+
+                                                                         
+The path must pass through every cell of the grid once, crossing over itself at the flowers in the directions indicated by the petals. Here is a 
+complete solution. It looks complicated, but the hexagonal grid is actually more forgiving for path construction than a square grid.
+                                             Honey Way
+
+
+
+
+                                                  
+Dangerous bees complicate some of the puzzles.
+                                                  Lineman
+                                 CONCEPT: Build any cyclic path
+                                    using one-cell elements
+      ❥    Playing field                          Regular grid 10x10
+      ❥    Objects                                4 corners, 2 lines, 1 cross
+      ❥    Rules                                  Pieces appear on field; loops collapse
+      ❥    User interface                         Click to rotate pieces in place
+      ❥    Scoring, levels                        Nothing special
+
+
+                                                                       
+Lineman, from the Russian Six Pack (Interplay) uses the same seven objects but different rules. Pieces appear directly on the playing field 
+and can only be rotated, not moved. The goal is construct loops, which collapse, not paths from one place to another. Excellent game.
+                                                  EXAMPLES
+             Fool’s Errand, Incredible
+              Machine, Puzzle Zone
+                                               Three games,
+                                               Three genres
+
+
+Here are other puzzle games that demonstrate some of the design challenges in other puzzle game genres.
+                                                                                                          Scott Kim
+                                    The Fool’s Errand
+       ❥     Integrated story, puzzles, art
+       ❥     Idiomatic puzzles
+       ❥     Metapuzzle
+
+
+
+
+                                                                       
+Created solely by Cliff Johnson in the 80s, The Fool’s Errand is an integrated work of art. Each puzzle links with a tarot card and story 
+segment. The bold silhouette art style looks good on a small screen. Each puzzle unlocks part of a larger unifying “meta­puzzle”.
+                          The Incredible Machine
+
+
+
+
+                                                                        
+The Incredible Machine (TIM) is the best construction puzzle game. There are three important design decisions. Decision 1: allow the 
+player to build things. SimCity, shown above, allows  construction, but does not give the player a fixed goal and is thus a toy, not a puzzle.
+                         The Incredible Machine
+
+
+
+
+                                                                     
+Decision 2. No realtime decision making. In contrast, Lemmings, shown above, requires players to solve the puzzle by repositioning 
+lemmings while they are walking around. In The Incredible Machine, building and running machines happen in separate modes.
+                         The Incredible Machine
+
+
+
+
+                                                                      
+Decision 3: Player authoring. In contrast, Marble Drop, shown here, has separate build and run modes, but does not allow the player to 
+construct original puzzles. Instead, all the puzzles come preconstructed, which allows Marble Drop to have beautifully rendered screens.
+                          The Incredible Machine
+
+
+
+
+                                                                         
+In The Incredible Machine, players can build their own puzzles in a separate freeform construction mode, separate from puzzle mode. The 
+goal of this particular puzzle is to get all balls into all the aquariums using a motley collection of ropes, pulleys, ramps and other devices. 
+                          The Incredible Machine
+       ❥     Physical simulation
+       ❥     Player authoring
+       ❥     Integrated controls
+
+
+
+
+                                                                        
+The designers of TIM did a brilliant job of including a broad range of play elements that all interact with one another within a rich physics 
+model, while keeping the user interface simple and obvious.
+                                            Puzzle Zone
+
+
+
+
+                                                                   
+The Puzzle Zone on America Online [editor’s note: now on boxerjam.com] is a good example of an online puzzle. Following the model of 
+newspaper puzzles, Puzzle Zone delivers four new puzzles every day. The puzzles add new twists to familiar word games.
+                                              Puzzle Zone
+
+
+
+
+                                                                     
+Flexicon, shown above, is a twist on a crossword puzzle. The problem with crossword puzzles on computer is that the screen is too small to 
+hold a large puzzle. The solution here is to save space by overlapping four rectangular regions, only one of which is visible at a time. 
+                                               Puzzle Zone
+
+
+
+
+                                                                      
+Strip Search adds new twists to the familiar word search.: The theme here — Joes — was inspired by the topical event of Joe Dimaggio’s 
+death. Found words appear in order of length, giving the player a hint. When all words are found, the leftover letters form a witty phrase.
+                                             Puzzle Zone
+
+
+
+
+                                                                    
+Finally, the Puzzle Zone also includes elements that build community and encourage players to keep coming back: message boards, high 
+score boards, and a place to buy branded merchandise.
+                                              Puzzle Zone
+       ❥    Familiar puzzles
+       ❥    Daily editions
+       ❥    Online community
+
+
+
+
+                                                                     
+The puzzles in Puzzle Zone are somewhat mundane and obvious, but that is not a bad thing. By using familiar puzzle types, the Puzzle 
+Zone lowers the barrier to entry. Furthermore, word games require very little data to be downloaded, so play is snappy.
+                                                CASE STUDY
+                                       Jesse’s Strips
+                                  Recent design experience
+                                        with 3 aha’s
+
+
+Jesse’s Strips, designed by Alexey Pajitnov, is one of a number of image­based puzzles 
+from Pandora’s Box, a forthcoming title from Microsoft.                                   Alexey Pajitnov
+                                          Jesse’s Strips
+       CONCEPT
+       ❥    To make jigsaw puzzle using long narrow
+            pieces (strips)
+
+
+
+
+                                                                  
+One of the members of the Pandora’s Box team suggested the concept.
+                                           Jesse’s Strips
+       PROBLEM
+       ❥    The playing field is too messy
+
+
+
+
+                                                   
+The problem with long skinny pieces, however...
+                                                 
+Is that the playing field quickly gets messy.
+                                        Jesse’s Strips
+                                 Problem:
+                       The playing field is too messy
+                                Solutions:
+  no       ❥     Stack the pieces
+  no       ❥     Separate picture and pieces in different windows
+  ??       ❥     Enlarge the space for more than one screen
+
+                          no       ❥     Scroll the playing field
+                     Yes!          ❥     Paginate the playing field
+                                                                       
+I considered many possible solutions before hitting on the idea of spreading the pieces across several different pages.
+                          Jesse’s Strips
+                              First AHA:
+             To make multiple pages and repeat the picture in
+             progress on each of them, distributing the pieces.
+
+
+
+
+                                      
+This was the first Aha.
+                                         Jesse’s Strips
+                                              Problem:
+                     Player does not understand what happens
+                              when the pages switch
+                                              Solutions:
+            no      ❥     Change picture position
+            no      ❥     Change background look (color, texture)
+            no      ❥     Use animation for changing pages
+       Yes!         ❥     Change the picture in progress.
+
+                                                    
+But this insight raised another problem... 
+                                       Jesse’s Strips
+                                         Second AHA:
+    To emphasize certain color for the picture on each page;
+         to do the same with the pieces on the page.
+
+
+
+
+                                               
+Which in turn required a second Aha.
+                                       Jesse’s Strips
+                                                      Problem:
+                    We need to move the pieces from page to
+                    page now and User Interface become too
+                                 complicated
+                                                    Solutions:
+    Yes!           ❥     Work on UI
+    Yes!
+                   ❥     Connect the piece movements with rotations
+
+                                                                     
+The final insight was motivated by wanting to keep the user interface simple. Instead of separate commands to rotate pieces and changes 
+pages...
+                                        Jesse’s Strips
+                                                     Third AHA:
+     To move the piece to the next page together with the 90
+                       degrees rotation.
+
+
+
+
+The two things happen together. This is a good 
+example of how the difficulties in realizing a 
+particular puzzle concept can guide the designer 
+toward novel solutions. [Editor’s note: the final 
+         
+published version in Pandora’s Box works                  
+differently.] 
+                                                 CASE STUDY
+               Charlie Blast’s Territory
+                               Adding action to a classic
+                                computer puzzle game
+
+
+Charlie Blast’s Territory is a game for the Nintendo 64  published by Kemco. Kemco hired Realtime 
+Associates to develop the game; they in turn hired Scott to assist in game design and level design for the 
+puzzles. This example highlights some of the techniques he used in level design.                              Scott Kim
+                                                    Sokoban
+       ❥    Classic, widely copied
+       ❥    Simple rules
+       ❥    Deep puzzles
+       ❥    Fits the medium
+
+
+
+
+                                                                    
+Charlie Blast is based on the classic puzzle game Sokoban, which is one of the most widely copied computer games. It has simple rules 
+that are easy to program, yet has deep gameplay. It works well on low­resolution displays with simple arrow controls, such as GameBoy.
+                                Changing Sokoban
+       ❥    Pieces: Bombs, shapes, pictures
+       ❥    Board: Breakaway, ice, bumper
+       ❥    Moves: Push two, pull not push
+       ❥    Goal: Push to hole, arrange bombs
+       ❥    Play mode: Multiplayer, action
+
+
+
+                                                                  
+One of the most common ways to create a new game is to change an existing game. Here are some ways to change Sokoban.
+                       Charlie Blast’s Territory
+       ❥    Based on Sokoban
+       ❥    For N64, American audience
+       ❥    Uses 3D graphics
+       ❥    Adds action elements
+
+
+
+
+                                                                   
+For Charlie Blast’s Territory Kemco decided to pump up the 3D action elements of the game by using 3D perspective, moving camera, 
+animated main character (Charlie Blast), and adding action elements.
+           Challenge: Add Action Features
+       ❥     Jumping
+       ❥     Autodetonator
+       ❥     Moving platforms, spikes
+       ❥     Multiplayer competitive mode
+       ❥     Not included: damage
+
+
+
+                                                                     
+We added common action game features like jumping, moving platforms, moving spikes, and a multiplayer competitive mode. We did not 
+include damage points, because that would have shifted the emphasis of gameplay too far in the direction of dexterity, not puzzle solving.
+            Challenge: Add Other Features
+       ❥    Bombs & Detonator
+       ❥    Objects: TNT crates, blocks
+       ❥    Tiles: breakaway, ice, trampolines
+       ❥    Not included: enemy characters
+
+
+
+
+                                                                     
+Features like bombs, blocks and breakaway tiles add depth and variety to the underlying Sokoban game. Of course features interact with 
+each other. TNT crates and blocks were introduced specifically to complement the jumping ability.
+                                                      Bombs
+
+
+
+
+                                                                   
+Here’s how bombs work. A 1 bomb blows up itself. A 2 bomb also blows up the four adjacent squares. A 3 bomb blows up a larger 
+diamond region. The detonator and TNT act like a 2 bomb. You can light pm;u a detonator, and you can jump only over TNT.
+                                                          Bombs
+
+
+
+
+                                                                        
+The goal of every puzzle is to arrange the bombs so that when Charlie lights the detonator, it triggers a chain reaction that blows up all the 
+bombs. Suppose Charlie lights the detonator in this configuration. Which bombs will not blow up?
+                                                       Bombs
+
+
+
+
+                                                                    
+Here’s the answer. The only bombs that don’t blow up are the 1 bomb at right, which is too far away from a 2 bomb, and the 2 and TNT 
+bombs in the lower left, which touch another 2 bomb diagonally.
+                      Challenge: Design Levels
+       ❥     60 levels = 6 groups of 10
+       ❥     Easy to hard within a group
+       ❥     Each group features different devices
+
+
+
+
+                                                                      
+The bulk of my time was spent designing the 60 levels, structured as 6 ramps of 10 puzzles each. Puzzles within a ramp start easy and get 
+harder. Each ramp has a different visual theme and emphasizes a different mix of features, to keep the game from getting too repetitive.
+                                         Building Levels
+       ❥     Tell a Story
+       ❥     Paint a Picture
+       ❥     Create a Mood
+       ❥     Use Math
+       ❥     Exploit features
+       ❥     Lay a Trap
+
+                                                                        
+I used many different strategies for coming up with ideas for levels, so that there would be a wide variety of puzzle types. Here are six of 
+my strategies. Following are examples of how I used each strategy to design a particular level.
+                Building Levels: Tell a Story
+                                           #17 Run Like Crazy
+
+
+
+
+                                                                       
+Some puzzles are structured as a linear sequence of events. For this puzzle, Î started by drawing a board that wraps a long narrow corridor 
+into a small space.
+                Building Levels: Tell a Story
+                                          #17 Run Like Crazy
+
+
+
+
+                                                                      
+This puzzle features an autodetonator, shown in red here, which blows up automatically in a preset amount of time unless you touch it to 
+reset it. The basic drama of this puzzle is that you must run to the autodetonator, then push it back a long way so it blows up a bomb.
+                Building Levels: Tell a Story
+                                          #17 Run Like Crazy
+
+
+
+
+                                                                     
+I then compounded the puzzle by adding obstacles along the three legs of the journey. Moving spikes that raise and lower out of the game 
+cause you to have to wait a bit before you can get to the autodetonator ­­ frustrating when you have to get there quickly.
+                Building Levels: Tell a Story
+                                           #17 Run Like Crazy
+
+
+
+
+                                                                        
+Next you must push the autodetonator onto a moving platform that travels slowly to the right, then push it off. Again, timing is critical if 
+you are to execute this move before the autodetonator blows up.
+                Building Levels: Tell a Story
+                                           #17 Run Like Crazy
+
+
+
+
+                                                            
+I added one more spike in the right leg of the journey..
+               Building Levels: Tell a Story
+                                         #17 Run Like Crazy
+
+
+
+
+                                                                    
+Finally there is the end game. One bombs only blow up themselves, so the ending position must be an autodetonator surrounded by one 
+bombs. Because two of the 1 bombs are against walls they cannot be pushed away from, there is only one possible ending position.
+           Building Levels: Paint a Picture
+                                #48 Ice Rink. Initial pattern.
+
+
+
+
+                                                                        
+Another way to invent a puzzle is to start with a pretty pattern, then try playing it. Here are three opening positions I considered for the 
+puzzle Ice Rink. They look similar, but behave very differently. You cannot stop moving on ice until you hit a wall or reach solid ground.
+           Building Levels: Paint a Picture
+                               #49 Diamond. Initial pattern.
+
+
+
+
+                                                                       
+Here are three patterns I considered for a puzzle called Diamond, which features a patch of ice surrounded by solid ground. After drawing 
+the opening patterns I played them to see if they could be solved. If they were not solvable, I then had to decide how to modify the pattern.
+           Building Levels: Paint a Picture
+                                     #60 The… Final pattern.
+
+
+
+
+                                                                        
+For the final puzzle I decided to aim for a pretty final position that would spell the word “End”. This is what I originally hoped for..
+           Building Levels: Paint a Picture
+                                   #60 The… Initial pattern.
+
+
+
+
+                                                                     
+The actual final puzzle required many modifications to the boards and pieces to make sure that the puzzle only had one solution. Shown 
+here is the final beginning position.
+           Building Levels: Paint a Picture
+                              #57 Pinball. Overall picture.
+
+
+
+
+                                                                   
+One of the features of Charlie Blast is bumpers, which rebound bombs pushed into them. Bumpers reminded me of pinball bumpers, so I 
+built this puzzle to look like a pinball machine, complete with a moving beltway for returning a queue of balls into play.
+           Building Levels: Create a Mood
+                                                 #16 Long Haul
+
+
+
+
+                                                                      
+Some puzzles create distinct moods. Long haul, for instance, creates a frantic suspenseful mood as you must run further and further away 
+from an autodetonator with a very short fuse in order to reposition bombs that are further and further away.
+           Building Levels: Create a Mood
+                                                 #16 Long Haul
+
+
+
+
+                                                                      
+It is easy to see that the autodetonator and 1 bomb cannot move, so the solution must be to create a chain of 3 bombs reaching from one 
+end to the other.
+           Building Levels: Create a Mood
+                                                   #16 Long Haul
+
+
+
+
+                                                                         
+Or is it really that easy? A bit of analysis will show that the previous solution cannot be achieved, so a modified chain like this is 
+necessary.
+                   Building Levels: Use Math
+                                                  #39 Peninsula
+
+
+
+
+                                                                     
+Puzzle designers often mine mathematics for ideas. Shown above is a puzzle based on the mathematical idea of a tour. The goal is to draw 
+a closed path that visits every square once, using all the red lines. The unique solution is shown at right.
+                    Building Levels: Use Math
+                                                   #39 Peninsula
+
+
+
+
+                                                                       
+I decided to make a puzzle for Charlie Blast that used the idea of a tour. Suppose the tiles above are all breakaway tiles, which means you 
+can only step on them once. How would you push all three one bombs off the bottom edge of the square? One solution is shown at right.
+                    Building Levels: Use Math
+                                                   #39 Peninsula
+
+
+
+
+                                                                       
+After a bit of work I came up with this more difficult tour puzzle. The goal is to push all three 1 bombs off the bottom edge of the square 
+by walking a single path. The unique solution requires that you visit every square exactly once.
+                   Building Levels: Use Math
+                                                  #39 Peninsula
+
+
+
+
+                                                                      
+Here’s the final puzzle. The purple electric bombs act like 2 bombs, except if one electric bomb blows up, the other also blows up. Since 
+the electric bomb along the bottom edge cannot be pushed up toward the 1 bombs, the three 1 bombs must be pushed down to surround it.
+       Building Levels: Exploit Features
+                                         #30 Moving Ground
+
+
+
+
+                                                                     
+Another strategy is to exploit a feature. Shown above are two states of the same board, built entirely of moving platforms. The tall 
+rectangles move left and right, while the wide rectangles move up and down. The green arrows show how the 2 bomb could be pushed.
+       Building Levels: Exploit Features
+                                           #30 Moving Ground
+
+
+
+
+                                                                       
+Here is the final puzzle. The ground at the bottom is stable, while the ground at the top is moving. The goal is clear: build a chain of bombs 
+between the immovable detonator at left and 1 bomb at right. But getting there requires a hair­raising ride around the platforms.
+       Building Levels: Exploit Features
+                                           #30 Moving Ground
+
+
+
+
+                                                                        
+This puzzle is easier to analyze if we collapse time and push all the platforms together so all adjacencies are present at the once. The green 
+arrows show all paths that bombs can follow as they move around the platforms. Removing the dead ends, we discover the loop at right.
+                  Building Levels: Lay a Trap
+                                                     #58 Tadpole
+
+
+
+
+                                                                       
+Finally, puzzles can trick you into pursuing the wrong line of reasoning. For the puzzle Tadpole, I started by observing that a puzzle 
+involving a 2 bomb, detonator and six 1 bombs must end with the 2 bomb and detonator surrounded by the 1 bombs.
+                 Building Levels: Lay a Trap
+                                                     #58 Tadpole
+
+
+
+
+                                                                       
+With that analysis in mind, this puzzle appears to be simple: push the autodetonator into the pocket, seal the opening with a 1 bomb, then 
+sit back and watch the fireworks.
+                 Building Levels: Lay a Trap
+                                                    #58 Tadpole
+
+
+
+
+                                                                 
+By adding a couple of spikes I gave the puzzle a new wrinkle.
+                 Building Levels: Lay a Trap
+                                                   #58 Tadpole
+
+
+
+
+                                                                    
+Now you can only push the autodetonator as far as shown above by the green line. You cannot push the autodetonator any further because 
+the spikes prevent you from getting to the square to the right of the final position of the autodetonator.
+                  Building Levels: Lay a Trap
+                                                     #58 Tadpole
+
+
+
+
+                                                                       
+The real solution requires that you rebuild the entire hexagonal pattern of 1 bombs up and to the right one square.
+                 Building Levels: Lay a Trap
+                                                     #58 Tadpole
+
+
+
+
+                                                                      
+To complete the puzzle, I added some blocks and breakaway tiles.. These complications add difficulty to the puzzle, but are not integral to 
+the central theme of the puzzle.
+                                              CASE STUDY
+
+               Scott Kim’s Puzzle Box
+                            Creating a monthly puzzle
+                             for a children’s web site
+
+
+The second case studies a monthly puzzle called Scott Kim’s Puzzle Box, which Scott created for the kid’s 
+online service Juniornet. This example highlights issues in designing puzzles for the web.                   Scott Kim
+                                                   JuniorNet
+       ❥     Safe online place
+       ❥     For kids 3-12
+       ❥     Content partners
+       ❥     Subscription
+       ❥     CD-ROM
+
+
+
+                                                                      
+Juniornet is an online service that gives kids a safe, fun, rewarding, and ad­free experience. Content comes from such well known brands as 
+Highlights and Weekly Reader. Subscribers receive a CD­ROM, with more frequently updated content streamed across the internet.
+                         Scott Kim’s Puzzle Box
+       ❥     Monthly, weekly
+       ❥     Player authoring
+       ❥     Fun, educational
+       ❥     Learning styles
+       ❥     Branded
+
+
+
+                                                                      
+My feature on Juniornet is an original content area called Scott Kim’s Puzzle Box, which delivers.a new collection of puzzles every month. 
+The type of puzzle changes from month to month. Players can create their own puzzles, some of which are posted on the site.
+                                  Design Challenges
+       ❥    Adapt existing physical puzzle
+       ❥    Structure for efficient production
+       ❥    Player authoring
+
+
+
+
+                                                                     
+Producing a rich puzzle experience on a monthly schedule posed several design challenges..
+                Challenge: Adapt Hiroimono
+       ❥ Hiroimono =
+        “Things Picked Up”
+       ❥ 500 years old
+
+       ❥ From Japan
+
+
+
+
+                                                                     
+The puzzles are adapted from existing puzzles. For instance, the April puzzle is based on Hiroimono, a popular puzzle from Japan 
+traditionally played with Go stones.
+                            Changes to Hiroimono
+       ❥     Animated characters
+       ❥     Specify beginning
+       ❥     Clear motivation
+       ❥     Embody the rules
+
+
+
+                                                                        
+To make Hiroimono friendlier to kids I embodied the rules in the characters of a dog that is eating pet treats, and a cat that prevents the dog 
+from backing up in the direction it came. Even with words, kids could be attracted to the game and have a sense of what it is about.
+              Challenge: Efficient Structure
+       FIXED FORMAT
+       ❥     Monthly puzzles
+       ❥     Kid’s puzzles
+       ❥     Letters
+       ❥     Puzzling Times
+       ❥     My Puzzles
+
+                                                                      
+In order to keep production costs reasonable, I planned a modular structure that would allow most of the site to stay the same from month 
+to month. These basic features are always the same.
+                                                    Structure
+           4 TEMPLATES/YEAR, 3 VARIATIONS EACH
+
+
+
+
+           Pet Tricks    Tangrams                                         Arrow Maze Drum Circle
+           High Flyer    Patchwork T.                                     Number Maze Bell Circle
+           House Painter Glass Tan.                                       Shape Maze  Rap Circle
+
+                                                                       
+The type of puzzle changes every month. But instead of creating 12 different puzzle engines, I create only 4 engines for the year, then reuse 
+each engine 3 times with minor variations.
+                                                    Structure
+       15 MONTHLY PUZZLES, 24 KID’S PUZZLES
+
+
+
+
+                                                                       
+Every month I deliver 15 puzzles that I created, and 24 puzzles that kids create.
+                                                    Structure
+
+                                                                                           Fixed Format
+
+                                                                                           Puzzle engines
+                                                                                           Variations
+                                                                                           Month puzzles
+                                                                                           Kid’s Puzzles
+                                                                       
+Production is structured so that the most difficult pieces to build change the least often. Templates change only once every three months. 
+The monthly template variations require only art changes. Finally, puzzle specification requires only compact text files.
+                 Challenge: Player Authoring
+       ❥     Simple pieces
+       ❥     No interdependence
+       ❥     Random puzzles OK
+       ❥     Solve before submit
+
+
+
+
+                                                                        
+Players can create and submit their own puzzles. In order to keep puzzle creation kid friendly, I chose puzzles that are relatively easy to 
+author. And I require that players solve their puzzles before submitting them, so I don’t receive puzzles that don’t work.
+                                                TECHNIQUE
+                     Puzzle Game Design
+                                        In eight easy steps
+
+
+
+Now that we’ve seen two very different examples, what can we say about puzzle design in general? 
+                                                                                                    Scott Kim
+                                         The Eight Steps
+                                           1. Inspiration
+                                           2. Simplification
+                                           3. Construction Set
+                                           4. Rules
+                                           5. Puzzles
+                                           6. Testing
+                                           7. Sequence
+                                           8. Presentation
+                                                                        
+Here are the steps in designing any puzzle game. The first four steps sharpen the concept into a design specification; the last four steps 
+bring the concept into reality.
+              1. Inspiration: Previous Game
+
+
+
+
+                                                                      
+Where do ideas come from? Here are six ways to get inspired. First, you can look to a previous game. Tetris was inspired by a 
+noncomputer game called pentaminoes, and in turn inspired Welltris and other Tetris spinoffs.
+                    1. Inspiration: Technology
+       1. Enable nonphysical moves (Tetris)
+       2. Algorithmic hint, create, analyze, enemy
+       3. Enforce the rules (Sokoban)
+       4. Undo, record moves (Solitaire)
+       5. Structure the experience (Lemmings)
+       6. Instruction (Chess)
+       7. Bells and whistles (Battle Chess)
+       8. Online play (NY Times crossword)
+                                                                    
+If you are going to put a puzzle on computer, there should be some gain. Many computer puzzle games do things that could never be done 
+in a physical puzzle. But even if the puzzle is physically possible, there are many other ways the computer can enhance gameplay.
+               1. Inspiration: Play Mechanic
+
+
+
+
+                                                                     
+Endorfun was inspired by the play mechanism of a colored cube rolling on a square grid.
+                1. Inspiration: Subject matter
+       ❥     Start with something you love
+       ❥     Express it as if it mattered
+       ❥     Give each puzzle a memorable identity
+       ❥     Like a good song, a good puzzle has soul
+
+
+
+
+                                                                      
+Like songs, puzzles can be inspired by real life. Stephen Sondheim: A good clue can give you all the pleasures of being duped that a 
+mystery story can. It has surface innocence, surprise, the revelation of a concealed meaning, and the catharsis of solution.
+                                 1. Inspiration: Story
+
+
+
+
+                                                                       
+Story puzzle games like Myst are built around story line, character, setting, and mood.
+                                    1. Inspiration: Art
+
+
+
+
+                                                                      
+The story game Obsidian started as a series of concept sketches for characters and environments. Story and puzzles came later. 
+                                      2. Simplification
+
+
+
+
+                                                                     
+The second step is to whittle the concept down to manageable size. Say we wanted to make a puzzle based on the tricky core skill of 
+parking a car in a crowded lot. We eliminate irrelevant details and make pieces uniform by conforming them to a square grid.
+                                   3. Construction Set
+       ❥     Programmer: reusable code
+       ❥     Rule designer: tweak rules
+       ❥     Level designer: build levels
+       ❥     Player: build levels
+
+
+
+
+                                                                        
+The only way to test a puzzle concept works is to play it. So the next step is to build a construction set that makes it easy to build puzzles 
+of a certain type. Sometimes a paper prototype is adequate. Once the rules are set, other people can use the construction set to build levels.
+                                                      4. Rules
+       ❥     Board — grid, network, irregular, none
+       ❥     Pieces — shape, image, attribute, supply
+       ❥     Moves — sequential, side effect, primary
+       ❥     Goal — exact match, partial, condition
+
+
+
+
+                                                                      
+Now it is time to write a detailed design specification. Most puzzle game specs will describe puzzles in terms of board, pieces, moves and 
+goals. In addition a design spec may also cover the user interface, scoring, story, art, sound and other aspects of production.
+                                                   5. Puzzles
+
+
+
+
+                                                                       
+
+Schematically, a puzzle challenges the player to get from a problem to a solution.
+                                                   5. Puzzles
+
+
+
+
+                                                                      
+
+But of course the path is never simple. Every puzzle requires that the player make choices, some of which lead to dead ends.
+                                                  5. Puzzles
+
+
+
+
+                                                                      
+
+Puzzles in a game have a larger situation that gives the puzzle meaning. Applying the solution lets you move forward in the game. 
+                                                   5. Puzzles
+
+
+
+
+                                                                      
+
+Good puzzles have require insight. The insight above is to walk around the outside of the maze. Obscure insights, however, feel unfair.
+                                                    6. Testing
+       ❥     Is it fun?
+       ❥     How hard is it?
+       ❥     Are there simpler solutions?
+       ❥     Can it be improved?
+
+
+
+
+                                                                       
+The only way to find out whether a puzzle is fun is to watch someone play it. Often a puzzle you think is easy will turn out to be hard, or 
+vice versa. Sometimes players will find simpler solutions. Or you will realize that the puzzle needs some other improvement.
+                                             7. Sequence
+                                                                    Accelerating
+                                                                    Linear
+                                                                    Sawtooth
+                                                                    Semilinear
+                                                                    Ordered collection
+                                                                    Metapuzzle
+                                                                       
+Next you must put the levels into sequence. Linear is simplest, but can get tiring. A better organization is the sawtooth, which keeps going 
+back to easy puzzles, or to give players freedom to play puzzles out of order. Metapuzzles motivate players to complete the whole game.
+                        7. Sequence: Transitions
+       ❥    Learning rules
+       ❥    Within a puzzle: hints
+       ❥    From one puzzle to next
+       ❥    From one section to next
+       ❥    Ending
+
+
+
+                                                                     
+You also need to think about the transitions between puzzles. Whenever the player moves from one place to another in your game, there is 
+an opportunity to lose the player’s interest. How can you bridge these gaps?
+                                           8. Presentation
+
+
+
+
+                                                                        
+Finally there are all the matters of presentation that turn an abstract puzzle into something people can see, hear and touch. I won’t go into 
+detail on production for puzzle games.
+                                                     PROJECT
+                                  Inventing Ideas
+                           Inventing ideas for puzzles
+                            based on today’s headlines
+
+
+The class divided up into teams of people each. Each team invented an idea for a puzzle game based on a 
+story or ad in today’s San Jose Mercury News. Finally the groups pitched their ideas to the whole class.   Scott Kim
+                                        Termite Control
+                                                                          ❥   You are a termite
+                                                                          ❥   Goal: eat a floor
+                                                                          ❥   Obstacle: humans
+
+
+
+
+                                                                       
+Like most of the puzzles this is a character­driven action game that has been turned into a puzzle game by putting it onto a grid and turning 
+real time action into turn based strategy.
+                                          Prison Shuffle
+                                                                     ❥     Put prisoners in cells
+                                                                     ❥     Avoid bad combos
+                                                                     ❥     Can shuffle cells
+
+
+
+
+                                                                       
+A dynamic allocation puzzle. Prisoners are arriving at a jail. Allocate them to cells while avoiding certain bad combinations, such as an 
+escape artist plus someone who has a key. Shuffling prisoners between cells takes time.
+                                                        Cubicles
+
+
+
+
+                                    ❥     Fit cubicles in floor
+                                    ❥     Leave path to doors
+                                    ❥     Dilbert license?
+                                                                         
+A clever idea that falls naturally out of a real situation. Irregularly shaped cubicles made of square modules are to be fit within a floor of a 
+building. Additionally, every cubicle must have a clear path from its door to a building entrance.
+                                    Get Barbie Home
+                                                                       ❥    Bust Out Barbie
+                                                                       ❥    Barbie Queue
+                                                                       ❥    Ken’s Magnetic
+                                                                            Personality
+
+
+
+                                                                    
+A story about homeless Barbie inspired the most ideas. Get Barbie Home had Barbie wandering through the back streets of a city. Bust Out 
+Barbie required chain smoking Malibu Barbie use Fashion Barbie’s hairspray to fashion a homemade bomb and stage a jail break.
+                                                     PROJECT
+                                         Rule Design
+                                            Turn Sokoban
+                                           into a word game
+
+
+Next, groups were asked to invent a game that combined Sokoban with some sort of 
+                                                                                   Alexey Pajitnov
+word game, then pitch the game to the group. The ideas were surprisingly varied, and 
+several were sufficiently developed to be implementable.
+                                                     PROJECT
+                                      Level Design
+                               Creating levels for a new
+                                 variation of Sokoban
+
+
+As part of the Sokoban Word Game exercise, groups invented three levels of their games. Some of the levels were completely drawn out, 
+others were just titles or concepts.
+

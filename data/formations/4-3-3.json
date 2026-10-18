@@ -1,0 +1,17 @@
+{
+  "id": "4-3-3",
+  "doc": "Coordenadas no referencial 'atacando para a direita': x 0 = própria linha de fundo, 1 = linha adversária; y 0 = topo.",
+  "slots": [
+    { "role": "GK",  "x": 0.035, "y": 0.50 },
+    { "role": "DEF", "x": 0.18,  "y": 0.18 },
+    { "role": "DEF", "x": 0.15,  "y": 0.38 },
+    { "role": "DEF", "x": 0.15,  "y": 0.62 },
+    { "role": "DEF", "x": 0.18,  "y": 0.82 },
+    { "role": "MID", "x": 0.28,  "y": 0.50 },
+    { "role": "MID", "x": 0.38,  "y": 0.28 },
+    { "role": "MID", "x": 0.38,  "y": 0.72 },
+    { "role": "FWD", "x": 0.52,  "y": 0.18 },
+    { "role": "FWD", "x": 0.54,  "y": 0.50 },
+    { "role": "FWD", "x": 0.52,  "y": 0.82 }
+  ]
+}

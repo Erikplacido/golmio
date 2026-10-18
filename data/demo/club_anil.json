@@ -1,0 +1,402 @@
+{
+  "club": {
+    "id": "demo_anil",
+    "name": "Anil EC",
+    "short_name": "ANI",
+    "colors": {
+      "primary": "#2563eb",
+      "secondary": "#ffffff"
+    }
+  },
+  "formation": "4-4-2",
+  "tactics": {
+    "mentality": "equilibrado",
+    "penalty_order": [
+      "ani_09",
+      "ani_10",
+      "ani_07",
+      "ani_05",
+      "ani_08"
+    ],
+    "auto_subs": [
+      {
+        "when": "condition_below",
+        "value": 0.35
+      }
+    ]
+  },
+  "athletes": [
+    {
+      "id": "ani_01",
+      "name": "Henrique Sá",
+      "nationality": "BR",
+      "position": "GK",
+      "shirt": 1,
+      "attributes": {
+        "pace": 65,
+        "physical": 72,
+        "passing": 68,
+        "finishing": 30,
+        "tackling": 60,
+        "positioning": 89,
+        "reflexes": 90,
+        "elasticity": 88,
+        "stamina": 70
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_06",
+      "name": "Téo Barros",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 6,
+      "attributes": {
+        "pace": 90,
+        "physical": 72,
+        "passing": 79,
+        "finishing": 66,
+        "tackling": 81,
+        "positioning": 82,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 85
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_03",
+      "name": "Murilo Castro",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 3,
+      "attributes": {
+        "pace": 83,
+        "physical": 86,
+        "passing": 74,
+        "finishing": 46,
+        "tackling": 88,
+        "positioning": 86,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 78
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_04",
+      "name": "Samuel Dantas",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 4,
+      "attributes": {
+        "pace": 82,
+        "physical": 87,
+        "passing": 78,
+        "finishing": 44,
+        "tackling": 89,
+        "positioning": 87,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 77
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_02",
+      "name": "Vitor Carvalhal",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 2,
+      "attributes": {
+        "pace": 80,
+        "physical": 76,
+        "passing": 81,
+        "finishing": 57,
+        "tackling": 84,
+        "positioning": 85,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 82
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_11",
+      "name": "Luan Sampaio",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 11,
+      "attributes": {
+        "pace": 87,
+        "physical": 70,
+        "passing": 84,
+        "finishing": 82,
+        "tackling": 65,
+        "positioning": 84,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 84
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_05",
+      "name": "Fábio Kreutz",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 5,
+      "attributes": {
+        "pace": 64,
+        "physical": 72,
+        "passing": 95,
+        "finishing": 80,
+        "tackling": 72,
+        "positioning": 87,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 76
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_08",
+      "name": "Diego Valadares",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 8,
+      "attributes": {
+        "pace": 88,
+        "physical": 84,
+        "passing": 84,
+        "finishing": 84,
+        "tackling": 80,
+        "positioning": 86,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 90
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_07",
+      "name": "Joaquim Belém",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 7,
+      "attributes": {
+        "pace": 84,
+        "physical": 80,
+        "passing": 88,
+        "finishing": 86,
+        "tackling": 78,
+        "positioning": 89,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 86
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_09",
+      "name": "Heitor Kaiser",
+      "nationality": "BR",
+      "position": "FWD",
+      "shirt": 9,
+      "attributes": {
+        "pace": 76,
+        "physical": 85,
+        "passing": 87,
+        "finishing": 93,
+        "tackling": 50,
+        "positioning": 91,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 80
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_10",
+      "name": "Miguel Pontes",
+      "nationality": "BR",
+      "position": "FWD",
+      "shirt": 10,
+      "attributes": {
+        "pace": 96,
+        "physical": 70,
+        "passing": 82,
+        "finishing": 90,
+        "tackling": 41,
+        "positioning": 88,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 84
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_12",
+      "name": "Ravi Coutinho",
+      "nationality": "BR",
+      "position": "GK",
+      "shirt": 12,
+      "attributes": {
+        "pace": 58,
+        "physical": 65,
+        "passing": 60,
+        "finishing": 26,
+        "tackling": 52,
+        "positioning": 79,
+        "reflexes": 81,
+        "elasticity": 79,
+        "stamina": 66
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_13",
+      "name": "André Prates",
+      "nationality": "BR",
+      "position": "DEF",
+      "shirt": 13,
+      "attributes": {
+        "pace": 74,
+        "physical": 82,
+        "passing": 68,
+        "finishing": 40,
+        "tackling": 83,
+        "positioning": 79,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 74
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_14",
+      "name": "Yuri Lacerda",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 14,
+      "attributes": {
+        "pace": 73,
+        "physical": 74,
+        "passing": 85,
+        "finishing": 72,
+        "tackling": 74,
+        "positioning": 79,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 79
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_15",
+      "name": "Otto Nery",
+      "nationality": "BR",
+      "position": "MID",
+      "shirt": 15,
+      "attributes": {
+        "pace": 82,
+        "physical": 68,
+        "passing": 78,
+        "finishing": 79,
+        "tackling": 60,
+        "positioning": 77,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 83
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    },
+    {
+      "id": "ani_16",
+      "name": "Cauê Bittencourt",
+      "nationality": "BR",
+      "position": "FWD",
+      "shirt": 16,
+      "attributes": {
+        "pace": 88,
+        "physical": 72,
+        "passing": 72,
+        "finishing": 83,
+        "tackling": 40,
+        "positioning": 79,
+        "reflexes": 20,
+        "elasticity": 20,
+        "stamina": 80
+      },
+      "dna": {
+        "generator": "demo",
+        "initial_age": 17
+      }
+    }
+  ],
+  "lineup": [
+    "ani_01",
+    "ani_06",
+    "ani_03",
+    "ani_04",
+    "ani_02",
+    "ani_11",
+    "ani_05",
+    "ani_08",
+    "ani_07",
+    "ani_09",
+    "ani_10"
+  ],
+  "bench": [
+    "ani_12",
+    "ani_13",
+    "ani_14",
+    "ani_15",
+    "ani_16"
+  ]
+}

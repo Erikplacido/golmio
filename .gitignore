@@ -1,0 +1,20 @@
+# Godot 4 cache and export artifacts
+.godot/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary files and scratch
+*.tmp
+*.bak
+*~
+
+# Builds and export outputs
+build/
+export/
+*.apk
+*.aab
+*.ipa

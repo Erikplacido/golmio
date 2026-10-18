@@ -1,0 +1,17 @@
+{
+  "id": "4-4-2",
+  "doc": "Coordenadas no referencial 'atacando para a direita'.",
+  "slots": [
+    { "role": "GK",  "x": 0.035, "y": 0.50 },
+    { "role": "DEF", "x": 0.18,  "y": 0.18 },
+    { "role": "DEF", "x": 0.15,  "y": 0.38 },
+    { "role": "DEF", "x": 0.15,  "y": 0.62 },
+    { "role": "DEF", "x": 0.18,  "y": 0.82 },
+    { "role": "MID", "x": 0.32,  "y": 0.16 },
+    { "role": "MID", "x": 0.30,  "y": 0.39 },
+    { "role": "MID", "x": 0.30,  "y": 0.61 },
+    { "role": "MID", "x": 0.32,  "y": 0.84 },
+    { "role": "FWD", "x": 0.52,  "y": 0.38 },
+    { "role": "FWD", "x": 0.52,  "y": 0.62 }
+  ]
+}

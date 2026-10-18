@@ -1,0 +1,536 @@
+{
+  "versao": 2,
+  "ultima_atualizacao": "2026-10-02T11:25:00.000Z",
+  "card_dimensoes": {
+    "largura": 1122,
+    "altura": 1452
+  },
+  "niveis": {
+    "normal": {
+      "id": "normal",
+      "label": "Normal",
+      "card_imagem": "card_normal.png",
+      "overlay_imagem": "card_normal_acabamento.png",
+      "overlay_ativo": true,
+      "overlay_opacidade": 1,
+      "overlay_blend": "source-over",
+      "filtros_base": {
+        "hue": 0,
+        "saturacao": 100,
+        "brilho": 100,
+        "contraste": 100
+      },
+      "jogador": {
+        "x": 561,
+        "y": 760,
+        "escala": 0.48,
+        "corte_inferior": 1225,
+        "corte_ativo": true,
+        "brilho_divino": {
+          "ativo": false,
+          "externo_intensidade": 75,
+          "externo_raio": 28,
+          "interno_intensidade": 85,
+          "interno_raio": 12,
+          "cor": "#fef08a",
+          "pulso": true
+        }
+      },
+      "foil": {
+        "ativo": false,
+        "tipo": "nenhum",
+        "area_mascara": "janela_arte",
+        "camada_posicao": "sobre_base",
+        "pulso_ativo": true,
+        "pulso_velocidade": 2,
+        "pulso_intensidade": 0.32,
+        "varredura_velocidade": 0.28,
+        "hue": 0,
+        "opacidade": 0,
+        "blend": "color-dodge",
+        "angulo": 45,
+        "largura_brilho": 200,
+        "brilho_intensidade": 1
+      },
+      "posicao": {
+        "ativo": true,
+        "x": 140,
+        "y": 140,
+        "largura": 120,
+        "altura": 56,
+        "fonte_tamanho": 28,
+        "usar_cor_setor": true,
+        "estilo": "badge"
+      },
+      "ovr": {
+        "ativo": true,
+        "x": 982,
+        "y": 140,
+        "largura": 110,
+        "altura": 56,
+        "fonte_tamanho": 32,
+        "cor_fundo": "rgba(0,0,0,0.75)",
+        "cor_texto": "#e2e8f0"
+      },
+      "estrelas": {
+        "ativo": true,
+        "x": 561,
+        "y": 1260,
+        "qtd": 1,
+        "tamanho": 22,
+        "cor": "#94a3b8"
+      },
+      "nome": {
+        "x": 561,
+        "y": 1308,
+        "tamanho": 52,
+        "fonte": "Montserrat",
+        "peso": 800,
+        "cor": "#ffffff",
+        "sombra": "rgba(0,0,0,0.85)",
+        "espacamento": 3,
+        "maiusculas": true
+      }
+    },
+    "raro": {
+      "id": "raro",
+      "label": "Raro",
+      "card_imagem": "card_raro.png",
+      "overlay_imagem": "card_raro_acabamento.png",
+      "overlay_ativo": true,
+      "overlay_opacidade": 1,
+      "overlay_blend": "source-over",
+      "filtros_base": {
+        "hue": 0,
+        "saturacao": 100,
+        "brilho": 100,
+        "contraste": 100
+      },
+      "jogador": {
+        "x": 561,
+        "y": 760,
+        "escala": 0.48,
+        "corte_inferior": 1225,
+        "corte_ativo": true,
+        "brilho_divino": {
+          "ativo": false,
+          "externo_intensidade": 75,
+          "externo_raio": 28,
+          "interno_intensidade": 85,
+          "interno_raio": 12,
+          "cor": "#fef08a",
+          "pulso": true
+        }
+      },
+      "foil": {
+        "ativo": false,
+        "tipo": "nenhum",
+        "area_mascara": "janela_arte",
+        "camada_posicao": "sobre_base",
+        "pulso_ativo": false,
+        "pulso_velocidade": 2,
+        "pulso_intensidade": 0,
+        "varredura_velocidade": 0,
+        "hue": 0,
+        "opacidade": 0,
+        "blend": "screen",
+        "angulo": 45,
+        "largura_brilho": 200,
+        "brilho_intensidade": 1
+      },
+      "posicao": {
+        "ativo": true,
+        "x": 140,
+        "y": 140,
+        "largura": 120,
+        "altura": 56,
+        "fonte_tamanho": 28,
+        "usar_cor_setor": true,
+        "estilo": "badge"
+      },
+      "ovr": {
+        "ativo": true,
+        "x": 982,
+        "y": 140,
+        "largura": 110,
+        "altura": 56,
+        "fonte_tamanho": 32,
+        "cor_fundo": "rgba(7,25,48,0.85)",
+        "cor_texto": "#38bdf8"
+      },
+      "estrelas": {
+        "ativo": true,
+        "x": 561,
+        "y": 1260,
+        "qtd": 2,
+        "tamanho": 22,
+        "cor": "#38bdf8"
+      },
+      "nome": {
+        "x": 561,
+        "y": 1308,
+        "tamanho": 52,
+        "fonte": "Montserrat",
+        "peso": 800,
+        "cor": "#e0f2fe",
+        "sombra": "rgba(0,0,0,0.85)",
+        "espacamento": 3,
+        "maiusculas": true
+      }
+    },
+    "lendario": {
+      "id": "lendario",
+      "label": "Lendário",
+      "descricao": "Dourado metálico leve com reflexo amplo brilho que simula o efeito foil dourado na area da mascara",
+      "card_imagem": "card_lenda.png",
+      "overlay_imagem": "card_lenda_acabamento.png",
+      "overlay_ativo": true,
+      "overlay_opacidade": 1,
+      "overlay_blend": "source-over",
+      "filtros_base": {
+        "hue": 0,
+        "saturacao": 100,
+        "brilho": 100,
+        "contraste": 100
+      },
+      "jogador": {
+        "x": 561,
+        "y": 760,
+        "escala": 0.48,
+        "corte_inferior": 1225,
+        "corte_ativo": true,
+        "brilho_divino": {
+          "ativo": false,
+          "externo_intensidade": 75,
+          "externo_raio": 28,
+          "interno_intensidade": 85,
+          "interno_raio": 12,
+          "cor": "#fef08a",
+          "pulso": true
+        }
+      },
+      "foil": {
+        "ativo": true,
+        "tipo": "dourado_metalico",
+        "area_mascara": "mascara_custom",
+        "camada_posicao": "sobre_base",
+        "pulso_ativo": true,
+        "pulso_velocidade": 2,
+        "pulso_intensidade": 0.35,
+        "varredura_velocidade": 0.28,
+        "hue": 0,
+        "opacidade": 0.65,
+        "blend": "color-dodge",
+        "angulo": 55,
+        "largura_brilho": 240,
+        "brilho_intensidade": 1.2,
+        "mascara_arquivo": "card_lenda_foil.png"
+      },
+      "posicao": {
+        "ativo": true,
+        "x": 140,
+        "y": 140,
+        "largura": 120,
+        "altura": 56,
+        "fonte_tamanho": 28,
+        "usar_cor_setor": true,
+        "estilo": "badge"
+      },
+      "ovr": {
+        "ativo": true,
+        "x": 982,
+        "y": 140,
+        "largura": 110,
+        "altura": 56,
+        "fonte_tamanho": 32,
+        "cor_fundo": "rgba(35,22,0,0.88)",
+        "cor_texto": "#fbbf24"
+      },
+      "estrelas": {
+        "ativo": true,
+        "x": 561,
+        "y": 1260,
+        "qtd": 3,
+        "tamanho": 24,
+        "cor": "#fbbf24"
+      },
+      "nome": {
+        "x": 561,
+        "y": 1308,
+        "tamanho": 52,
+        "fonte": "Montserrat",
+        "peso": 800,
+        "cor": "#fef08a",
+        "sombra": "rgba(0,0,0,0.9)",
+        "espacamento": 3,
+        "maiusculas": true
+      }
+    },
+    "mitico": {
+      "id": "mitico",
+      "label": "Mítico",
+      "descricao": "Foil holográfico violeta, magenta e azul em area de mascara",
+      "card_imagem": "card_mitico.png",
+      "overlay_imagem": "card_mitico_acabamento.png",
+      "overlay_ativo": true,
+      "overlay_opacidade": 1,
+      "overlay_blend": "source-over",
+      "filtros_base": {
+        "hue": 0,
+        "saturacao": 100,
+        "brilho": 100,
+        "contraste": 100
+      },
+      "jogador": {
+        "x": 561,
+        "y": 840,
+        "escala": 0.48,
+        "corte_inferior": 1225,
+        "corte_ativo": true,
+        "brilho_divino": {
+          "ativo": false,
+          "externo_intensidade": 75,
+          "externo_raio": 28,
+          "interno_intensidade": 85,
+          "interno_raio": 12,
+          "cor": "#fef08a",
+          "pulso": true
+        }
+      },
+      "foil": {
+        "ativo": true,
+        "tipo": "holografico_violeta_magenta_azul",
+        "area_mascara": "mascara_custom",
+        "camada_posicao": "sobre_base",
+        "pulso_ativo": true,
+        "pulso_velocidade": 2.2,
+        "pulso_intensidade": 0.35,
+        "varredura_velocidade": 0.32,
+        "hue": 0,
+        "opacidade": 1.07,
+        "blend": "color-dodge",
+        "angulo": 182,
+        "largura_brilho": 600,
+        "brilho_intensidade": 1.3,
+        "mascara_arquivo": "card_mitico_foil.png",
+        "mascara_inverter": false
+      },
+      "posicao": {
+        "ativo": true,
+        "x": 140,
+        "y": 140,
+        "largura": 120,
+        "altura": 56,
+        "fonte_tamanho": 28,
+        "usar_cor_setor": true,
+        "estilo": "badge"
+      },
+      "ovr": {
+        "ativo": true,
+        "x": 982,
+        "y": 140,
+        "largura": 110,
+        "altura": 56,
+        "fonte_tamanho": 32,
+        "cor_fundo": "rgba(28,4,36,0.9)",
+        "cor_texto": "#f0abfc"
+      },
+      "estrelas": {
+        "ativo": true,
+        "x": 561,
+        "y": 1260,
+        "qtd": 4,
+        "tamanho": 24,
+        "cor": "#e879f9"
+      },
+      "nome": {
+        "x": 561,
+        "y": 1308,
+        "tamanho": 52,
+        "fonte": "Montserrat",
+        "peso": 800,
+        "cor": "#fae8ff",
+        "sombra": "rgba(0,0,0,0.9)",
+        "espacamento": 3,
+        "maiusculas": true
+      }
+    },
+    "divino": {
+      "id": "divino",
+      "label": "Divino",
+      "descricao": "Dourado escuro e velho com reflexos metálicos envelhecidos, bronze nobre e brilho sacro",
+      "card_imagem": "card_divino.png",
+      "overlay_imagem": "card_divino_acabamento.png",
+      "overlay_ativo": true,
+      "overlay_opacidade": 1,
+      "overlay_blend": "source-over",
+      "filtros_base": {
+        "hue": 0,
+        "saturacao": 100,
+        "brilho": 100,
+        "contraste": 100
+      },
+      "jogador": {
+        "x": 561,
+        "y": 774,
+        "escala": 0.44,
+        "corte_inferior": 1225,
+        "corte_ativo": true,
+        "brilho_divino": {
+          "ativo": true,
+          "externo_intensidade": 100,
+          "externo_raio": 73,
+          "interno_intensidade": 98,
+          "interno_raio": 40,
+          "cor": "#fef08a",
+          "pulso": true
+        }
+      },
+      "foil": {
+        "ativo": true,
+        "tipo": "perolado_dourado_intenso",
+        "area_mascara": "mascara_custom",
+        "camada_posicao": "sobre_base",
+        "pulso_ativo": true,
+        "pulso_velocidade": 1.8,
+        "pulso_intensidade": 0.42,
+        "varredura_velocidade": 0.28,
+        "hue": 0,
+        "opacidade": 0.47,
+        "blend": "hard-light",
+        "angulo": 226,
+        "largura_brilho": 216,
+        "brilho_intensidade": 1.6,
+        "mascara_arquivo": "card_divino_foil.png",
+        "mascara_inverter": false
+      },
+      "posicao": {
+        "ativo": true,
+        "x": 140,
+        "y": 140,
+        "largura": 120,
+        "altura": 56,
+        "fonte_tamanho": 28,
+        "usar_cor_setor": true,
+        "estilo": "badge"
+      },
+      "ovr": {
+        "ativo": true,
+        "x": 982,
+        "y": 140,
+        "largura": 110,
+        "altura": 56,
+        "fonte_tamanho": 32,
+        "cor_fundo": "rgba(40,32,10,0.9)",
+        "cor_texto": "#ffffff"
+      },
+      "estrelas": {
+        "ativo": true,
+        "x": 561,
+        "y": 1260,
+        "qtd": 5,
+        "tamanho": 24,
+        "cor": "#fef08a"
+      },
+      "nome": {
+        "x": 561,
+        "y": 1308,
+        "tamanho": 52,
+        "fonte": "Cinzel",
+        "peso": 800,
+        "cor": "#ffffff",
+        "sombra": "rgba(0,0,0,0.95)",
+        "espacamento": 4,
+        "maiusculas": true
+      }
+    },
+    "estrela_convidada": {
+      "id": "estrela_convidada",
+      "label": "Estrela convidada",
+      "descricao": "Foil prismático com padrão de pequenas estrelas na area da mascara",
+      "card_imagem": "card_normal.png",
+      "overlay_imagem": "card_normal_acabamento.png",
+      "overlay_ativo": true,
+      "overlay_opacidade": 1,
+      "overlay_blend": "source-over",
+      "filtros_base": {
+        "hue": 0,
+        "saturacao": 100,
+        "brilho": 100,
+        "contraste": 100
+      },
+      "jogador": {
+        "x": 561,
+        "y": 760,
+        "escala": 0.48,
+        "corte_inferior": 1225,
+        "corte_ativo": true,
+        "brilho_divino": {
+          "ativo": false,
+          "externo_intensidade": 75,
+          "externo_raio": 28,
+          "interno_intensidade": 85,
+          "interno_raio": 12,
+          "cor": "#fef08a",
+          "pulso": true
+        }
+      },
+      "foil": {
+        "ativo": true,
+        "tipo": "prismatico_estrelas",
+        "area_mascara": "janela_arte",
+        "camada_posicao": "sobre_base",
+        "pulso_ativo": true,
+        "pulso_velocidade": 2.5,
+        "pulso_intensidade": 0.35,
+        "varredura_velocidade": 0.35,
+        "hue": 0,
+        "opacidade": 0.8,
+        "blend": "color-dodge",
+        "angulo": 45,
+        "densidade_estrelas": 60,
+        "escala_estrelas": 1,
+        "brilho_intensidade": 1.3
+      },
+      "posicao": {
+        "ativo": true,
+        "x": 140,
+        "y": 140,
+        "largura": 120,
+        "altura": 56,
+        "fonte_tamanho": 28,
+        "usar_cor_setor": true,
+        "estilo": "badge"
+      },
+      "ovr": {
+        "ativo": true,
+        "x": 982,
+        "y": 140,
+        "largura": 110,
+        "altura": 56,
+        "fonte_tamanho": 32,
+        "cor_fundo": "rgba(10,20,40,0.9)",
+        "cor_texto": "#38bdf8"
+      },
+      "estrelas": {
+        "ativo": true,
+        "x": 561,
+        "y": 1260,
+        "qtd": 5,
+        "tamanho": 24,
+        "cor": "#38bdf8"
+      },
+      "nome": {
+        "x": 561,
+        "y": 1308,
+        "tamanho": 52,
+        "fonte": "Montserrat",
+        "peso": 800,
+        "cor": "#e0f2fe",
+        "sombra": "rgba(0,0,0,0.9)",
+        "espacamento": 3,
+        "maiusculas": true
+      }
+    }
+  }
+}
