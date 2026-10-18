@@ -70,7 +70,10 @@ func _rebuild() -> void:
 	right.add_child(_build_recent())
 	_timer.stop()
 	if _countdown:
-		_timer.start()
+		if _timer.is_inside_tree():
+			_timer.start()
+		else:
+			_timer.autostart = true
 
 
 # --- cartão principal -------------------------------------------------------------------------

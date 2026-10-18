@@ -198,9 +198,13 @@ func substitute(team: MatchTeam, out_player: MatchPlayer, in_athlete: Athlete) -
 func dispose() -> void:
 	for t: MatchTeam in [home, away]:
 		if t:
-			t.players.clear()
-			t.bench.clear()
+			t.dispose()
+	for p in all_players:
+		if p is MatchPlayer:
+			p.dispose()
 	all_players.clear()
+	home = null
+	away = null
 	ball.holder = null
 	ball.last_kicker = null
 	ball.intended = null
@@ -208,7 +212,15 @@ func dispose() -> void:
 	ball.block_tried = {}
 	restart = {}
 	_pressers = {"home": [], "away": []}
+	if bus:
+		bus.clear()
 	bus = null
+	setup = null
+	registry = null
+	rng = null
+	_rng_streams.clear()
+	events.clear()
+	ext.clear()
 
 
 # ------------------------------------------------------------------ uso interno do motor

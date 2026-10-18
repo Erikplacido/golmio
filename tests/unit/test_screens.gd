@@ -116,7 +116,23 @@ func test_pre_jogo_bloqueia_escalacao_invalida() -> void:
 	var play: Button = s.find_child("Play", true, false)
 	check(play != null and play.disabled, "JOGAR desabilitado")
 	check(play != null and play.tooltip_text != "", "e diz o motivo")
+	var auto_btn: Button = s.find_child("AutoCompleteSquad", true, false)
+	check(auto_btn != null, "botão auto completar escalação visível")
+	if auto_btn != null:
+		auto_btn.emit_signal("pressed")
+		play = s.find_child("Play", true, false)
+		check(play != null and not play.disabled, "JOGAR habilitado após auto completar escalação")
 	_done(g, [s])
+
+
+func test_tactics_header_ratings_visible_narrow() -> void:
+	var tac = (load("res://presentation/tactics/tactics_view.tscn") as PackedScene).instantiate()
+	tac.size = Vector2(360, 640)
+	tac._ready()
+	tac._apply_responsive()
+	check(tac._header_ratings != null and tac._header_ratings.visible, "ratings visíveis no mobile (narrow)")
+	tac.free()
+
 
 
 func test_elenco_filtra_e_busca() -> void:

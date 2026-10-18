@@ -57,6 +57,11 @@ func decide(hook: String, payload: Dictionary = {}) -> Variant:
 	return null
 
 
+func clear() -> void:
+	_handlers.clear()
+	_known.clear()
+
+
 static func _sort_handlers(a: Dictionary, b: Dictionary) -> bool:
 	if a.priority != b.priority:
 		return a.priority < b.priority

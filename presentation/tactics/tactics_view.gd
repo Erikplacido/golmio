@@ -110,6 +110,9 @@ func _ready() -> void:
 
 
 func _load_squad_from_world_or_demo() -> void:
+	if not is_inside_tree():
+		_load_demo_squad()
+		return
 	var app_node = get_node_or_null("/root/App")
 	if app_node and app_node.get("backend") != null:
 		var w_dict: Dictionary = app_node.backend.load_world()
@@ -621,7 +624,12 @@ func _apply_responsive() -> void:
 	for c: Control in [_left_scroll, _center_panel, _right_panel]:
 		c.size_flags_horizontal = SIZE_EXPAND_FILL if narrow or c == _center_panel else SIZE_FILL
 	_pitch.custom_minimum_size = Vector2(0, 620) if narrow else Vector2(480, 580)
-	_header_ratings.visible = not narrow
+	_header_ratings.visible = true
+	_header_ratings.add_theme_constant_override("separation", 4 if narrow else 14)
+	var rating_font_size: int = UiKit.FONT_CAPTION - 2 if narrow else UiKit.FONT_CAPTION
+	for lbl: Label in [_lbl_ovr, _lbl_def, _lbl_mid, _lbl_fwd]:
+		if lbl != null:
+			lbl.add_theme_font_size_override("font_size", rating_font_size)
 	for b: Button in _bench_container.get_children():
 		_fit_bench_button(b)
 	for b in _header_buttons:

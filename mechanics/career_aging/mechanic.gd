@@ -63,7 +63,28 @@ func _on_official(payload: Dictionary) -> void:
 			registry.bus.emit(Hooks.ATHLETE_BIRTHDAY, {"athlete": a, "age": age})
 			if age >= int(param("retire_age")):
 				a.status = "retired"
-				registry.bus.emit(Hooks.ATHLETE_RETIRED, {"athlete": a})
+				var target_club: Club = null
+				for c: Club in world.clubs.values():
+					if c.athlete_ids.has(a.id):
+						target_club = c
+						break
+				if target_club != null:
+					var hof: Array = target_club.ext.get("hall_of_fame_stickers", [])
+					var legacy_entry := {
+						"id": a.id,
+						"name": a.name,
+						"role": a.position,
+						"retired_age": age,
+						"tier": str(a.dna.get("tier", "normal")),
+						"attributes": a.attributes.duplicate(true),
+						"mentor_role": "mentor_" + a.position.to_lower()
+					}
+					hof.append(legacy_entry)
+					target_club.ext["hall_of_fame_stickers"] = hof
+					var mentors: Dictionary = target_club.ext.get("coaching_staff", {})
+					mentors[a.id] = {"name": a.name, "sector": a.position, "xp_boost": 0.05}
+					target_club.ext["coaching_staff"] = mentors
+				registry.bus.emit(Hooks.ATHLETE_RETIRED, {"athlete": a, "club": target_club})
 
 
 func _apply_birthday(a: Athlete, age: int) -> void:

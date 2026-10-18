@@ -50,3 +50,14 @@ func ext_for(mechanic_id: String) -> Dictionary:
 	if not ext.has(mechanic_id):
 		ext[mechanic_id] = {}
 	return ext[mechanic_id]
+
+
+func dispose() -> void:
+	for p in players:
+		if p is MatchPlayer:
+			p.dispose()
+	players.clear()
+	bench.clear()
+	participants.clear()
+	ext.clear()
+	setup = null

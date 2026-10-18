@@ -104,7 +104,10 @@ func _show_highlights() -> void:
 	skip.pressed.connect(func() -> void: _show_grid(true))
 	_footer.add_child(skip)
 	content.add_child(_footer)
-	_timer.start()
+	if _timer.is_inside_tree():
+		_timer.start()
+	else:
+		_timer.autostart = true
 
 
 func _card(a: Athlete, w: float) -> StickerCard:

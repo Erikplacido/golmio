@@ -230,6 +230,14 @@ func _alerts_card(g: GameStore, problems: PackedStringArray) -> Control:
 		l.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		row.add_child(l)
 		v.add_child(row)
+	if not problems.is_empty():
+		var btn_auto := UiKit.button(tr("UI_BTN_AUTO_COMPLETE_SQUAD"), "primary", "elenco", 40)
+		btn_auto.name = "AutoCompleteSquad"
+		btn_auto.pressed.connect(func() -> void:
+			g.auto_lineup()
+			_rebuild()
+		)
+		v.add_child(btn_auto)
 	return parts[0]
 
 

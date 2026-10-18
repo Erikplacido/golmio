@@ -30,6 +30,7 @@ static func create(setup: MatchSetup, registry: MechanicRegistry) -> MatchEngine
 func dispose() -> void:
 	if ctx:
 		ctx.dispose()
+		ctx = null
 
 
 func is_finished() -> bool:

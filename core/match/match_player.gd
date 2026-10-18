@@ -7,7 +7,12 @@ extends RefCounted
 const PRESSURE_RADIUS := 42.0
 
 var athlete: Athlete
-var team: MatchTeam
+var _team_ref: WeakRef = null
+var team: MatchTeam:
+	get:
+		return _team_ref.get_ref() as MatchTeam if _team_ref != null else null
+	set(val):
+		_team_ref = weakref(val) if val != null else null
 var role: String = "MID"
 var slot := Vector2(0.5, 0.5)
 var shirt: int = 0
@@ -36,6 +41,13 @@ func _init(p_athlete: Athlete, p_team: MatchTeam, p_slot: Dictionary, p_shirt: i
 	radius = 8.0 if is_gk() else 7.2
 	attrs = athlete.attributes.duplicate()
 	refresh_derived()
+
+
+func dispose() -> void:
+	_team_ref = null
+	athlete = null
+	attrs.clear()
+	ext.clear()
 
 
 func is_gk() -> bool:

@@ -58,19 +58,58 @@ func fetch_ruleset() -> Dictionary:
 	return Ruleset.load_file(path).to_dict()
 
 
+func bak_path() -> String:
+	return world_path() + ".bak"
+
+
+func tmp_path() -> String:
+	return world_path() + ".tmp"
+
+
 func load_world() -> Dictionary:
-	if not FileAccess.file_exists(world_path()):
-		return {}
-	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string(world_path()))
-	return parsed if parsed is Dictionary else {}
+	var wp := world_path()
+	var bp := bak_path()
+	if FileAccess.file_exists(wp):
+		var content := FileAccess.get_file_as_string(wp)
+		if not content.is_empty():
+			var parsed: Variant = JSON.parse_string(content)
+			if parsed is Dictionary and not parsed.is_empty():
+				return parsed
+	# Fallback automático: se world.json não existir, for vazio ou inválido, tenta o backup
+	if FileAccess.file_exists(bp):
+		var bcontent := FileAccess.get_file_as_string(bp)
+		if not bcontent.is_empty():
+			var bparsed: Variant = JSON.parse_string(bcontent)
+			if bparsed is Dictionary and not bparsed.is_empty():
+				return bparsed
+	return {}
 
 
 func save_world(data: Dictionary) -> bool:
 	DirAccess.make_dir_recursive_absolute(save_dir)
-	var f := FileAccess.open(world_path(), FileAccess.WRITE)
+	var wp := world_path()
+	var tp := tmp_path()
+	var bp := bak_path()
+
+	var f := FileAccess.open(tp, FileAccess.WRITE)
 	if f == null:
 		return false
 	f.store_string(JSON.stringify(data, "\t"))
+	f.flush()
+	f.close()
+
+	if not FileAccess.file_exists(tp) or FileAccess.get_file_as_string(tp).is_empty():
+		return false
+
+	# Backup seguro do arquivo existente
+	if FileAccess.file_exists(wp):
+		DirAccess.copy_absolute(wp, bp)
+
+	# Troca atômica do temporário para o destino final
+	var err := DirAccess.rename_absolute(tp, wp)
+	if err != OK:
+		DirAccess.copy_absolute(tp, wp)
+		DirAccess.remove_absolute(tp)
 	return true
 
 

@@ -164,6 +164,145 @@ func save_tactics(t: Dictionary) -> bool:
 	return persist()
 
 
+## Preenche vagas vazias da escalação com os melhores atletas do clube disponíveis.
+func auto_lineup() -> bool:
+	var c := club()
+	if c == null:
+		return false
+	var available: Array[Athlete] = []
+	for aid in c.athlete_ids:
+		var a := athlete(str(aid))
+		if a != null and a.is_active():
+			available.append(a)
+	if available.is_empty():
+		return false
+
+	available.sort_custom(func(a: Athlete, b: Athlete):
+		var sum_a := 0.0
+		for v in a.attributes.values(): sum_a += float(v)
+		var sum_b := 0.0
+		for v in b.attributes.values(): sum_b += float(v)
+		return sum_a > sum_b
+	)
+
+	var t := tactics()
+	var formation: String = str(t.get("formation", DEFAULT_FORMATION))
+	var raw_slots := DemoData.formation(formation)
+
+	var starting_11: Array = []
+	var cur_starters: Array = t.get("starting_11", [])
+	for i in range(11):
+		var aid: String = str(cur_starters[i]) if i < cur_starters.size() else ""
+		if aid != "" and c.athlete_ids.has(aid):
+			var a := athlete(aid)
+			if a != null and a.is_active():
+				starting_11.append(aid)
+				continue
+		starting_11.append("")
+
+	var used_ids := {}
+	for aid in starting_11:
+		if str(aid) != "":
+			used_ids[str(aid)] = true
+
+	# 1. Encaixa goleiro no slot GK
+	for i in range(11):
+		if starting_11[i] == "" and i < raw_slots.size() and raw_slots[i].get("role") == "GK":
+			var gk := available.filter(func(a: Athlete): return a.position == "GK" and not used_ids.has(a.id))
+			if not gk.is_empty():
+				starting_11[i] = gk[0].id
+				used_ids[gk[0].id] = true
+
+	# 2. Encaixa defensores, meias e atacantes na posição exata
+	for i in range(11):
+		if starting_11[i] != "": continue
+		var role: String = raw_slots[i].get("role", "MID") if i < raw_slots.size() else "MID"
+		var match_ath := available.filter(func(a: Athlete): return a.position == role and not used_ids.has(a.id))
+		if not match_ath.is_empty():
+			starting_11[i] = match_ath[0].id
+			used_ids[match_ath[0].id] = true
+
+	# 3. Preenche eventuais vagas restantes com os melhores disponíveis
+	for i in range(11):
+		if starting_11[i] == "":
+			var rest := available.filter(func(a: Athlete): return not used_ids.has(a.id))
+			if not rest.is_empty():
+				starting_11[i] = rest[0].id
+				used_ids[rest[0].id] = true
+
+	# 4. Banco com os melhores restantes (até 5 vagas)
+	var bench: Array = []
+	var bench_candidates := available.filter(func(a: Athlete): return not used_ids.has(a.id))
+	for i in range(mini(5, bench_candidates.size())):
+		bench.append(bench_candidates[i].id)
+
+	t["starting_11"] = starting_11
+	t["bench"] = bench
+	if not t.has("formation"):
+		t["formation"] = formation
+	return save_tactics(t)
+
+
+# --- Economia e Loja Cosmética (TASK-07) -----------------------------------------------------
+
+## Saldo de créditos cosméticos do clube (saldo inicial 250 créditos).
+func credits() -> int:
+	var c := club()
+	if c == null:
+		return 0
+	return int(c.ext.get("credits", 250))
+
+
+func can_afford(cost: int) -> bool:
+	return credits() >= cost
+
+
+func add_credits(amount: int) -> bool:
+	var c := club()
+	if c == null or amount <= 0:
+		return false
+	c.ext["credits"] = credits() + amount
+	return persist()
+
+
+func spend_credits(amount: int) -> bool:
+	var c := club()
+	if c == null or amount <= 0 or not can_afford(amount):
+		return false
+	c.ext["credits"] = credits() - amount
+	return persist()
+
+
+func is_cosmetic_unlocked(item_id: String) -> bool:
+	return Cosmetics.is_unlocked(item_id, club())
+
+
+func buy_cosmetic(item_id: String, price: int) -> bool:
+	var c := club()
+	if c == null or is_cosmetic_unlocked(item_id):
+		return false
+	if not spend_credits(price):
+		return false
+	Cosmetics.unlock(c, item_id)
+	return persist()
+
+
+func equip_cosmetic(category: String, item_id: String) -> bool:
+	var c := club()
+	if c == null or not is_cosmetic_unlocked(item_id):
+		return false
+	c.ext["active_" + category] = item_id
+	return persist()
+
+
+func active_cosmetic(category: String, default_id: String = "") -> String:
+	var c := club()
+	if c == null:
+		return default_id
+	return str(c.ext.get("active_" + category, default_id))
+
+
+
 func set_mentality(mentality: String) -> bool:
 	if not GameTerms.MENTALITIES.has(mentality):
 		return false

@@ -348,3 +348,25 @@ PADRAO_CHEVRON,Chevron
 PADRAO_DUAS_FAIXAS,Duas faixas
 PADRAO_LOSANGOS,Losangos
 COSMETICO_BLOQUEADO,Ganhe em recompensas ou na loja
+UI_BTN_AUTO_COMPLETE_SQUAD,Completar escalação
+LOJA_CAT_BOTOES,Estilos de botão
+LOJA_CAT_UNIFORMES,Uniformes e brasões
+LOJA_CAT_CAMPOS,Campos e redes
+LOJA_SALDO_CREDITOS,Saldo: %d créditos
+LOJA_BTN_COMPRAR,Comprar (%d)
+LOJA_BTN_EQUIPAR,Equipar
+LOJA_BTN_EQUIPADO,Equipado
+LOJA_SALDO_INSUFICIENTE,Saldo insuficiente
+LOJA_ITEM_DISCO_VINIL,Disco de Vinil
+LOJA_ITEM_COROA,Coroa Nobre
+LOJA_ITEM_ARTE_DECO,Arte Déco
+LOJA_ITEM_PORCELANA,Porcelana Fina
+LOJA_ITEM_TURBINA,Turbina Veloz
+LOJA_ITEM_CHEVRON,Padrão Chevron
+LOJA_ITEM_DUAS_FAIXAS,Duas Faixas
+LOJA_ITEM_LOSANGOS,Losangos Clássicos
+LOJA_ITEM_REDE_OURO,Rede Dourada
+LOJA_ITEM_GRAMADO_LISTRADO,Gramado Listrado
+CAREER_HALL_OF_FAME_TITULO,Hall da Fama do Clube
+CAREER_MENTOR_BONUS,Mentor da Posição (+5% XP)
+LOJA_CAT_TODOS,Todos

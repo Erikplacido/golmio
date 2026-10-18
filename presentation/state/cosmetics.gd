@@ -37,14 +37,20 @@ const DEFAULT_CREST := "classico_faixa"
 
 
 static func _entry(id: String) -> Dictionary:
-	return PATTERNS.get(id, CRESTS.get(id, {}))
+	if PATTERNS.has(id):
+		return PATTERNS[id]
+	if CRESTS.has(id):
+		return CRESTS[id]
+	if ButtonPieces.STYLES.has(id):
+		return {"free": id in [ButtonPieces.DEFAULT_HOME, ButtonPieces.DEFAULT_AWAY]}
+	if PitchSkins.SKINS.has(id):
+		return {"free": id == PitchSkins.DEFAULT}
+	return {"free": false}
 
 
 ## Liberado para este clube (null = clube ainda não criado: só os grátis).
 static func is_unlocked(id: String, club: Club = null) -> bool:
 	var e := _entry(id)
-	if e.is_empty():
-		return false
 	if bool(e.get("free", false)):
 		return true
 	return club != null and (club.ext.get("cosmetics", []) as Array).has(id)
@@ -52,10 +58,11 @@ static func is_unlocked(id: String, club: Club = null) -> bool:
 
 ## Dá o item ao clube (recompensa, loja). Devolve false se não existe ou já era dele.
 static func unlock(club: Club, id: String) -> bool:
-	if club == null or _entry(id).is_empty() or is_unlocked(id, club):
+	if club == null or is_unlocked(id, club):
 		return false
 	var owned: Array = club.ext.get("cosmetics", [])
-	owned.append(id)
+	if not owned.has(id):
+		owned.append(id)
 	club.ext["cosmetics"] = owned
 	return true
 

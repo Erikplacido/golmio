@@ -93,6 +93,17 @@ var _names := {}
 const FF_BUDGET_USEC := 12000
 const CAREER_ACTIONS := ["pause", "critical", "replay", "cutscenes", "finish"]
 
+## Camada Cinestésica (Game Feel — TASK-05)
+var _squash: Dictionary = {}
+var _ball_squash := Vector2.ONE
+var _ball_squash_angle := 0.0
+var _ball_squash_time := 0.0
+var _shake_intensity := 0.0
+var _shake_offset := Vector2.ZERO
+var _net_wave := 0.0
+var _net_goal_side := 0
+var _last_contact_tick := -100
+
 
 func _ready() -> void:
 	_font = DesignTokens.display_font()
@@ -242,8 +253,103 @@ func _process(delta: float) -> void:
 			if _cutscenes:
 				_cutscenes.dismiss()
 			_summary.open(engine.ctx, false, _names)
+
+	_update_game_feel(delta)
 	_update_hud()
 	queue_redraw()
+
+
+func _update_game_feel(delta: float) -> void:
+	# 1. Screen Shake decrescente (150ms)
+	if _shake_intensity > 0.0:
+		_shake_intensity = maxf(0.0, _shake_intensity - delta * 30.0)
+		_shake_offset = Vector2(randf_range(-1.0, 1.0), randf_range(-1.0, 1.0)) * _shake_intensity
+	else:
+		_shake_offset = Vector2.ZERO
+
+	# 2. Deformação de rede (onda amortecida)
+	if _net_wave > 0.0:
+		_net_wave = maxf(0.0, _net_wave - delta * 2.5)
+
+	# 3. Squash de jogadores
+	if not _squash.is_empty():
+		var expired: Array = []
+		for pid in _squash:
+			var sq: Dictionary = _squash[pid]
+			sq["time_left"] = float(sq.get("time_left", 0.0)) - delta
+			if float(sq["time_left"]) <= 0.0:
+				expired.append(pid)
+			else:
+				var t_prog: float = 1.0 - (float(sq["time_left"]) / float(sq.get("duration", 0.1)))
+				var curve := sin(t_prog * PI) * float(sq.get("intensity", 0.2))
+				sq["current_scale"] = Vector2(1.0 + curve * 0.9, 1.0 - curve * 0.7)
+		for pid in expired:
+			_squash.erase(pid)
+
+	# 4. Squash da bola
+	if _ball_squash_time > 0.0:
+		_ball_squash_time -= delta
+		var b_factor := sin(clampf(1.0 - _ball_squash_time / 0.1, 0.0, 1.0) * PI) * 0.25
+		_ball_squash = Vector2(1.0 + b_factor, 1.0 - b_factor * 0.8)
+	else:
+		_ball_squash = Vector2.ONE
+
+
+func _trigger_haptic(duration_ms: int) -> void:
+	if DisplayServer.is_headless():
+		return
+	var haptics_enabled: bool = bool(_pref("vibration", true))
+	if haptics_enabled and Input.has_method("vibrate_handheld"):
+		Input.vibrate_handheld(duration_ms)
+
+
+func _trigger_player_squash(player_id: String, angle: float, intensity: float = 0.22, duration: float = 0.1) -> void:
+	_squash[player_id] = {
+		"angle": angle,
+		"intensity": intensity,
+		"duration": duration,
+		"time_left": duration,
+		"current_scale": Vector2.ONE
+	}
+
+
+func _trigger_ball_squash(angle: float, duration: float = 0.1) -> void:
+	_ball_squash_angle = angle
+	_ball_squash_time = duration
+
+
+func _trigger_game_feel_impact(type: String, data: Dictionary) -> void:
+	match type:
+		"shot":
+			_trigger_haptic(35)
+			if engine and engine.ctx:
+				var b := engine.ctx.ball
+				var angle := b.vel.angle() if b.vel.length_squared() > 0.01 else 0.0
+				_trigger_ball_squash(angle)
+				if b.last_kicker:
+					_trigger_player_squash(b.last_kicker.id, angle, 0.22)
+		"goal":
+			_trigger_haptic(70)
+			_shake_intensity = 6.0
+			_net_wave = 1.0
+			if engine and engine.ctx:
+				_net_goal_side = -1 if engine.ctx.ball.pos.x < Pitch.W / 2.0 else 1
+		"save":
+			_trigger_haptic(35)
+			_shake_intensity = 3.5
+			if engine and engine.ctx:
+				_trigger_ball_squash(engine.ctx.ball.vel.angle())
+		"block":
+			_trigger_haptic(35)
+			_shake_intensity = 3.0
+			if engine and engine.ctx:
+				_trigger_ball_squash(engine.ctx.ball.vel.angle())
+		"woodwork":
+			_trigger_haptic(70)
+			_shake_intensity = 5.5
+		"pass":
+			_trigger_haptic(15)
+
 
 
 func _unhandled_input(event: InputEvent) -> void:
@@ -332,6 +438,7 @@ func _on_match_event(payload: Dictionary) -> void:
 	var ev: Dictionary = payload.get("event", {})
 	if not _quiet:
 		_event_sound(ev)
+		_trigger_game_feel_impact(str(ev.get("type", "")), ev.get("data", {}))
 	if career and not _fast_forward and str(ev.get("type", "")) == "period_end" \
 			and str(ev.get("data", {}).get("period", "")) == "1T":
 		_halftime_pending = true
@@ -840,7 +947,7 @@ func _draw() -> void:
 		draw_texture_rect(paper, Rect2(Vector2.ZERO, get_viewport_rect().size), true)
 	else:
 		draw_rect(Rect2(Vector2.ZERO, get_viewport_rect().size), DesignTokens.COLOR_BG_APP)
-	draw_set_transform_matrix(_xf)
+	draw_set_transform_matrix(_xf.translated(_shake_offset))
 	_draw_pitch()
 	draw_set_transform_matrix(Transform2D.IDENTITY)
 	if engine == null:
@@ -956,9 +1063,25 @@ func _draw_lines() -> void:
 
 func _draw_goals(lw: float) -> void:
 	var gt := Pitch.goal_top()
+	var net_lines := 5
 	for gx in [-Pitch.GOAL_DEPTH, Pitch.W]:
+		var is_left := gx < 0
 		var r := Rect2(ORIGIN + Vector2(gx, gt), Vector2(Pitch.GOAL_DEPTH, Pitch.GOAL_H))
-		draw_rect(r, Color(1, 1, 1, 0.25))
+		draw_rect(r, Color(1, 1, 1, 0.15))
+
+		# Malha e deformação elástica da rede no gol
+		var deform := 0.0
+		if _net_wave > 0.0 and ((is_left and _net_goal_side == -1) or (not is_left and _net_goal_side == 1)):
+			deform = sin(_net_wave * PI * 3.0) * _net_wave * 5.0 * (-1.0 if is_left else 1.0)
+
+		var net_col := Color(1, 1, 1, 0.3)
+		for i in range(1, net_lines):
+			var frac := float(i) / float(net_lines)
+			var y_line := gt + Pitch.GOAL_H * frac
+			var x_start := ORIGIN.x + (gx if is_left else Pitch.W)
+			var x_end := ORIGIN.x + (0.0 if is_left else (Pitch.W + Pitch.GOAL_DEPTH))
+			draw_line(Vector2(x_start + deform * (1.0 - frac), ORIGIN.y + y_line), Vector2(x_end, ORIGIN.y + y_line), net_col, 1.0)
+
 		draw_rect(r, Color.WHITE, false, lw)
 
 
@@ -968,12 +1091,27 @@ func _draw_player(p: MatchPlayer, has_ball: bool) -> void:
 	if has_ball:
 		draw_circle(at, r + 4.5 * _xf_scale, Color(0.98, 0.75, 0.14, 0.35))
 		draw_arc(at, r + 4.5 * _xf_scale, 0, TAU, 32, Color("#fbbf24"), 2.2 * _xf_scale)
-	_draw_piece(at, p.team, p.shirt, p.is_gk())
+
+	if _squash.has(p.id):
+		var sq: Dictionary = _squash[p.id]
+		var angle: float = float(sq.get("angle", 0.0))
+		var scale: Vector2 = sq.get("current_scale", Vector2.ONE)
+		draw_set_transform(at, angle, scale)
+		_draw_piece(Vector2.ZERO, p.team, p.shirt, p.is_gk())
+		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+	else:
+		_draw_piece(at, p.team, p.shirt, p.is_gk())
 
 
 func _draw_ball(b: MatchBall) -> void:
 	var at := _to_screen(b.pos)
 	var r := BALL_R * _xf_scale
 	draw_circle(at + Vector2(2, 2.5) * _xf_scale, r, Color(0, 0, 0, 0.35))
-	draw_circle(at, r, Color.WHITE)
-	draw_arc(at, r, 0, TAU, 16, Color("#0f172a"), 1.2 * _xf_scale)
+	if _ball_squash != Vector2.ONE:
+		draw_set_transform(at, _ball_squash_angle, _ball_squash)
+		draw_circle(Vector2.ZERO, r, Color.WHITE)
+		draw_arc(Vector2.ZERO, r, 0, TAU, 16, Color("#0f172a"), 1.2 * _xf_scale)
+		draw_set_transform(Vector2.ZERO, 0.0, Vector2.ONE)
+	else:
+		draw_circle(at, r, Color.WHITE)
+		draw_arc(at, r, 0, TAU, 16, Color("#0f172a"), 1.2 * _xf_scale)

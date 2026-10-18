@@ -33,7 +33,12 @@ var provides_hooks: Dictionary = {}   # "<id>.<nome>": "documentação" — hook
 
 # --- Preenchido pelo registro ---------------------------------------------------------------
 var params: Dictionary = {}
-var registry: MechanicRegistry
+var _registry_ref: WeakRef = null
+var registry: MechanicRegistry:
+	get:
+		return _registry_ref.get_ref() as MechanicRegistry if _registry_ref != null else null
+	set(val):
+		_registry_ref = weakref(val) if val != null else null
 
 
 ## Registra hooks globais (mundo/carreira/economia). Chamado a cada aplicação de ruleset.
